@@ -1,0 +1,39 @@
+.container-main {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.93),rgba(0, 0, 0, 0.90) , rgba(0, 0, 0, 0.80));
+
+  .logo {
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    margin: 0 4rem;
+    img {
+      width: 4rem;
+      height: 2.5rem;
+      object-fit: contain;
+    }
+  }
+
+  .center-card {
+      width: 28rem;
+      height: 38rem;
+      background-color: #75B3D7;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    .card {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img {
+        width: 70rem;
+        height: 36rem;
+        object-fit: contain;
+      }
+    }
+  }
+}
