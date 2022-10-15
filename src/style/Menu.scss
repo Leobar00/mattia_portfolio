@@ -1,0 +1,52 @@
+.menu-container {
+  .navbar-left {
+    position: relative;
+    width: 10rem;
+    height: 100vh;
+    background: white;
+    &:hover {
+      background: linear-gradient(rgba(0, 0, 0, 0.93),rgba(0, 0, 0, 0.90) , rgba(0, 0, 0, 0.84));
+      transition: 0s;
+      .navbar-left-text p{
+        color: white;
+        text-decoration: line-through;
+        transition: 0.8s;
+      }
+      .black-logo .logo-background{
+        transition: 0.8s;
+        background-image: url("../../public/images/HOMEPAGE/Logo.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+    }
+    .black-logo {
+      height: 10rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 4rem;
+      .logo-background {
+        background-image: url("../../public/images/HOMEPAGE/logonero.png");
+        width: 4rem;
+        height: 2.5rem;
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+    }
+    .navbar-left-text {
+      height: 100%;
+      width: 100%;
+      p {
+        margin: 0;
+        font-size: 1.5rem;
+        width: 16rem;
+        height: 2rem;
+        color: black;
+        position: absolute;
+        top: 30%;
+        left: -25%;
+        transform: rotate(-90deg) translateX(-50%) translateY(-50%);
+      }
+    }
+  }
+}

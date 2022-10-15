@@ -1,19 +1,32 @@
 import React from 'react';
-import '../style/Main.scss'
+import '../style/Main.scss';
+import CenterCard from './../components/CenterCard'
+import Logo from './../components/Logo'
+import Navbar from './../components/Navbar'
 
 const Main = () => {
+
     return (
-        <div className="container-main">
-            <div className="logo">
-                <img src="/images/HOMEPAGE/Logo.png" alt="" />
-            </div>
-            <div className="center-card">
-                <div className="card">
-                    <img src="/images/HOMEPAGE/Drones.png" alt=""/>
+        <div className="general-container">
+            <div className="container-main">
+                <Logo />
+                <CenterCard />
+                <div className="container-line">
+                    <div className="line"></div>
+                    <div className="text-line">
+                        <span>Drones mobile drones mobile app</span>
+                    </div>
+                    <div className="line"></div>
+                    <div className="text-line-2">
+                        <span>ux/ui design</span>
+                    </div>
+                    <div className="line"></div>
                 </div>
             </div>
+            <Navbar />
         </div>
-    )
+
+)
 }
 
 export default Main;
