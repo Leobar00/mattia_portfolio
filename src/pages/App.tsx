@@ -5,6 +5,7 @@ import Main from "./Main";
 import Error from './Error';
 import Menu from './Menu';
 import {BrowserRouter as Router, Link, Route, Routes} from "react-router-dom";
+import Drone from "./Drone";
 
 
 
@@ -15,6 +16,7 @@ const App = () => {
               <Route path="/" element={<Home />} />
               <Route path="/main" element={<Main />} />
               <Route path='/menu' element={<Menu />}></Route>
+              <Route path='/drone' element={<Drone />}></Route>
               <Route path='*' element={<Error />}></Route>
           </Routes>
       </Router>

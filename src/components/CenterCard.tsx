@@ -8,13 +8,15 @@ import "swiper/css";
 import "swiper/css/pagination";
 import {Mousewheel} from "swiper";
 import { Link } from 'react-router-dom';
+import Drone from "../pages/Drone";
 
-const urlImg: Array<string> = [
-    '/images/HOMEPAGE/FitUp.png',
-    '/images/HOMEPAGE/Oceano.png',
-    '/images/HOMEPAGE/Bibank.png',
-    '/images/HOMEPAGE/Drones.png'
-];
+const urlImg: {[key:string]:string}= {
+    'fitup' :'/images/HOMEPAGE/FitUp.png',
+    'oceano':'/images/HOMEPAGE/Oceano.png',
+    'bibank':'/images/HOMEPAGE/Bibank.png',
+    'drone' :'/images/HOMEPAGE/Drones.png'
+};
+
 
 
 const CenterCard = () => {
@@ -28,15 +30,17 @@ const CenterCard = () => {
                 mousewheel={true}
                 modules={[Mousewheel]}
             >
-                { urlImg.map(img => {
-                    return(
-                        <SwiperSlide className="card">
-                            <Link to="">
-                                <img src={img} alt=""/>
-                            </Link>
-                        </SwiperSlide>
-                    )
-                }) }
+                {
+                    Object.entries(urlImg).map(([key,value]) => {
+                        return(
+                            <SwiperSlide className="card">
+                                <Link to={"/" + key}>
+                                    <img src={value} alt=""/>
+                                </Link>
+                            </SwiperSlide>
+                        )
+                    })
+                }
             </Swiper>
             <div className="instruction">
                 <p>Drag and press to view projects</p>
