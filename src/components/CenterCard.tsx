@@ -1,14 +1,11 @@
 import React from 'react';
-import { useRef, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
 import {Mousewheel} from "swiper";
 import { Link } from 'react-router-dom';
-import Drone from "../pages/Drone";
 
 const urlImg: {[key:string]:string}= {
     'fitup' :'/images/HOMEPAGE/FitUp.png',
