@@ -33,12 +33,12 @@
     .center-card {
         width: 28rem;
         height: 38rem;
-        background-color: #75B3D7;
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
         z-index: 10;
+        transition: 0.5s ease-out;
       .swiper {
         overflow: inherit;
          .swiper-wrapper > div:not(.swiper-slide-active) {
@@ -57,6 +57,7 @@
           object-fit: contain;
         }
       }
+
     }
 
 
