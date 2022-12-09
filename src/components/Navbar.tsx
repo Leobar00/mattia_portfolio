@@ -6,6 +6,7 @@ const Navbar = () => {
       <Link to="/menu" className="sidebar-right">
           <div className="circle"></div>
       </Link>
+
     );
 }
 

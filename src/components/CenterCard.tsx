@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
@@ -21,41 +21,81 @@ const urlImg: CenterCard[] = [
 ];
 
 
-function changeColorCard(){
+function changeColorCard(arrayUrlImg: Array<any>)
+{
     let key: HTMLElement | null = document.querySelector('.swiper-slide-active');
     let centerCard: HTMLElement | null = document.querySelector('.center-card')
     if(key != null && centerCard != null) {
         let newIndex: number = parseInt(key.dataset.index as string) ?? 4
-        centerCard.style.backgroundColor = urlImg[newIndex].color
+        centerCard.style.backgroundColor = arrayUrlImg[newIndex].color
     }
 }
 
+function animationCenterCard(e:any)
+{
+    e.preventDefault();
+    const centerCard: HTMLElement | null = document.querySelector('.center-card');
+    const imgActive: HTMLElement | null  = document.querySelector('.center-card .swiper-slide-active');
+    if(centerCard != null && imgActive != null) {
+        const linkImg: HTMLElement | null    = imgActive.querySelector('.link-img-center');
+
+        centerCard.style.width = '100%'
+        centerCard.style.height = '100%'
+        imgActive.style.animation = 'transition-img-center 2s linear'
+        setTimeout(() => {
+            window.location.href = linkImg!.getAttribute('href') as string;
+        },1800)
+    }
+
+}
+
+
 
 const CenterCard = () => {
+    const [arrayUrlImg,setUrlImg] = useState(urlImg)
+
+    useEffect(() => {
+        if(window.screen.width < 1024) {
+            setUrlImg([...urlImg].reverse());
+        }
+    },[])
     return (
-        <div className="center-card" style={{backgroundColor: urlImg[3].color}}>
+        <div className="center-card" style={window.screen.width < 1024 ? {backgroundColor: arrayUrlImg[0].color} : {backgroundColor: arrayUrlImg[3].color}}>
             <Swiper
-                direction={"vertical"}
                 className="mySwiper card"
                 grabCursor={true}
                 initialSlide={4}
                 mousewheel={true}
                 modules={[Mousewheel]}
-                onSlideChangeTransitionEnd={changeColorCard}
+                onSlideChangeTransitionEnd={() => changeColorCard(arrayUrlImg)}
+                breakpoints={{
+                    1024: {
+                       direction:'vertical',
+                    },
+                    0 :{
+                        direction:"horizontal",
+                        initialSlide: 0,
+                    }
+
+                }}
             >
                 {
-                    Object.entries(urlImg).map(([key,value]) => {
+                    Object.entries(arrayUrlImg).map(([key,value]) => {
                         return(
-                            <SwiperSlide className="card" key={key} data-index={key} >
-                                <Link to={"/" + value.title}>
-                                    <img src={value.path} alt=""/>
+                            <SwiperSlide
+                                className="card"
+                                key={key}
+                                data-index={key}
+                            >
+                                <Link className='link-img-center' to={"/" + value.title}>
+                                    <img src={value.path} onClick={animationCenterCard} alt=""/>
                                 </Link>
                             </SwiperSlide>
                         )
                     })
                 }
             </Swiper>
-            <div className="instruction">
+            <div className="instruction desktop">
                 <p>Drag and press to view projects</p>
             </div>
         </div>

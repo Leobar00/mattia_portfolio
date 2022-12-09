@@ -1,0 +1,19 @@
+.logo {
+  height: 10rem;
+  display: flex;
+  align-items: center;
+  margin: 0 4rem;
+  justify-content: space-between;
+  img {
+    width: 4rem;
+    height: 2.5rem;
+    object-fit: contain;
+    @media screen and (max-width: 768px) {
+      width: 3rem;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    margin: 0 2rem;
+    height: 7rem;
+  }
+}

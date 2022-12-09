@@ -11,7 +11,7 @@ const Main = () => {
             <div className="container-main">
                 <Logo />
                 <CenterCard />
-                <div className="container-line">
+                <div className="container-line desktop">
                     <div className="line"></div>
                     <div className="text-line">
                         <span>Drones mobile drones mobile app</span>
@@ -21,6 +21,13 @@ const Main = () => {
                         <span>ux/ui design</span>
                     </div>
                     <div className="line"></div>
+                </div>
+                <div className="container-line-mobile mobile">
+                    <div className="line-mobile"></div>
+                    <div className="text-line-mobile">
+                        <span>Drones delivery app</span>
+                    </div>
+                    <div className="line-mobile"></div>
                 </div>
             </div>
             <Navbar />
