@@ -22,13 +22,6 @@ const Main = () => {
                     </div>
                     <div className="line"></div>
                 </div>
-                <div className="container-line-mobile mobile">
-                    <div className="line-mobile"></div>
-                    <div className="text-line-mobile">
-                        <span>Drones delivery app</span>
-                    </div>
-                    <div className="line-mobile"></div>
-                </div>
             </div>
             <Navbar />
         </div>

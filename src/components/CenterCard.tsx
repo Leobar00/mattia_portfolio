@@ -98,6 +98,13 @@ const CenterCard = () => {
             <div className="instruction desktop">
                 <p>Drag and press to view projects</p>
             </div>
+            <div className="container-line-mobile mobile">
+                <div className="line-mobile"></div>
+                <div className="text-line-mobile">
+                    <span>Drones delivery app</span>
+                </div>
+                <div className="line-mobile"></div>
+            </div>
         </div>
     )
 }
