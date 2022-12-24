@@ -127,7 +127,7 @@ const Drone = () => {
                                                 <div className="circle">
                                                     <img src="images/DRONES/icon-and-logo/icona%20lente.png" alt=""/>
                                                 </div>
-                                                <p>Emphatise phas</p>
+                                                <p>Emphatise phase</p>
                                             </div>
                                         </div>
                                     </div>
