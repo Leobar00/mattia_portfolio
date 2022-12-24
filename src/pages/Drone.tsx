@@ -11,7 +11,7 @@ const Drone = () => {
             <div className="container-main-white">
                 <Logo />
                 <div className="product-container">
-                    <div className="product-container-description">
+                    <div className="product-container-description center-align">
                         <div >
                             <div className="line-product"></div>
                             <p className="product-subtitle">Project</p>
@@ -42,7 +42,105 @@ const Drone = () => {
                         <img className="img-absolute" src="/images/DRONES/IMMAGINI/Copertina.png" alt=""/>
                         <div className="white-space-product"></div>
                         <div className="line-product"></div>
+                        <div className="description-container">
+                            <div className="column-6">
+                                <span>Drones - delivery mobile-app</span>
+                                <p>
+                                    Drones is a mobile application that allows users to make deliveries of small items with drones, directly from their mobile phones.
+                                    Drones mobile app aim to speed up the delivery process in urban areas and eliminate carbon dioxide emissions in the air.
+                                </p>
+                            </div>
+                            <div className="column-6">
+                                <span>Why Drones?</span>
+                                <p>
+                                    The ultimate goal was to simplify the process of creating a shipment through the app, making it easy even for people with disabilities or those not used to using technology. The intention was also to create a fast and intuitive flow with as few steps as possible to track the status of one's shipment.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="product-section-img" style={{backgroundImage:"linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)),url('images/DRONES/IMMAGINI/1.png')"}}>
+                        <div className="center-align h-100 w-100">
+                            <div className="align-the-end">
+                                <h3>A new way to deliver</h3>
+                                <div className="line-80"></div>
+                                <p className="w-60">
+                                    Freight transport is one of the main factors in air pollution in recent times. Drones offer the possibility of transporting goods by means of all-electric aerial drones, thus reducing the emission of greenhouse gases into the atmosphere.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="product-section center-align">
+                        <div className="product-container-description w-50">
+                            <div className="product-app">
+                                <span className="small-subtitle">Project challenge</span>
+                                <div className="line-product-100"></div>
+                                <h3 className="title-section">Easy to manage</h3>
+                                <p className="text-description">
+                                    The customer was looking for a simple and intuitive way to send his parcels.Many people reported difficulties in using the shipping applications due to too may steps to complete sending a parcel and a confusing graphical interface
+                                </p>
+                                <div className="project-icon">
+                                    <div className="container-square-icon">
+                                        <div className="square-icon">
+                                            <img src="images/DRONES/icon-and-logo/icona%20uomo.png" alt=""/>
+                                        </div>
+                                        <small>Accesibility</small>
+                                    </div>
+                                    <div className="container-square-icon">
+                                        <div className="square-icon">
+                                            <img src="images/DRONES/icon-and-logo/occhio%20aperto.png" alt=""/>
+                                        </div>
+                                        <small>Vision</small>
+                                    </div>
+                                    <div className="container-square-icon">
+                                        <div className="square-icon">
+                                            <img src="images/DRONES/icon-and-logo/icona%20speed.png" alt=""/>
+                                        </div>
+                                        <small>Steps</small>
+                                    </div>
+                                </div>
 
+                            </div>
+                            <img className="img-advantages-drones" src="images/DRONES/IMMAGINI/2.png" alt=""/>
+                        </div>
+                    </div>
+                    <div className="product-section-design-stages ">
+                        <div className="product-container-description center-align">
+                            <p className="small-subtitle">Design stages</p>
+                            <div className="line-product-100"></div>
+                            <h3 className="title-section">Step by step</h3>
+                            <p className="text-description">
+                                Discovering the conscious and unconscious needs of the customer is the first step in the design process.  I then moved on to the design phase, where I analysed in depth the user usage of other similar apps.
+                                After that I designed the user interface, trying to make navigation as simple as possible.
+                            </p>
+                            <div className="product-graphic-container">
+                                <div className="product-weeks">
+                                    <div className="week-square">1st Week</div>
+                                    <div className="week-square">2nd Week</div>
+                                    <div className="week-square">3rd Week</div>
+                                    <div className="week-square">4th Week</div>
+                                    <div className="week-square">5th week</div>
+                                </div>
+                                <div className="graphic-container">
+                                    <div className="column">
+                                        <div className="column-container">
+                                            <div className="square">
+                                                <div className="circle">
+                                                    <img src="images/DRONES/icon-and-logo/icona%20lente.png" alt=""/>
+                                                </div>
+                                                <p>Emphatise phase</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="column"></div>
+                                    <div className="column"></div>
+                                    <div className="column"></div>
+                                    <div className="column"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="product-section">
+                        <img src="images/DRONES/IMMAGINI/3.png" alt=""/>
                     </div>
                 </div>
             </div>
