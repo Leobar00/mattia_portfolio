@@ -40,7 +40,7 @@ function animationCenterCard(e:any)
         const linkImg: HTMLElement | null= imgActive.querySelector('.link-img-center');
 
         centerCard.classList.add('center-card-animation');
-        imgActive.style.animation = 'transition-img-center 1.8s linear';
+        imgActive.style.animation = 'transition-img-center 2s linear';
         setTimeout(() => {
             window.location.href = linkImg!.getAttribute('href') as string;
             imgActive.style.animation = 'none';
