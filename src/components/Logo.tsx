@@ -13,7 +13,7 @@ const Logo = () => {
             <Link to="/" >
                 <img src="/images/HOMEPAGE/Logo.png" alt="" />
             </Link>
-            { location.pathname  == '/main' ? <Hamburger/> : <CloseButton /> }
+            { location.pathname  == '/menu' ? <CloseButton /> : <Hamburger/>  }
         </div>
     )
 }

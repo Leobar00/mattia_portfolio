@@ -29,4 +29,17 @@
       font-weight: bolder;
     }
   }
+  .menu-mobile {
+    display: none;
+    @media screen and (max-width: 768px){
+      display: initial;
+      .line-menu {
+        height: 3px;
+        margin: 8px 0;
+        border-radius: 20%;
+        background-color: white;
+        width: 2rem;
+      }
+    }
+  }
 }
