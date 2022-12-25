@@ -45,7 +45,7 @@ function animationCenterCard(e:any)
             window.location.href = linkImg!.getAttribute('href') as string;
             imgActive.style.animation = 'none';
             centerCard.classList.remove('center-card-animation')
-        },1800)
+        },1600)
     }
 
 }
