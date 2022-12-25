@@ -2,7 +2,7 @@ import React from 'react';
 import BlackLogo from "./BlackLogo";
 import {Link} from "react-router-dom";
 
-const NavbarLeft = () => {
+const NavbarLeftMenu = () => {
     return (
             <div className="navbar-left">
                 <Link to="/main">
@@ -15,4 +15,4 @@ const NavbarLeft = () => {
     )
 }
 
-export default NavbarLeft;
+export default NavbarLeftMenu;

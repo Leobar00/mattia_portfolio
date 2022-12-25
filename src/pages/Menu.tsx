@@ -1,7 +1,8 @@
 import React, {useState} from 'react';
 import '../style/Menu.scss';
-import NavbarLeft from "../components/NavbarLeft";
+import NavbarLeftMenu from "../components/NavbarLeftMenu";
 import {Link} from "react-router-dom";
+import Logo from "../components/Logo";
 
 let menuItem: {[key:string]:string} = {
     'ABOUT':'/',
@@ -17,12 +18,32 @@ let backgroundImg: {[key:string]:string} = {
     'TALK' : '/images/menu/talk.png'
 }
 
+function mobileMenu() {
+    if(window.innerWidth < 768) {
+        return (
+            <div>
+                <Logo />
+                <div className="menu-mobile-text">
+                    <p>Explore</p>
+                    <div className="line-mobile-menu"></div>
+                </div>
+            </div>
+        )
+    }
+
+    return '';
+}
+
 const Menu = () => {
     const [background,setBackground] = useState("")
 
+
+
     return (
         <div className="menu-container">
-            <NavbarLeft />
+            {/* Mobile menu  */}
+            {mobileMenu()}
+            <NavbarLeftMenu />
             <div className="menu-main" style={{ background:'linear-gradient(rgba(220,219,219,.2), rgba(220,219,219,.2)),' + background }}>
                 <ul>
                     {

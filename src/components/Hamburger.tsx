@@ -1,7 +1,7 @@
 import React from "react";
 import {Link} from "react-router-dom";
 
-const MenuMobile = () => {
+const Hamburger = () => {
     return (
         <Link to="/menu" className="menu-mobile">
             <div className="line-menu"></div>
@@ -10,4 +10,4 @@ const MenuMobile = () => {
     );
 }
 
-export default MenuMobile;
+export default Hamburger;

@@ -4,6 +4,10 @@
   align-items: center;
   margin: 0 4rem;
   justify-content: space-between;
+  @media screen and (max-width: 768px) {
+    margin: 0 2rem;
+    height: 7rem;
+  }
   img {
     width: 4rem;
     height: 2.5rem;
@@ -12,8 +16,17 @@
       width: 3rem;
     }
   }
-  @media screen and (max-width: 768px) {
-    margin: 0 2rem;
-    height: 7rem;
+  .close-button {
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    > * {
+      font-size: 2rem;
+      font-weight: bolder;
+    }
   }
 }
