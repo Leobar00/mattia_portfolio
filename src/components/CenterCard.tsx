@@ -44,8 +44,7 @@ function animationCenterCard(e:any)
         setTimeout(() => {
             window.location.href = linkImg!.getAttribute('href') as string;
             centerCard.classList.remove('center-card-animation')
-            imgActive.style.animation = 'none';
-        },1600)
+        },1800)
     }
 
 }
