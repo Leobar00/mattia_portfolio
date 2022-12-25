@@ -11,8 +11,7 @@ html {
 .container-main-white {
   width: 87vw;
   height: 100vh;
-  position: absolute;
-  z-index: -2;
+  position: relative;
   overflow-y: scroll;
   overflow-x: hidden;
   background: white;

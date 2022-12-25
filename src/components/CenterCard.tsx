@@ -39,14 +39,12 @@ function animationCenterCard(e:any)
     if(centerCard != null && imgActive != null) {
         const linkImg: HTMLElement | null    = imgActive.querySelector('.link-img-center');
 
-        centerCard.style.width = '100vw'
-        centerCard.style.height = '100vh'
-        centerCard.style.maxHeight = '100vh';
-        centerCard.style.maxWidth = '100vw';
+        centerCard.classList.add('center-card-animation');
         imgActive.style.animation = 'transition-img-center 2s linear'
         setTimeout(() => {
             window.location.href = linkImg!.getAttribute('href') as string;
         },1800)
+
     }
 
 }
