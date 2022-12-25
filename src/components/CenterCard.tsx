@@ -43,7 +43,6 @@ function animationCenterCard(e:any)
         imgActive.style.animation = 'transition-img-center 1.8s linear';
         setTimeout(() => {
             window.location.href = linkImg!.getAttribute('href') as string;
-            imgActive.style.display = 'none!important';
             imgActive.style.animation = 'none';
             centerCard.classList.remove('center-card-animation')
         },1800)

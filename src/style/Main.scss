@@ -166,11 +166,12 @@
 }
 
 @keyframes transition-img-center {
-  100% {
+  to{
     top: 50rem;
   }
-  0% {
+  from {
     top:0;
+    display: none;
   }
 }
 
