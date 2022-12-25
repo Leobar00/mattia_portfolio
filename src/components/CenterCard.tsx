@@ -37,14 +37,14 @@ function animationCenterCard(e:any)
     const centerCard: HTMLElement | null = document.querySelector('.center-card');
     const imgActive: HTMLElement | null  = document.querySelector('.center-card .swiper-slide-active');
     if(centerCard != null && imgActive != null) {
-        const linkImg: HTMLElement | null    = imgActive.querySelector('.link-img-center');
+        const linkImg: HTMLElement | null= imgActive.querySelector('.link-img-center');
 
         centerCard.classList.add('center-card-animation');
-        imgActive.style.animation = 'transition-img-center 2s linear'
+        imgActive.style.animation = 'transition-img-center 2s linear';
         setTimeout(() => {
             window.location.href = linkImg!.getAttribute('href') as string;
             centerCard.classList.remove('center-card-animation')
-            imgActive.style.animation = 'none'
+            imgActive.style.animation = 'transition-img-center 0s linear';
         },1800)
     }
 

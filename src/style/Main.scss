@@ -110,7 +110,7 @@
       }
 
       .line {
-        height: 0.1px;
+        height: 1px;
         background-color: white;
         width: 80%;
         margin: 0 auto;
@@ -166,10 +166,10 @@
 }
 
 @keyframes transition-img-center {
-  to {
+  100% {
     top: 50rem;
   }
-  from {
+  0% {
     top:0;
   }
 }
