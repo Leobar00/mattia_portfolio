@@ -10,7 +10,7 @@ const Logo = () => {
     const location = useLocation();
     return (
         <div className="logo">
-            <Link to="/" >
+            <Link to="/main" >
                 <img src="/images/HOMEPAGE/Logo.png" alt="" />
             </Link>
             { location.pathname  == '/menu' ? <CloseButton /> : <Hamburger/>  }

@@ -18,6 +18,30 @@
       }
     }
 
+    .num-slide {
+      height: 5rem;
+      display: flex;
+      color: white;
+      font-weight: bold;
+      justify-content: center;
+      align-items: center;
+      > * {
+        margin: 0 1rem;
+      }
+      > .container-line-progress{
+        width: 8rem;
+        position: relative;
+        > .line-progress {
+          width: 25%;
+          height: 0.1rem;
+          background-color: white;
+          position: absolute;
+          top: 50%;
+          transform:translateY(-50%);
+        }
+      }
+    }
+
     //card centrale
     .center-card-animation {
       width: 100vw!important;
