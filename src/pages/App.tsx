@@ -13,7 +13,7 @@ import Fitup from "./Fitup";
 
 const App = () => {
   return (
-      <Router>
+
           <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/main" element={<Main />} />
@@ -24,7 +24,6 @@ const App = () => {
               <Route path='/fitup' element={<Fitup />}/>
               <Route path='*' element={<Error />}/>
           </Routes>
-      </Router>
 
   )
 }

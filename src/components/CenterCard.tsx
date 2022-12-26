@@ -5,7 +5,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import {Mousewheel} from "swiper";
-import { Link } from 'react-router-dom';
+import {Link, NavLink} from 'react-router-dom';
 
 interface CenterCard {
     title: string,
@@ -42,7 +42,7 @@ function animationCenterCard(e:any)
         centerCard.classList.add('center-card-animation');
         imgActive.style.animation = 'transition-img-center 2s linear';
         setTimeout(() => {
-            window.location.href = linkImg!.getAttribute('href') as string;
+            //window.location.href = linkImg!.getAttribute('href') as string;
         },1800)
     }
 
@@ -86,9 +86,9 @@ const CenterCard = () => {
                                 key={key}
                                 data-index={key}
                             >
-                                <Link className='link-img-center' to={"/" + value.title}>
+                                <NavLink className='link-img-center' to={"/" + value.title}>
                                     <img src={value.path} onClick={animationCenterCard} alt=""/>
-                                </Link>
+                                </NavLink>
                             </SwiperSlide>
                         )
                     })
