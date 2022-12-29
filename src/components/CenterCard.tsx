@@ -5,7 +5,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import {Mousewheel} from "swiper";
-import {Link, NavLink} from 'react-router-dom';
+import {Link, NavLink, useLocation} from 'react-router-dom';
+import {log} from "util";
 
 interface CenterCard {
     title: string,
@@ -43,7 +44,6 @@ function changeColorCard(arrayUrlImg: Array<any>)
 
 function animationCenterCard(e:any)
 {
-    e.preventDefault();
     const centerCard: HTMLElement | null = document.querySelector('.center-card');
     const imgActive: HTMLElement | null  = document.querySelector('.center-card .swiper-slide-active');
     if(centerCard != null && imgActive != null) {
@@ -68,6 +68,7 @@ const CenterCard = () => {
             setUrlImg([...urlImg].reverse());
         }
     },[])
+
     return (
         <div className="center-card" style={window.screen.width < 1024 ? {backgroundColor: arrayUrlImg[0].color} : {backgroundColor: arrayUrlImg[3].color}}>
             <Swiper
@@ -114,7 +115,7 @@ const CenterCard = () => {
                 </div>
                 <div className="line-mobile"></div>
             </div>
-            <div className="num-slide">
+            <div className="num-slide desktop">
                 <span id="first-num">01</span>
                 <span className="container-line-progress">
                     <span className="line-progress"></span>

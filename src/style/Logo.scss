@@ -8,6 +8,10 @@
     margin: 0 2rem;
     height: 7rem;
   }
+  > a {
+    position: relative;
+    z-index: 10;
+  }
   img {
     width: 4rem;
     height: 2.5rem;
