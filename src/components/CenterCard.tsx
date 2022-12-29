@@ -6,7 +6,6 @@ import "swiper/css";
 import "swiper/css/pagination";
 import {Mousewheel} from "swiper";
 import {Link, NavLink, useLocation} from 'react-router-dom';
-import {log} from "util";
 
 interface CenterCard {
     title: string,
@@ -44,6 +43,7 @@ function changeColorCard(arrayUrlImg: Array<any>)
 
 function animationCenterCard(e:any)
 {
+    e.preventDefault();
     const centerCard: HTMLElement | null = document.querySelector('.center-card');
     const imgActive: HTMLElement | null  = document.querySelector('.center-card .swiper-slide-active');
     if(centerCard != null && imgActive != null) {
