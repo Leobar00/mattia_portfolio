@@ -5,9 +5,9 @@ const Logo = () => {
 
     return (
         <div className="close-button">
-            <Link to="/main">
+            <a onClick={() => window.history.back()}>
                 &#10005;
-            </Link>
+            </a>
         </div>
     )
 }
