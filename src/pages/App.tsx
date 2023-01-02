@@ -9,6 +9,7 @@ import Drone from "./Drone";
 import Oceano from "./Oceano";
 import Bibank from "./Bibank";
 import Fitup from "./Fitup";
+import About from "./About";
 
 
 const App = () => {
@@ -16,6 +17,7 @@ const App = () => {
 
           <Routes>
               <Route path="/" element={<Home />} />
+              <Route path="/About" element={<About />} />
               <Route path="/main" element={<Main />} />
               <Route path='/menu' element={<Menu />}/>
               <Route path='/drone' element={<Drone />}/>

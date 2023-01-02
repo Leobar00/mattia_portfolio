@@ -4,19 +4,20 @@ import NavbarLeftMenu from "../components/NavbarLeftMenu";
 import {Link} from "react-router-dom";
 import Logo from "../components/Logo";
 
-let menuItem: {[key:string]:string} = {
-    'ABOUT':'/',
-    'WORKS':'/',
-    'IDEAS':'/',
-    'TALK' : '/'
-};
-
-let backgroundImg: {[key:string]:string} = {
-    'ABOUT': '/images/menu/about.png',
-    'WORKS': '/images/menu/works.png',
-    'IDEAS': '/images/menu/ideas.png',
-    'TALK' : '/images/menu/talk.png'
+interface MenuItem {
+    name: string,
+    route: string,
+    imageUrl : string,
+    description:string
 }
+
+
+let menuItem: MenuItem[] = [
+    {name:'ABOUT',route:'/about',imageUrl:'/images/menu/about.png',description:'Dom Mount, 4.545 mt.\n' + 'Switzerland, 2022\n' + 'Lonely journey among the snow-covered glaciers of the Swiss peaks.'},
+    {name:'WORKS',route:'/',imageUrl:'/images/menu/works.png',description:'My projects, my designs.\n' + 'Small collection of my case studies, developed during the courses.'},
+    {name:'IDEAS',route:'/',imageUrl:'/images/menu/ideas.png',description:'A blank sheet of paper.\n' + 'From which to start, to fill with ideas and thoughts about design world.'},
+    {name:'TALK',route:'/',imageUrl:'/images/menu/talk.png',description:'I would love to talk to you and learn more about this fantastic job. Currently in Perth  :)'}
+]
 
 function mobileMenu() {
     if(window.innerWidth < 768) {
@@ -37,27 +38,34 @@ function mobileMenu() {
 const Menu = () => {
     const [background,setBackground] = useState("")
 
-
-
     return (
-        <div className="menu-container">
+        <div className="menu-container overflow-hidden">
             {/* Mobile menu  */}
             {mobileMenu()}
             <NavbarLeftMenu />
-            <div className="menu-main" style={{ background:'linear-gradient(rgba(220,219,219,.2), rgba(220,219,219,.2)),' + background }}>
+            <div className="menu-main" style={{ background:'linear-gradient(rgba(220,219,219,0.05), rgba(220,219,219,0.3)),' + background }}>
                 <ul>
                     {
                         Object.entries(menuItem).map(([key,value]) => {
                             return(
                                 <li className="menu-item" >
-                                    <Link to={value} key={key} onMouseOver={() => setBackground('url("' + backgroundImg[key] + '")')} onMouseLeave={() => setBackground('#DCDBDB url("")')}>
-                                        {key}
+                                    <Link to={value.route} key={value.name}
+                                          onMouseOver={() => {
+                                              document.querySelector('.description-item-menu')!.innerHTML = value.description
+                                              setBackground('url("' + value.imageUrl + '")')
+                                          }}
+                                          onMouseLeave={() => {
+                                              document.querySelector('.description-item-menu')!.innerHTML = ''
+                                              setBackground('#DCDBDB url("")')
+                                          }}>
+                                        {value.name}
                                     </Link>
                                 </li>
                             )
                         })
                     }
                 </ul>
+                <div className="description-item-menu"/>
             </div>
         </div>
     )

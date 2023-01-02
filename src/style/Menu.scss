@@ -1,13 +1,17 @@
+.overflow-hidden {
+  overflow: hidden;
+}
 .menu-container {
   display: flex;
   width: 100%;
   height: 100vh;
-  overflow: hidden;
   @media screen and (max-width: 768px) {
     display: block;
     background: linear-gradient(rgba(0, 0, 0, 0.93),rgba(0, 0, 0, 0.90) , rgba(0, 0, 0, 0.80));
   }
+  //menù principale
   .menu-main {
+    position: relative;
     width: calc(100% - 12rem);
     height: 100%;
     background-color: #DCDBDB;
@@ -18,6 +22,14 @@
       width: 100%;
       background: transparent;
       height: 60%;
+    }
+    .description-item-menu {
+      position: absolute;
+      top: 3rem;
+      right: 3rem;
+      width: 15rem;
+      height: 10rem;
+      color: white;
     }
     ul {
       margin-left:clamp(1%,15%,30%) ;
@@ -64,6 +76,7 @@
       display: flex;
     }
   }
+  //navbar del /menu
   .navbar-left {
     position: relative;
     width: 12rem;
@@ -118,9 +131,69 @@
       }
     }
   }
+  //pagine del menu (About ecc.)
+  .container-section-menu {
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.93),rgba(0, 0, 0, 0.90) , rgba(0, 0, 0, 0.80));
+    @media screen and (max-width: 768px) {
+      background: transparent;
+    }
+    .navbar-section {
+      display: flex;
+      justify-content: end;
+      .navbar-section-item {
+        margin-top: 3rem;
+        display: flex;
+        justify-content: space-around;
+        width: 40%;
+        color: white;
+        list-style: none;
+        @media screen and (max-width: 768px) {
+          width: 100%;
+        }
+      }
+    }
+    .section-content {
+      color: white;
+      width: 80%;
+      margin: 8rem auto;
+      position: relative;
+      .first-section {
+        display:flex;
+        .content {
+          width: 50%;
+          .line-menu {
+            width: 100%;
+            height: 1px;
+            margin-top: 1rem;
+            background-color: white;
+          }
+          > h3 {
+            font-size: 2.5rem;
+            margin-top: 2rem;
+          }
+          > .content-text {
+            margin-top: 3rem;
+            line-height: 2.4rem;
+            font-size: 1.3rem;
+          }
+        }
+        .img-content {
+          width: 50%;
+          display: flex;
+          justify-content: end;
+          align-items: end;
+          > img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
 }
 
-//menu
+//menu colorato pagina principale
 .sidebar-right {
   position: absolute;
   right: 0;
