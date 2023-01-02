@@ -58,11 +58,14 @@ const CenterCard = () => {
                 const linkImg: HTMLElement | null = imgActive.querySelector('.link-img-center');
 
                 imgActive.style.animation = 'transition-img-center 2s linear';
-                window.location.href = linkImg!.getAttribute('href') as string;
+                setTimeout(() => {
+                    window.location.href = linkImg!.getAttribute('href') as string;
+                },1800)
             }
 
             return !v;
         })
+
     }
 
     useEffect(() => {
