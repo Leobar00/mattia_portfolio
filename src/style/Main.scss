@@ -43,11 +43,14 @@
     }
 
     //card centrale
-    .center-card-animation {
+    .transition-center-enter-active {
       width: 100vw!important;
       height: 100vh!important;
       max-width: 100vw!important;
       max-height: 100vh!important;
+    }
+    .transition-center-enter-done {
+
     }
     .center-card {
         width: 28rem;
@@ -143,7 +146,7 @@
 
     .container-line-mobile {
       position: absolute;
-      bottom: -7rem;
+      bottom: -9rem;
       left: 50%;
       transform: translateX(-50%);
       display: flex;
