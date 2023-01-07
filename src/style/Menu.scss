@@ -4,54 +4,62 @@
 .menu-container {
   display: flex;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   @media screen and (max-width: 768px) {
     display: block;
     background: linear-gradient(rgba(0, 0, 0, 0.93),rgba(0, 0, 0, 0.90) , rgba(0, 0, 0, 0.80));
   }
   //menù principale
-  .menu-main {
-    position: relative;
-    width: calc(100% - 12rem);
-    height: 100%;
-    background-color: #DCDBDB;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    @media screen and (max-width: 768px) {
-      width: 100%;
-      background: transparent;
-      height: 60%;
-    }
-    .description-item-menu {
+  .right-position {
+    width: 100%;
+    height: 100vh;
+    .menu-main {
       position: absolute;
-      top: 3rem;
-      right: 3rem;
-      width: 15rem;
-      height: 10rem;
-      color: white;
-    }
-    ul {
-      margin-left:clamp(1%,15%,30%) ;
-      .menu-item {
-        font-size: clamp(5rem,10vw,12rem);
-        list-style: none;
-        &:nth-child(odd){
-          font-weight: 400;
+      top: 0;
+      right: 0;
+      width: calc(100% - 12rem);
+      background-color: #DCDBDB;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      @media screen and (max-width: 768px) {
+        width: 100%;
+        background: transparent;
+      }
+      .description-item-menu {
+        position: absolute;
+        top: 3rem;
+        right: 3rem;
+        width: 15rem;
+        height: 10rem;
+        color: white;
+        @media screen and (max-width:768px) {
+          display: none;
         }
-        &:nth-child(even){
-          font-weight: 500;
-        }
-        a {
-          text-decoration: none;
-          color: black;
-          @media screen and (max-width: 768px) {
-            color: white;
+      }
+      ul {
+        margin-left:clamp(1%,15%,30%) ;
+        .menu-item {
+          font-size: clamp(5rem,10vw,12rem);
+          list-style: none;
+          &:nth-child(odd){
+            font-weight: 400;
           }
-          &:hover{
-            color: white;
-            text-decoration-line: line-through;
-            text-decoration-thickness: 0.4rem;
+          &:nth-child(even){
+            font-weight: 500;
+          }
+          a {
+            text-decoration: none;
+            color: black;
+            @media screen and (max-width: 768px) {
+              color: white;
+            }
+            &:hover{
+              color: white;
+              text-decoration-line: line-through;
+              text-decoration-thickness: 0.4rem;
+            }
           }
         }
       }
@@ -78,9 +86,12 @@
   }
   //navbar del /menu
   .navbar-left {
-    position: relative;
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+    overflow: hidden;
     width: 12rem;
-    height: 100%;
     background: white;
     margin: 0;
     @media screen and (max-width: 768px) {
@@ -132,9 +143,17 @@
     }
   }
   //pagine del menu (About ecc.)
-  .container-section-menu {
-    width: 100%;
+  .background-info-page {
     background: linear-gradient(rgba(0, 0, 0, 0.93),rgba(0, 0, 0, 0.90) , rgba(0, 0, 0, 0.80));
+  }
+  .container-section-menu {
+    overflow-y: scroll!important;
+    overflow-x:hidden;
+    width: calc(100% - 12rem);
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
     @media screen and (max-width: 768px) {
       background: transparent;
     }
@@ -150,6 +169,13 @@
         list-style: none;
         @media screen and (max-width: 768px) {
           width: 100%;
+        }
+        li > * {
+          text-decoration: none;
+          color: white;
+          &:hover {
+            text-decoration: underline;
+          }
         }
       }
     }
@@ -199,7 +225,7 @@
   right: 0;
   top: 0;
   width: 13vw;
-  height: 100vh;
+  min-height: 100vh;
   background: linear-gradient(#BC86AF,#6AB471 , #B23D3D, #4C869E);
   z-index: 99999;
   cursor: pointer;

@@ -6,7 +6,11 @@
   --microsfot-jheng : 'Microsoft JhengHei';
 
 }
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 a {
   text-decoration: none;
 }
@@ -14,14 +18,14 @@ a {
 .container-home {
   background-color: black;
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   .fade-effect {
     visibility : visible;
     opacity : 1;
   }
   .center-block-flex {
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;

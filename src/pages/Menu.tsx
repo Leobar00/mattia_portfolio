@@ -43,29 +43,31 @@ const Menu = () => {
             {/* Mobile menu  */}
             {mobileMenu()}
             <NavbarLeftMenu />
-            <div className="menu-main" style={{ background:'linear-gradient(rgba(220,219,219,0.05), rgba(220,219,219,0.3)),' + background }}>
-                <ul>
-                    {
-                        Object.entries(menuItem).map(([key,value]) => {
-                            return(
-                                <li className="menu-item" >
-                                    <Link to={value.route} key={value.name}
-                                          onMouseOver={() => {
-                                              document.querySelector('.description-item-menu')!.innerHTML = value.description
-                                              setBackground('url("' + value.imageUrl + '")')
-                                          }}
-                                          onMouseLeave={() => {
-                                              document.querySelector('.description-item-menu')!.innerHTML = ''
-                                              setBackground('#DCDBDB url("")')
-                                          }}>
-                                        {value.name}
-                                    </Link>
-                                </li>
-                            )
-                        })
-                    }
-                </ul>
-                <div className="description-item-menu"/>
+            <div className="right-position">
+                <div className="menu-main" style={{ background:'linear-gradient(rgba(220,219,219,0.05), rgba(220,219,219,0.3)),' + background }}>
+                    <ul>
+                        {
+                            Object.entries(menuItem).map(([key,value]) => {
+                                return(
+                                    <li className="menu-item" >
+                                        <Link to={value.route} key={value.name}
+                                              onMouseOver={() => {
+                                                  document.querySelector('.description-item-menu')!.innerHTML = value.description
+                                                  setBackground('url("' + value.imageUrl + '")')
+                                              }}
+                                              onMouseLeave={() => {
+                                                  document.querySelector('.description-item-menu')!.innerHTML = ''
+                                                  setBackground('#DCDBDB url("")')
+                                              }}>
+                                            {value.name}
+                                        </Link>
+                                    </li>
+                                )
+                            })
+                        }
+                    </ul>
+                    <div className="description-item-menu"/>
+                </div>
             </div>
         </div>
     )
