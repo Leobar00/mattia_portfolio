@@ -156,6 +156,9 @@
     right: 0;
     @media screen and (max-width: 768px) {
       background: transparent;
+      width: 90%;
+      position: relative;
+      margin: 0 auto;
     }
     .navbar-section {
       display: flex;
@@ -181,15 +184,19 @@
     }
     .section-content {
       color: white;
-      width: 80%;
       margin: 8rem auto;
       position: relative;
-      .first-section {
+      width: 80%;
+      @media screen and (max-width: 768px) {
+        width: 100%;
+      }
+      .flex-section {
         display:flex;
+        @media screen and (max-width: 768px) {
+          display: block;
+        }
         .content {
-          width: 50%;
           .line-menu {
-            width: 100%;
             height: 1px;
             margin-top: 1rem;
             background-color: white;
@@ -205,12 +212,29 @@
           }
         }
         .img-content {
-          width: 50%;
           display: flex;
           justify-content: end;
           align-items: end;
-          > img {
-            width: 100%;
+        }
+      }
+      .line-center-container {
+        margin: 4rem 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .line-center-vertical {
+          height: 15rem;
+          width: 1px;
+          background-color: white;
+          position: relative;
+          .circle-line-vertical {
+            width: 1.2rem;
+            height: 1.2rem;
+            background-color: white;
+            border-radius: 50%;
+            position: absolute;
+            bottom: 0;
+            left: -0.6rem;
           }
         }
       }
