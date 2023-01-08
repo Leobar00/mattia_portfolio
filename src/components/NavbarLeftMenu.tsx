@@ -2,13 +2,18 @@ import React from 'react';
 import BlackLogo from "./BlackLogo";
 import {Link} from "react-router-dom";
 
-const NavbarLeftMenu = () => {
+interface NavbarLeftMenuProps {
+    route:string,
+    text:string
+}
+
+const NavbarLeftMenu = ({route,text}: NavbarLeftMenuProps) => {
     return (
             <div className="navbar-left">
-                <Link to="/main">
+                <Link to={ '/' + route }>
                     <BlackLogo />
                     <div className="navbar-left-text">
-                        <p>Back to Home</p>
+                        <p>{text}</p>
                     </div>
                 </Link>
             </div>

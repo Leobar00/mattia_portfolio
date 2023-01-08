@@ -42,7 +42,7 @@ const Menu = () => {
         <div className="menu-container overflow-hidden">
             {/* Mobile menu  */}
             {mobileMenu()}
-            <NavbarLeftMenu />
+            <NavbarLeftMenu route='main' text='Back to Home' />
             <div className="right-position">
                 <div className="menu-main" style={{ background:'linear-gradient(rgba(220,219,219,0.05), rgba(220,219,219,0.3)),' + background }}>
                     <ul>

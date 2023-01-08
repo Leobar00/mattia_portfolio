@@ -7,7 +7,7 @@ const About = () => {
 
     return (
         <div className="menu-container overflow-hidden">
-            <NavbarLeftMenu />
+            <NavbarLeftMenu route="menu" text="Back to menu" />
             <div className="right-position background-info-page">
                 <div className="container-section-menu">
                     <div className="navbar-section">
