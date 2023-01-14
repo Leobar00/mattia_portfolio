@@ -17,7 +17,7 @@ const About = () => {
                             <li><Link to="">Contact me</Link></li>
                         </ul>
                     </div>
-                    <div className="section-content">
+                    <div className="section-content-black">
                         <div className="flex-section">
                             <div className="content w-50">
                                 <p>About myself</p>
@@ -33,8 +33,8 @@ const About = () => {
                             </div>
                         </div>
                         <div className="line-center-container w-100">
-                            <div className="line-center-vertical">
-                                <div className="circle-line-vertical"></div>
+                            <div className="line-center-vertical bg-white">
+                                <div className="circle-line-vertical bg-white"></div>
                             </div>
                         </div>
                         <div className="flex-section">
@@ -46,6 +46,75 @@ const About = () => {
                                 <p className="content-text">
                                     My biggest passion is technology, which is why I decided to pursue this path in the design world. As a designer, I would like to create innovative products that can solve serious social problems. I would also like to work on highly technological and interactive projects, as I would never want to stop learning new things. My second passion is reading and my favorite autor is the Japanese Haruki Murakami. His texts, at times strongly surreal but rooted in everyday reality, are a bit of a reflection of my person, quiet, polite but also dreamy and ambitious.
                                 </p>
+                            </div>
+                        </div>
+                        <div className="line-center-container w-100 half-absolute">
+                            <div className="line-center-vertical bg-black">
+                                <div className="circle-line-vertical bg-black"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="section-content-white">
+                        <div className="flex-section ">
+                            <div className="content ">
+                                <p>Experiences</p>
+                                <div className="line-menu-black w-50"></div>
+                                <h3>Study and work</h3>
+                                <div className="container-content-text">
+                                    <h3 className="title-content-text"><span>2022</span> - Design thinking and UI course</h3>
+                                    <p className="subtitle-content-text">Interaction Design Foundation</p>
+                                    <p className="content-text">
+                                        Through this 6-month course, I was able to explore the process of
+                                        design in a deeper way, learning about new techniques in the
+                                        different stages of design. Much of the course also focused on the
+                                        User Interface and how to create a satisfactory visual experience for
+                                        the user.
+                                    </p>
+                                </div>
+                                <div className="container-content-text">
+                                    <h3 className="title-content-text"><span>2022</span> - Design thinking and UI course</h3>
+                                    <p className="subtitle-content-text">Interaction Design Foundation</p>
+                                    <p className="content-text">
+                                        Through this 6-month course, I was able to explore the process of
+                                        design in a deeper way, learning about new techniques in the
+                                        different stages of design. Much of the course also focused on the
+                                        User Interface and how to create a satisfactory visual experience for
+                                        the user.
+                                    </p>
+                                </div>
+                                <div className="container-content-text">
+                                    <h3 className="title-content-text"><span>2022</span> - Design thinking and UI course</h3>
+                                    <p className="subtitle-content-text">Interaction Design Foundation</p>
+                                    <p className="content-text">
+                                        Through this 6-month course, I was able to explore the process of
+                                        design in a deeper way, learning about new techniques in the
+                                        different stages of design. Much of the course also focused on the
+                                        User Interface and how to create a satisfactory visual experience for
+                                        the user.
+                                    </p>
+                                </div>
+                                <div className="container-content-text">
+                                    <h3 className="title-content-text"><span>2022</span> - Design thinking and UI course</h3>
+                                    <p className="subtitle-content-text">Interaction Design Foundation</p>
+                                    <p className="content-text">
+                                        Through this 6-month course, I was able to explore the process of
+                                        design in a deeper way, learning about new techniques in the
+                                        different stages of design. Much of the course also focused on the
+                                        User Interface and how to create a satisfactory visual experience for
+                                        the user.
+                                    </p>
+                                </div>
+                                <div className="container-content-text">
+                                    <h3 className="title-content-text"><span>2022</span> - Design thinking and UI course</h3>
+                                    <p className="subtitle-content-text">Interaction Design Foundation</p>
+                                    <p className="content-text">
+                                        Through this 6-month course, I was able to explore the process of
+                                        design in a deeper way, learning about new techniques in the
+                                        different stages of design. Much of the course also focused on the
+                                        User Interface and how to create a satisfactory visual experience for
+                                        the user.
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
