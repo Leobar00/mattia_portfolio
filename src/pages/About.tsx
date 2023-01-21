@@ -9,7 +9,7 @@ const About = () => {
         <div className="menu-container overflow-hidden">
             <NavbarLeftMenu route="menu" text="Back to menu" />
             <div className="right-position background-info-page">
-                <div className="container-section-menu">
+                <div className="container-section-menu background-info-page">
                     <div className="navbar-section">
                         <ul className="navbar-section-item">
                             <li><Link to="">Linkedin</Link></li>

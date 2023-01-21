@@ -123,6 +123,19 @@ const Drone = () => {
                                 <div className="graphic-container">
                                     <div className="column">
                                         <div className="column-container">
+                                            <div className="square first-color-square">
+                                                <div className="circle">
+                                                    <img src="images/DRONES/icon-and-logo/icona%20lente.png" alt=""/>
+                                                </div>
+                                                <p>Emphatise phase</p>
+                                            </div>
+                                            <div className="subsquare">
+                                                Qualitative Primary Research
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="column">
+                                        <div className="column-container" style={{gridRow:'2'}}>
                                             <div className="square">
                                                 <div className="circle">
                                                     <img src="images/DRONES/icon-and-logo/icona%20lente.png" alt=""/>
@@ -131,10 +144,36 @@ const Drone = () => {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="column"></div>
-                                    <div className="column"></div>
-                                    <div className="column"></div>
-                                    <div className="column"></div>
+                                    <div className="column">
+                                        <div className="column-container" style={{gridRow:'3'}}>
+                                            <div className="square">
+                                                <div className="circle">
+                                                    <img src="images/DRONES/icon-and-logo/icona%20lente.png" alt=""/>
+                                                </div>
+                                                <p>Emphatise phase</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="column">
+                                        <div className="column-container" style={{gridRow:'4'}}>
+                                            <div className="square">
+                                                <div className="circle">
+                                                    <img src="images/DRONES/icon-and-logo/icona%20lente.png" alt=""/>
+                                                </div>
+                                                <p>Emphatise phase</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="column">
+                                        <div className="column-container" style={{gridRow:'5',width:'100%'}}>
+                                            <div className="square">
+                                                <div className="circle">
+                                                    <img src="images/DRONES/icon-and-logo/icona%20lente.png" alt=""/>
+                                                </div>
+                                                <p>Emphatise phase</p>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>

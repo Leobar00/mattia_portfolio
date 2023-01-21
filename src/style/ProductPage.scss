@@ -188,7 +188,7 @@ html {
       }
     }
     .product-section-design-stages {
-      height: 150vh;
+      height: 150%;
       background:linear-gradient(#121212, #1A1A1A,#2C2C2C) ;
       position: relative;
       z-index: 3;
@@ -207,14 +207,20 @@ html {
         background-color: white;
         width: 50%!important;
       }
+      .product-container-description {
+        margin:10rem auto
+      }
       .product-graphic-container {
-        width: 90%;
-        margin-top: 2rem;
+        width: 100%;
+        margin-top: 5rem;
         .product-weeks{
+          width: 95%;
+          margin: 0 auto;
           display: grid;
           grid-template-columns: repeat(5,1fr);
           gap:4rem;
           .week-square {
+            width: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -227,35 +233,64 @@ html {
           }
         }
         .graphic-container {
+          width: 100%;
+          margin: 0 auto;
           margin-top: 2rem;
           display: grid;
           grid-template-columns: repeat(10,1fr);
-          grid-template-rows: repeat(4, 10rem);
+          grid-template-rows: repeat(5, 5rem);
           grid-auto-flow: row;
           .column {
+            width: 100%;
             grid-column: span 2;
-            height: 40rem;
+            height: 48rem;
             border-left: 2px dashed white ;
-            .square {
-              display: flex;
-              justify-content: space-between;
-              align-items: center;
-              border-radius: 10px;
-              padding: 0.5rem 0.3rem ;
-              grid-row: span 2;
-              background: linear-gradient(to left,#6BACFF,#E563C9);
-              .circle {
+            display: grid;
+            grid-template-rows: repeat(4,10rem);
+            .column-container {
+              width: 150%;
+              .first-color-square {
+                background: linear-gradient(to left,#6BACFF,#E563C9);
+              }
+              .square {
+                position: relative;
+                z-index: 3;
                 display: flex;
-                justify-content: center;
                 align-items: center;
-                width: 3rem;
-                height: 3rem;
-                border-radius: 50%;
-                background-color: white;
+                padding: 0.6rem 0.5rem ;
+                border-radius: 150px;
+                .circle {
+                  justify-self: start;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  width: 3.5rem;
+                  height: 3.5rem;
+                  border-radius: 50%;
+                  background-color: white;
+                }
+                p {
+                  font-size: 1.1rem;
+                  margin-left: 20%;
+                  font-weight: 600;
+                }
+              }
+              .subsquare {
+                margin-top: 0.5rem;
+                position: relative;
+                z-index: 3;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: black;
+                padding: 0.6rem 0.5rem ;
+                background: #EAEAEA;
+                border-radius: 150px;
               }
             }
           }
           &:last-child {
+            height: 48rem;
             border-right: 2px dashed white ;
           }
         }
