@@ -3,6 +3,13 @@ import Navbar from "../components/Navbar";
 import {Link} from "react-router-dom";
 import Logo from "../components/Logo";
 import '../style/ProductPage.scss'
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+import { FreeMode, Pagination } from "swiper";
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/free-mode";
 
 
 const Drone = () => {
@@ -200,13 +207,117 @@ const Drone = () => {
                             </p>
                         </div>
                         <div className="slider-card-container">
-                            <div className="card-container">
-                                <div className="main-card card-color">
-                                    <div className="avatar">
-                                        <img src="images/DRONES/EMOJI/emoji1.png" alt=""/>
+                            <Swiper
+                                slidesPerView={2}
+                                spaceBetween={40}
+                                grabCursor={true}
+                                freeMode={true}
+                                modules={[FreeMode, Pagination]}
+                                className="mySwiper"
+                            >
+                                <SwiperSlide>
+                                    <div className="card-container">
+                                        <div className="main-card card-color">
+                                            <div className="avatar">
+                                                <img src="images/DRONES/EMOJI/emoji1.png" alt=""/>
+                                            </div>
+                                            <div className="main-card-text">
+                                                <h3 className="main-card-title">Marco</h3>
+                                                <p className="main-card-subtitle">Assistant in law firm</p>
+                                                <p className="card-text">
+                                                    Marco is a 35 year old boy who lives in a neighborhood on the outskirts of Milan. He lives with his girlfriend with whom he has been together for 10 years. They have a dog but no children. He studied at the School of Economics, but did not complete the university. He is a clerk in a notary's office and is responsible for drafting acquisition contracts and running errands for his lawyer.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div className="small-card card-color">
+                                            <div className="small-card-title">
+                                                Paint Point
+                                            </div>
+                                            <div className="icon">&#128551;</div>
+                                            <div className="card-text">
+                                                Marco has little confidence in the time frames and methods provided by apps and websites that deliver and ship via an online process.
+                                            </div>
+                                        </div>
+                                        <div className="small-card card-color">
+                                            <div className="small-card-title">
+                                                Needs
+                                            </div>
+                                            <div className="icon">&#9201;</div>
+                                            <div className="card-text">
+                                                Marco has to save time at work during his tasks and find a way to be less stressed.
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <div className="card-container">
+                                        <div className="main-card card-color">
+                                            <div className="avatar">
+                                                <img src="images/DRONES/EMOJI/emoji1.png" alt=""/>
+                                            </div>
+                                            <div className="main-card-text">
+                                                <h3 className="main-card-title">Marco</h3>
+                                                <p className="main-card-subtitle">Assistant in law firm</p>
+                                                <p className="card-text">
+                                                    Marco is a 35 year old boy who lives in a neighborhood on the outskirts of Milan. He lives with his girlfriend with whom he has been together for 10 years. They have a dog but no children. He studied at the School of Economics, but did not complete the university. He is a clerk in a notary's office and is responsible for drafting acquisition contracts and running errands for his lawyer.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div className="small-card card-color">
+                                            <div className="small-card-title">
+                                                Paint Point
+                                            </div>
+                                            <div className="icon">&#128551;</div>
+                                            <div className="card-text">
+                                                Marco has little confidence in the time frames and methods provided by apps and websites that deliver and ship via an online process.
+                                            </div>
+                                        </div>
+                                        <div className="small-card card-color">
+                                            <div className="small-card-title">
+                                                Needs
+                                            </div>
+                                            <div className="icon">&#9201;</div>
+                                            <div className="card-text">
+                                                Marco has to save time at work during his tasks and find a way to be less stressed.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <div className="card-container">
+                                        <div className="main-card card-color">
+                                            <div className="avatar">
+                                                <img src="images/DRONES/EMOJI/emoji1.png" alt=""/>
+                                            </div>
+                                            <div className="main-card-text">
+                                                <h3 className="main-card-title">Marco</h3>
+                                                <p className="main-card-subtitle">Assistant in law firm</p>
+                                                <p className="card-text">
+                                                    Marco is a 35 year old boy who lives in a neighborhood on the outskirts of Milan. He lives with his girlfriend with whom he has been together for 10 years. They have a dog but no children. He studied at the School of Economics, but did not complete the university. He is a clerk in a notary's office and is responsible for drafting acquisition contracts and running errands for his lawyer.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div className="small-card card-color">
+                                            <div className="small-card-title">
+                                                Paint Point
+                                            </div>
+                                            <div className="icon">&#128551;</div>
+                                            <div className="card-text">
+                                                Marco has little confidence in the time frames and methods provided by apps and websites that deliver and ship via an online process.
+                                            </div>
+                                        </div>
+                                        <div className="small-card card-color">
+                                            <div className="small-card-title">
+                                                Needs
+                                            </div>
+                                            <div className="icon">&#9201;</div>
+                                            <div className="card-text">
+                                                Marco has to save time at work during his tasks and find a way to be less stressed.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </SwiperSlide>
+                            </Swiper>
                         </div>
                     </div>
                 </div>

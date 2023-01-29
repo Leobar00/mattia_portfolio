@@ -314,15 +314,14 @@ html {
       }
       .slider-card-container {
         width: 100%;
-        overflow-x: scroll;
         .card-container {
           .card-color {
-            background: linear-gradient(rgba(197, 215, 252,0.5),rgba(81,140,255,0.2));
+            background: linear-gradient(rgba(197, 215, 252,0.4),rgba(81,140,255,0.1));
           }
           .main-card {
-            width: 50%;
+            width: 93%;
             height: 25rem;
-            border-radius: 10%;
+            border-radius: 25px;
             position: relative;
             .avatar {
               position: absolute;
@@ -336,10 +335,52 @@ html {
               height: 9rem;
               background: rgba(239,239,239,0.4);
               z-index: 5;
-              border-radius: 10%;
+              border-radius: 25px;
               > img {
                 width: 100%;
               }
+            }
+            .main-card-text {
+              padding: 5rem 3rem;
+              line-height: 1.6rem;
+              .main-card-title {
+                text-align: center;
+                font-size: 2rem;
+              }
+              .main-card-subtitle {
+                text-align: center;
+                font-weight: bold;
+                margin-top: 0.3rem;
+                margin-bottom: 1.5rem;
+              }
+            }
+          }
+          .small-card {
+            width: 93%;
+            display: flex;
+            padding: 2rem;
+            border-radius: 20px;
+            position: relative;
+            margin: 4rem 0;
+            justify-content: space-around;
+            align-items: center;
+            .small-card-title {
+              color: black;
+              background-color: #D9D9D9;
+              position: absolute;
+              left: 50%;
+              top:-1.3rem;
+              transform: translateX(-50%);
+              padding: 0.5rem 1.5rem;
+              border-radius: 10px;
+              font-weight: bold;
+            }
+            .icon {
+              font-size: 2.8rem;
+            }
+            .card-text {
+              width: 80%;
+              line-height: 1.6rem;
             }
           }
         }
