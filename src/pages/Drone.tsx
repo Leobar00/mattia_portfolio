@@ -136,41 +136,44 @@ const Drone = () => {
                                     </div>
                                     <div className="column">
                                         <div className="column-container" style={{gridRow:'2'}}>
-                                            <div className="square">
+                                            <div className="square second-color-square">
                                                 <div className="circle">
-                                                    <img src="images/DRONES/icon-and-logo/icona%20lente.png" alt=""/>
+                                                    <img src="images/DRONES/icon-and-logo/icona%20grafico.png" alt=""/>
                                                 </div>
-                                                <p>Emphatise phase</p>
+                                                <p>Analyse phase</p>
                                             </div>
                                         </div>
                                     </div>
                                     <div className="column">
                                         <div className="column-container" style={{gridRow:'3'}}>
-                                            <div className="square">
+                                            <div className="square third-color-square">
                                                 <div className="circle">
-                                                    <img src="images/DRONES/icon-and-logo/icona%20lente.png" alt=""/>
+                                                    <img src="images/DRONES/icon-and-logo/icona%20testa.png" alt=""/>
                                                 </div>
-                                                <p>Emphatise phase</p>
+                                                <p>Ideation phase</p>
+                                            </div>
+                                            <div className="subsquare">
+                                                Wireframe
                                             </div>
                                         </div>
                                     </div>
                                     <div className="column">
                                         <div className="column-container" style={{gridRow:'4'}}>
-                                            <div className="square">
+                                            <div className="square fourth-color-square">
                                                 <div className="circle">
-                                                    <img src="images/DRONES/icon-and-logo/icona%20lente.png" alt=""/>
+                                                    <img src="images/DRONES/icon-and-logo/icona%20pennello.png" alt=""/>
                                                 </div>
-                                                <p>Emphatise phase</p>
+                                                <p>Design phase</p>
+                                            </div>
+                                            <div className="subsquare">
+                                                Design System
                                             </div>
                                         </div>
                                     </div>
                                     <div className="column">
-                                        <div className="column-container" style={{gridRow:'5',width:'100%'}}>
-                                            <div className="square">
-                                                <div className="circle">
-                                                    <img src="images/DRONES/icon-and-logo/icona%20lente.png" alt=""/>
-                                                </div>
-                                                <p>Emphatise phase</p>
+                                        <div className="column-container " style={{gridRow:'5',width:'100%'}}>
+                                            <div className="square five-color-square">
+                                                <p>Usability phase</p>
                                             </div>
                                         </div>
                                     </div>
@@ -180,6 +183,31 @@ const Drone = () => {
                     </div>
                     <div className="product-section">
                         <img src="images/DRONES/IMMAGINI/3.png" alt=""/>
+                    </div>
+                    <div className="product-section-design-stages">
+                        <div className="product-container-description center-align">
+                            <p className="small-subtitle">WHo are the potential users?</p>
+                            <div className="line-product-100"></div>
+                            <h3 className="title-section">User Personas</h3>
+                            <p className="text-description">
+                                In order to create the following Personas, I asked myself the following questions to create empathy with the potential user categories:
+                                <ul>
+                                    <li>How people feel when they entrust their items to a shipping company?</li>
+                                    <li>How people interact with an online shipping/receiving process?</li>
+                                    <li>What problems people have previously had with online shipping?</li>
+                                    <li>What are their pain points?</li>
+                                </ul>
+                            </p>
+                        </div>
+                        <div className="slider-card-container">
+                            <div className="card-container">
+                                <div className="main-card card-color">
+                                    <div className="avatar">
+                                        <img src="images/DRONES/EMOJI/emoji1.png" alt=""/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

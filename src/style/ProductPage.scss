@@ -195,6 +195,7 @@ html {
       color: white;
       display: flex;
       align-items: center;
+      flex-wrap: wrap;
       .text-description {
         margin: 1rem 0;
         font-size: 1.3rem;
@@ -202,6 +203,9 @@ html {
         margin: 1rem 0;
         font-weight: 400;
         width: 70%;
+        ul {
+          margin-top: 1.5rem;
+        }
       }
       .line-product-100{
         background-color: white;
@@ -250,7 +254,20 @@ html {
             .column-container {
               width: 150%;
               .first-color-square {
-                background: linear-gradient(to left,#6BACFF,#E563C9);
+                background: linear-gradient(to left,#6BACFF,rgba(229,99,201,0.7));
+              }
+              .second-color-square {
+                background: linear-gradient(to left,#6B94FF,rgba(206,43,170,0.7));
+              }
+              .third-color-square {
+                background: linear-gradient(to left,rgba(73,204,133,1),rgba(222,159,208,0.7));
+              }
+              .fourth-color-square {
+                background: linear-gradient(to left,rgba(42,89,255,1),rgba(229,130,99,0.7));
+              }
+              .five-color-square {
+                background: linear-gradient(to left,rgba(84,114,131,1),rgba(193,84,170,0.7));
+                padding: 1.5rem!important;
               }
               .square {
                 position: relative;
@@ -292,6 +309,38 @@ html {
           &:last-child {
             height: 48rem;
             border-right: 2px dashed white ;
+          }
+        }
+      }
+      .slider-card-container {
+        width: 100%;
+        overflow-x: scroll;
+        .card-container {
+          .card-color {
+            background: linear-gradient(rgba(197, 215, 252,0.5),rgba(81,140,255,0.2));
+          }
+          .main-card {
+            width: 50%;
+            height: 25rem;
+            border-radius: 10%;
+            position: relative;
+            .avatar {
+              position: absolute;
+              left: 50%;
+              top:-5rem;
+              transform: translateX(-50%);
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              width: 9rem;
+              height: 9rem;
+              background: rgba(239,239,239,0.4);
+              z-index: 5;
+              border-radius: 10%;
+              > img {
+                width: 100%;
+              }
+            }
           }
         }
       }
