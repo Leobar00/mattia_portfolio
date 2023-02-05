@@ -150,11 +150,20 @@ html {
             position: relative;
             .circle-journey-container {
               position: absolute;
-              top: 50%;
-              transform: translateY(-50%);
+              top: 25%;
+              transform: translateY(-25%);
               display: flex;
-              .circle-journey {
-                .journey-circle-text {
+              .journey-circle-text {
+                position: relative;
+                > p {
+                  width: 80%;
+                  text-align: center;
+                }
+                .circle-journey {
+                  width: 2rem;
+                  height: 2rem;
+                  border-radius: 50%;
+                  margin: 0 4vw;
                   &:first-child {
                     margin-left: 1vw;
                     margin-right: 4vw;
@@ -164,10 +173,6 @@ html {
                     margin-left: 4vw;
                   }
                 }
-                  width: 2rem;
-                  height: 2rem;
-                  border-radius: 50%;
-                  margin: 0 4vw;
               }
               .circle-red {
                 background: rgba(255, 116, 116, 1);
@@ -183,25 +188,6 @@ html {
               }
               .circle-blu {
                 background: rgba(8, 204, 204, 1);
-              }
-            }
-          }
-        }
-        .line-circle-text-container {
-          .text-circle {
-            display: flex;
-            width: 95%;
-            > p {
-              margin: 2rem 3vw;
-              text-transform: uppercase;
-              font-size: 0.8rem;
-              &:first-child {
-                margin-left: 1vw;
-                margin-right: 3vw;
-              }
-              &:last-child {
-                margin-right: 1vw;
-                margin-left: 3vw;
               }
             }
           }

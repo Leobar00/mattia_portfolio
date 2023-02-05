@@ -340,33 +340,29 @@ const Drone = () => {
                                     <div className="circle-journey-container">
                                         <div className="journey-circle-text">
                                             <div className="circle-journey circle-red"></div>
+                                            <p>Finding and organizing</p>
                                         </div>
                                         <div className="journey-circle-text">
                                             <div className="circle-journey circle-purple"></div>
+                                            <p>Packing the package</p>
                                         </div>
                                         <div className="journey-circle-text">
                                             <div className="circle-journey circle-green"></div>
+                                            <p>Reach the delivery point</p>
                                         </div>
                                         <div className="journey-circle-text">
                                             <div className="circle-journey circle-yellow"></div>
+                                            <p>Deliver the package</p>
                                         </div>
                                         <div className="journey-circle-text">
                                             <div className="circle-journey circle-blu"></div>
+                                            <p>Back the office</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="circle-text">
                                     <div className="circle-journey-container">
                                     </div>
-                                </div>
-                            </div>
-                            <div className="line-circle-text-container">
-                                <div className="text-circle">
-                                    <p>Finding and organizing</p>
-                                    <p>Packing the package</p>
-                                    <p>Reach the delivery point</p>
-                                    <p>Deliver the package</p>
-                                    <p>Back the office</p>
                                 </div>
                             </div>
                         </div>
