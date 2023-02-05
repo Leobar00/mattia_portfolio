@@ -320,6 +320,57 @@ const Drone = () => {
                             </Swiper>
                         </div>
                     </div>
+                    <div className="product-section center-align">
+                        <div className="product-container-description w-60">
+                            <div className="product-app">
+                                <span className="small-subtitle">A typical day of potential user</span>
+                                <div className="line-product-100"></div>
+                                <h3 className="title-section">User Journey map</h3>
+                                <p className="text-description">
+                                    Based on the research data, the creation of a User Journey Map helped me to better understand the users' pain points, the environment and the context in which the application could be used.
+                                </p>
+                                <p className="text-description">
+                                    The goal of this User Journey is to deliver a package of documents, on behalf of his employer, to another firm of lawyers a few miles away, through a standard delivery method
+                                </p>
+                            </div>
+                        </div>
+                        <div className="journey-map">
+                            <div className="line-circle-container">
+                                <div className="line-circle">
+                                    <div className="circle-journey-container">
+                                        <div className="journey-circle-text">
+                                            <div className="circle-journey circle-red"></div>
+                                        </div>
+                                        <div className="journey-circle-text">
+                                            <div className="circle-journey circle-purple"></div>
+                                        </div>
+                                        <div className="journey-circle-text">
+                                            <div className="circle-journey circle-green"></div>
+                                        </div>
+                                        <div className="journey-circle-text">
+                                            <div className="circle-journey circle-yellow"></div>
+                                        </div>
+                                        <div className="journey-circle-text">
+                                            <div className="circle-journey circle-blu"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="circle-text">
+                                    <div className="circle-journey-container">
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="line-circle-text-container">
+                                <div className="text-circle">
+                                    <p>Finding and organizing</p>
+                                    <p>Packing the package</p>
+                                    <p>Reach the delivery point</p>
+                                    <p>Deliver the package</p>
+                                    <p>Back the office</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <Navbar />

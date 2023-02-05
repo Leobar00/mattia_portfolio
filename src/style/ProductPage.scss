@@ -104,8 +104,9 @@ html {
       color: white;
       position: relative;
       .align-the-end {
-        width: 100%;
+        width: 80%;
         height: 85%;
+        margin: 0 auto;
         display: flex;
         flex-direction: column;
         justify-content: end;
@@ -131,10 +132,80 @@ html {
       display: flex;
       align-items: center;
       z-index: 3;
+      flex-wrap: wrap;
       > img {
         width: 100%;
         height: 100%;
         object-fit: cover;
+      }
+      .journey-map {
+        width: 80%;
+        .line-circle-container {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          .line-circle {
+            width: 100%;
+            border: 1.4px dashed grey;
+            position: relative;
+            .circle-journey-container {
+              position: absolute;
+              top: 50%;
+              transform: translateY(-50%);
+              display: flex;
+              .circle-journey {
+                .journey-circle-text {
+                  &:first-child {
+                    margin-left: 1vw;
+                    margin-right: 4vw;
+                  }
+                  &:last-child {
+                    margin-right: 1vw;
+                    margin-left: 4vw;
+                  }
+                }
+                  width: 2rem;
+                  height: 2rem;
+                  border-radius: 50%;
+                  margin: 0 4vw;
+              }
+              .circle-red {
+                background: rgba(255, 116, 116, 1);
+              }
+              .circle-purple {
+                background: rgba(168, 119, 217, 1);
+              }
+              .circle-green {
+                background: rgba(73, 182, 90, 1);
+              }
+              .circle-yellow {
+                background: rgba(205, 181, 52, 1);
+              }
+              .circle-blu {
+                background: rgba(8, 204, 204, 1);
+              }
+            }
+          }
+        }
+        .line-circle-text-container {
+          .text-circle {
+            display: flex;
+            width: 95%;
+            > p {
+              margin: 2rem 3vw;
+              text-transform: uppercase;
+              font-size: 0.8rem;
+              &:first-child {
+                margin-left: 1vw;
+                margin-right: 3vw;
+              }
+              &:last-child {
+                margin-right: 1vw;
+                margin-left: 3vw;
+              }
+            }
+          }
+        }
       }
       .product-app {
         position: relative;
