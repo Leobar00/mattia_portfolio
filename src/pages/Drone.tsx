@@ -367,6 +367,9 @@ const Drone = () => {
                             </div>
                         </div>
                     </div>
+                    <div className="product-section">
+                        <img src="images/DRONES/IMMAGINI/road.png" alt=""/>
+                    </div>
                 </div>
             </div>
             <Navbar />

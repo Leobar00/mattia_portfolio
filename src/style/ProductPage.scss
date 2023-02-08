@@ -151,13 +151,13 @@ html {
             .circle-journey-container {
               position: absolute;
               top: 25%;
-              transform: translateY(-25%);
+              transform: translateY(-18%);
               display: flex;
               .journey-circle-text {
-                position: relative;
                 > p {
-                  width: 80%;
-                  text-align: center;
+                  width: 60%;
+                  margin-top: 0.5rem;
+                  text-transform: uppercase;
                 }
                 .circle-journey {
                   width: 2rem;
