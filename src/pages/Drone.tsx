@@ -370,9 +370,138 @@ const Drone = () => {
                     <div className="product-section">
                         <img src="images/DRONES/IMMAGINI/road.png" alt=""/>
                     </div>
+                    <div className="product-section center-align">
+                        <div className="product-container-description w-60">
+                            <div className="product-app">
+                                <span className="small-subtitle">What to do?</span>
+                                <div className="line-product-100"></div>
+                                <h3 className="title-section">Improvement opportunities</h3>
+                                <p className="text-description">
+                                    On the basis of the User Journey Map, I identified, for each of the tasks to achieve the final goal, some points for improvement of the user experience. Some of these improvements will then be integrated within the final design.
+                                </p>
+                                <div className="slider-card-container">
+                                    <Swiper
+                                        grabCursor={true}
+                                        freeMode={true}
+                                        modules={[FreeMode, Pagination]}
+                                        className="improvement-opportunites"
+                                        breakpoints= {{
+                                            // when window width is >= 320px
+                                            320: {
+                                            slidesPerView: 1.5,
+                                            spaceBetween: 80
+                                        },
+                                            // when window width is >= 480px
+                                            680: {
+                                            slidesPerView: 2.5,
+                                            spaceBetween: 80
+                                        },
+                                            // when window width is >= 640px
+                                            1040: {
+                                            slidesPerView: 3.5,
+                                            spaceBetween: 90
+                                        }
+                                        }}
+                                    >
+                                        <SwiperSlide>
+                                            <div className="card-container">
+                                                <div className="card-text">
+                                                    <p>FINDING AND ORGANIZING</p>
+                                                </div>
+                                                <div className="card-improvement flex-center improvement-color-1">
+                                                    <p>Use an app for organizing your schedule and jotting down things to remember</p>
+                                                </div>
+                                            </div>
+                                        </SwiperSlide>
+                                        <SwiperSlide>
+                                            <div className="card-container">
+                                                <div className="card-text">
+                                                    <p>PACKING THE PACKAGE</p>
+                                                </div>
+                                                <div className="card-improvement flex-center improvement-color-2">
+                                                    <p>Nothing digital. Need to improve your dexterity! :)</p>
+                                                </div>
+                                            </div>
+                                        </SwiperSlide>
+                                        <SwiperSlide>
+                                            <div className="card-container">
+                                                <div className="card-text">
+                                                    <p>REACH THE DELIVERY POINT</p>
+                                                </div>
+                                                <div className="card-improvement flex-center improvement-color-3">
+                                                    <p>Create an aerial drone delivery app that avoids traffic and saves Marco time that he wouldn't have to leave the office.</p>
+                                                </div>
+                                            </div>
+                                        </SwiperSlide>
+                                        <SwiperSlide>
+                                            <div className="card-container">
+                                                <div className="card-text">
+                                                    <p>DELIVER THE PACKAGE</p>
+                                                </div>
+                                                <div className="card-improvement flex-center improvement-color-4">
+                                                    <p>There is a delivery tracking system within the app that updates every 30 seconds.</p>
+                                                </div>
+                                            </div>
+                                        </SwiperSlide>
+                                        <SwiperSlide>
+                                            <div className="card-container">
+                                                <div className="card-text">
+                                                    <p>BACK TO THE OFFICE</p>
+                                                </div>
+                                                <div className="card-improvement flex-center improvement-color-5">
+                                                    <p>A delivery notification system shared among all employees of the notary firm. Internal function within the app.</p>
+                                                </div>
+                                            </div>
+                                        </SwiperSlide>
+                                    </Swiper>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div className="product-section">
                         <img src="images/DRONES/IMMAGINI/4.png" alt=""/>
                     </div>
+                    <div className="product-section center-align">
+                        <div className="product-container-description w-60">
+                            <div className="product-app">
+                                <span className="small-subtitle">Ideation</span>
+                                <div className="line-product-100"></div>
+                                <h3 className="title-section">Storyboard</h3>
+                                <p className="text-description">
+                                    I used the 'storyboard' conception technique to look for new ideas for the wireframe realisation, still trying to empathise with the potential user.
+                                </p>
+                                <p className="text-description">
+                                    I therefore developed two different types of storyboards, the first one with the focus on the environment and emotions of the user and the second one with the focus on the functionality of the prototype.
+                                </p>
+                                <div className="slider-card-container">
+                                    <Swiper
+                                        grabCursor={true}
+                                        freeMode={true}
+                                        modules={[FreeMode, Pagination]}
+                                        className="storyboard"
+                                        breakpoints= {{
+                                            1040: {
+                                                slidesPerView: 1.2,
+                                                spaceBetween:1
+                                            }
+                                        }}
+                                    >
+                                        <SwiperSlide>
+                                            <div className="card-container">
+                                                <img src="images/DRONES/IMMAGINI/6.png" alt=""/>
+                                            </div>
+                                        </SwiperSlide>
+                                        <SwiperSlide>
+                                            <div className="card-container">
+                                                <img src="images/DRONES/IMMAGINI/7.png" alt=""/>
+                                            </div>
+                                        </SwiperSlide>
+                                    </Swiper>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <div className="product-section">
                         <img src="images/DRONES/IMMAGINI/7A.png" alt=""/>
                     </div>

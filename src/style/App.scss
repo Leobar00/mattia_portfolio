@@ -17,7 +17,11 @@ a {
 .d-none {
   display: none!important;
 }
-
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .container-home {
   background-color: black;
   width: 100vw;
