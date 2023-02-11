@@ -188,7 +188,7 @@ const Drone = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="product-section">
+                    <div className="product-section product-section-only-img">
                         <img src="images/DRONES/IMMAGINI/3.png" alt=""/>
                     </div>
                     <div className="product-section-design-stages">
@@ -367,7 +367,7 @@ const Drone = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="product-section">
+                    <div className="product-section product-section-only-img">
                         <img src="images/DRONES/IMMAGINI/road.png" alt=""/>
                     </div>
                     <div className="product-section center-align">
@@ -458,7 +458,7 @@ const Drone = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="product-section">
+                    <div className="product-section product-section-only-img">
                         <img src="images/DRONES/IMMAGINI/4.png" alt=""/>
                     </div>
                     <div className="product-section center-align">
@@ -502,13 +502,13 @@ const Drone = () => {
                         </div>
                     </div>
 
-                    <div className="product-section">
+                    <div className="product-section product-section-only-img">
                         <img src="images/DRONES/IMMAGINI/7A.png" alt=""/>
                     </div>
-                    <div className="product-section">
+                    <div className="product-section product-section-only-img">
                         <img src="images/DRONES/IMMAGINI/14.png" alt=""/>
                     </div>
-                    <div className="product-section">
+                    <div className="product-section product-section-only-img">
                         <img src="images/DRONES/IMMAGINI/19.png" alt=""/>
                     </div>
                 </div>
