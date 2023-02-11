@@ -22,7 +22,7 @@ html {
     display: none;
   }
   .center-align {
-    width: 80%;
+    width: 85%;
     margin: 0 auto;
     @media screen and (max-width: 768px){
       width: 95%;
@@ -320,11 +320,64 @@ html {
             margin-top: 2rem;
             margin-left: 3rem;
             font-size: 1.1rem;
+            line-height: 1.8rem;
           }
           img {
             width: 60vw;
             margin-left: 2.3rem;
             margin-top: 2rem;
+          }
+        }
+      }
+      .list-with-img-flex {
+        .item-with-img-flex {
+          width: 100%;
+          margin: 6rem 0;
+          display: flex;
+          .text-flex-container {
+            margin-top: 5rem;
+            h4 {
+              margin-left: 3rem;
+              font-size: 2rem;
+            }
+            p {
+              line-height: 1.8rem;
+              margin-top: 2rem;
+              margin-left: 3rem;
+              font-size: 1.1rem;
+            }
+          }
+          img {
+            border: 8px solid;
+            border-radius: 35px;
+            width: 35%;
+            margin-top: 2rem;
+            box-shadow: 0px 15px 20px 0px rgba(0, 0, 0, 0.4);
+          }
+        }
+        .item-two-images {
+          .text-flex-container {
+            margin-top: 5rem;
+            h4 {
+              font-size: 2rem;
+            }
+            p {
+              line-height: 1.8rem;
+              margin-top: 2rem;
+              font-size: 1.1rem;
+            }
+          }
+
+          .img-flex-container {
+            display: flex;
+            justify-content: space-around;
+            img {
+              border: 8px solid;
+              border-radius: 35px;
+              width: 30%;
+              margin-top: 4rem;
+              box-shadow: 0px 15px 20px 0px rgba(0, 0, 0, 0.4);
+            }
           }
         }
       }
@@ -334,6 +387,9 @@ html {
         top: 10rem;
         z-index: 1;
       }
+    }
+    .background-digital-wireframe {
+      background-color: rgba(240,240,240,0.8);
     }
     .product-section-design-stages {
       height: 150%;
@@ -348,6 +404,7 @@ html {
         margin: 1rem 0;
         font-size: 1.3rem;
         font-family: var(--microsfot-jheng);
+        line-height: 1.8rem;
         margin: 1rem 0;
         font-weight: 400;
         width: 70%;

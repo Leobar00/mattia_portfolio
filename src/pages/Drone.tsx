@@ -554,6 +554,64 @@ const Drone = () => {
                         </div>
                     </div>
 
+                    <div className="background-digital-wireframe">
+                        <div className="product-section center-align">
+                            <div className="product-container-description">
+                                <div className="product-app w-60">
+                                    <span className="small-subtitle">From paper to digital</span>
+                                    <div className="line-product-100"></div>
+                                    <h3 className="title-section">Digital Wireframe</h3>
+                                    <p className="text-description">
+                                        Following usability tests performed on some potential users, I developed my digital wireframe. This lo-fi version was very helpful in understanding even better the best process to create in order to lead the user to his final goal.
+                                    </p>
+                                </div>
+                                <div className="list-with-img-flex w-80">
+                                    <div className="item-with-img-flex">
+                                        <img src="images/DRONES/DIGITAL%20WIREFRAME%20GIF/Signup.gif" alt=""/>
+                                        <div className="text-flex-container">
+                                            <h4>Signup</h4>
+                                            <p>Signup (and also login) are simple fast and intuitive. The user only needs to enter a few pieces of information and in a few simple steps he or she is immediately on the main page. This path is designed to bring as little stress as possible to the user while filling in.</p>
+                                        </div>
+                                    </div>
+                                    <div className="item-with-img-flex">
+                                        <img src="images/DRONES/DIGITAL%20WIREFRAME%20GIF/track.gif" alt=""/>
+                                        <div className="text-flex-container">
+                                            <h4>Track pack</h4>
+                                            <p>Tracking the parcel, both incoming and outgoing, is very simple. Based on the research done, I decided to put this feature on the homepage, as it is the most used by users.</p>
+                                            <p>To track the package, the user has two different ways: by entering the shipment code or through the "scanner" function, that is, by scanning the qr code of the shipment with their smartphone.</p>
+                                        </div>
+                                    </div>
+                                    <div className="item-with-img-flex">
+                                        <img src="images/DRONES/DIGITAL%20WIREFRAME%20GIF/Deliver.gif" alt=""/>
+                                        <div className="text-flex-container">
+                                            <h4>Deliver flow</h4>
+                                            <p>The user can create an order in a few simple steps. The flow was created so that the user can easily go back if he/she made any mistakes in entering information.
+                                                The user can also decide to choose pre-set shipments with standard package sizes.</p>
+                                        </div>
+                                    </div>
+                                    <div className="item-two-images">
+                                        <div className="text-flex-container">
+                                            <h4>Shipment history and notifications</h4>
+                                            <p>Thanks to the "Shipment history" function, the user can check all shipments made previously, breaking them down into time spaces.
+                                                On the other hand, thanks to the "Notifications" function, the user can be notified about the arrival of parcels that he himself has shipped and about those coming in from other people.</p>
+                                        </div>
+                                        <div className="img-flex-container">
+                                            <img src="images/DRONES/DIGITAL%20WIREFRAME%20GIF/Shipment%20history.gif" alt=""/>
+                                            <img src="images/DRONES/DIGITAL%20WIREFRAME%20GIF/Shipment%20history.gif" alt=""/>
+                                        </div>
+                                    </div>
+                                    <div className="item-with-img-flex">
+                                        <img src="images/DRONES/DIGITAL%20WIREFRAME%20GIF/Contacts.gif" alt=""/>
+                                        <div className="text-flex-container">
+                                            <h4>Contacts</h4>
+                                            <p>With the "contacts" feature, you can save your most frequently used contacts and send your items quickly and easily without having to enter information such as address, name, and package size.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <div className="product-section product-section-only-img">
                         <img src="images/DRONES/IMMAGINI/14.png" alt=""/>
                     </div>
