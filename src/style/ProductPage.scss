@@ -299,6 +299,35 @@ html {
         }
 
       }
+      .list-with-img {
+        margin: 8rem 0;
+        .item-with-img {
+          width: 100%;
+          margin: 6rem 0;
+          h4 {
+            font-size: 2rem;
+            .bullet {
+              width: 0.8rem;
+              height: 0.8rem;
+              border-radius: 50%;
+              margin: 0.2rem;
+              margin-right: 2rem;
+              background-color: black;
+              display: inline-block;
+            }
+          }
+          p {
+            margin-top: 2rem;
+            margin-left: 3rem;
+            font-size: 1.1rem;
+          }
+          img {
+            width: 60vw;
+            margin-left: 2.3rem;
+            margin-top: 2rem;
+          }
+        }
+      }
       .img-advantages-drones {
         position: absolute;
         right: -20rem;
@@ -522,5 +551,5 @@ html {
 .line-product-100{
   margin: 1rem 0;
   height: 0.8px;
-  width: 100%;
+  width: 85%;
 }

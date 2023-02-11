@@ -505,6 +505,55 @@ const Drone = () => {
                     <div className="product-section product-section-only-img">
                         <img src="images/DRONES/IMMAGINI/7A.png" alt=""/>
                     </div>
+                    <div className="product-section center-align">
+                        <div className="product-container-description w-60">
+                            <div className="product-app">
+                                <span className="small-subtitle">Wireframe</span>
+                                <div className="line-product-100"></div>
+                                <h3 className="title-section">Paper Wireframe</h3>
+                                <p className="text-description">
+                                    I chose to begin the most practical phase of creation by starting with the paper Wireframe.
+                                </p>
+                                <p className="text-description">
+                                    The paper Wireframe allowed me to experiment with different solutions and ideas, testing the product at an early stage, without wasting too much time modifying a project that was already well advanced in development.
+                                    I used the 'storyboard' conception technique to look for new ideas for the wireframe realisation, still trying to empathise with the potential user.
+                                </p>
+                            </div>
+                            <div className="list-with-img">
+                                <div className="item-with-img">
+                                    <h4 className="title-list"><div className="bullet"></div>Login / Sign up</h4>
+                                    <p>I chose to create a quick and easy login and sign-up process, with little data to enter to gain access.</p>
+                                    <img src="images/DRONES/IMMAGINI/PAPER%20WIREFRAME/8.png" alt=""/>
+                                </div>
+                                <div className="item-with-img">
+                                    <h4 className="title-list"><div className="bullet"></div>Track page</h4>
+                                    <p>From the research I did, the most popular action performed by users is to track their parcel, so I decided to put this feature in the first frames. The search looks very simple and offers two different ways to track the parcel.</p>
+                                    <img src="images/DRONES/IMMAGINI/PAPER%20WIREFRAME/9.png" alt=""/>
+                                </div>
+                                <div className="item-with-img">
+                                    <h4 className="title-list"><div className="bullet"></div>Maps and scanner</h4>
+                                    <p>Interactive maps show in real time where the parcel is (whether you are the sender or the recipient). I thought of including a 'scanner' function so that you can follow the parcel without necessarily knowing the order number.</p>
+                                    <img src="images/DRONES/IMMAGINI/PAPER%20WIREFRAME/10.png" alt=""/>
+                                </div>
+                                <div className="item-with-img">
+                                    <h4 className="title-list"><div className="bullet"></div>Deliver</h4>
+                                    <p>My goal was to create a shipping flow that was as intuitive, easy and fast as possible. By entering a little information you can create a totally new shipment.</p>
+                                    <img src="images/DRONES/IMMAGINI/PAPER%20WIREFRAME/11.png" alt=""/>
+                                </div>
+                                <div className="item-with-img">
+                                    <h4 className="title-list"><div className="bullet"></div>Shipping history</h4>
+                                    <p>I created this session to help users find the details of previous shipments. A convenient horizontal scrolling menu makes it easy to search for shipments on a time basis..</p>
+                                    <img src="images/DRONES/IMMAGINI/PAPER%20WIREFRAME/12.png" alt=""/>
+                                </div>
+                                <div className="item-with-img">
+                                    <h4 className="title-list"><div className="bullet"></div>Contacts</h4>
+                                    <p>This section is designed to speed up the shipping process for people who receive packages from us more frequently than others.</p>
+                                    <img src="images/DRONES/IMMAGINI/PAPER%20WIREFRAME/13.png" alt=""/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <div className="product-section product-section-only-img">
                         <img src="images/DRONES/IMMAGINI/14.png" alt=""/>
                     </div>
