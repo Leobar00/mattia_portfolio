@@ -297,7 +297,9 @@ html {
               }
           }
         }
-
+      }
+      .img-advantages-bibank {
+        width: 100%;
       }
       .list-with-img {
         margin: 8rem 0;
@@ -594,7 +596,29 @@ html {
     }
   }
 }
-
+.arrow-up {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  position: fixed;
+  background: linear-gradient(rgba(217,217,217,0),rgba(192,192,192,0.72),rgba(226,226,226,0.8),rgba(217,217,217,1));
+  bottom: 2rem;
+  right: 14%;
+  font-size: 3.4rem;
+  display: flex;
+  justify-content: center;
+  z-index: 1000;
+  opacity: 0.75;
+  filter: drop-shadow(5px 8px 8px rgba(0, 0, 0, 0.3));
+  cursor: pointer;
+  user-select: none;
+  @media screen and (max-width: 768px){
+    right: 2%;
+  }
+  > p {
+    margin-top: 0.4rem;
+  }
+}
 .white-space-product {
   height: 30rem;
   width: 100%;

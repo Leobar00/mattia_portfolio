@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar";
 import {Link} from "react-router-dom";
 import Logo from "../components/Logo";
 import '../style/ProductPage.scss'
+import ButtonScroll from "../components/ButtonScroll";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 import { FreeMode, Pagination } from "swiper";
@@ -10,7 +11,6 @@ import { FreeMode, Pagination } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/free-mode";
-
 
 const Drone = () => {
     return (
@@ -196,7 +196,7 @@ const Drone = () => {
                             <p className="small-subtitle">WHo are the potential users?</p>
                             <div className="line-product-100"></div>
                             <h3 className="title-section">User Personas</h3>
-                            <p className="text-description">
+                            <div className="text-description">
                                 In order to create the following Personas, I asked myself the following questions to create empathy with the potential user categories:
                                 <ul>
                                     <li>How people feel when they entrust their items to a shipping company?</li>
@@ -204,7 +204,7 @@ const Drone = () => {
                                     <li>What problems people have previously had with online shipping?</li>
                                     <li>What are their pain points?</li>
                                 </ul>
-                            </p>
+                            </div>
                         </div>
                         <div className="slider-card-container">
                             <Swiper
@@ -618,7 +618,29 @@ const Drone = () => {
                     <div className="product-section product-section-only-img">
                         <img src="images/DRONES/IMMAGINI/19.png" alt=""/>
                     </div>
+
+                    <div className="product-section center-align">
+                        <div className="product-container-description w-80">
+                            <div className="product-app">
+                                <span className="small-subtitle">What have I learnt?</span>
+                                <div className="line-product-100 w-60"></div>
+                                <h3 className="title-section">How I love the design</h3>
+                                <p className="text-description">
+                                    Drones was my first Ux/Ui Design project, developed during Google's Ux Design course. It was my first approach to the world of User Experience. Among the things I learnt during this project there is definitely one that is fundamental in the whole world of design: putting the user at the centre.
+                                    I didn't think, before I started on this path, that research into users' behaviour, emotions and habits was so important for creating effective products with good usability.
+                                </p>
+                                <p className="text-description">
+                                    It was also my first approach with software used to create digital prototypes, such as Figma. I learnt the basic functions of this software through practice, first through wireframing and then through mockup creation.
+                                    It is really important to continuously test the product, not only at the end but during the entire creation process.
+                                </p>
+                                <p className="text-description">
+                                    Through this project, although very basic and certainly with several mistakes and things to improve, I understood how this world (that of design) can be MY world.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                <ButtonScroll/>
             </div>
             <Navbar />
         </div>
