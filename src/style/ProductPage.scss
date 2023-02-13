@@ -521,6 +521,9 @@ html {
       }
       .slider-card-container {
         width: 100%;
+        .swiper {
+          overflow: unset!important;
+        }
         .card-container {
           //grey slider
           .card-color {
