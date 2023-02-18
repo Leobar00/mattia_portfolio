@@ -7,6 +7,7 @@ import "swiper/css/pagination";
 import {Mousewheel} from "swiper";
 import {Link, NavLink, useLocation} from 'react-router-dom';
 import {CSSTransition} from 'react-transition-group';
+import Drone from "../pages/Drone";
 
 interface CenterCard {
     title: string,

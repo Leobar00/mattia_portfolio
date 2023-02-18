@@ -178,7 +178,7 @@ const Bibank = () => {
                     </div>
                     <div className="product-section-design-stages">
                         <div className="product-container-description center-align">
-                            <p className="small-subtitle">WHo are the potential users?</p>
+                            <p className="small-subtitle">Who are the potential users?</p>
                             <div className="line-product-100"></div>
                             <h3 className="title-section">User Personas</h3>
                             <div className="text-description">
@@ -319,46 +319,50 @@ const Bibank = () => {
                     <div className="product-section center-align">
                         <div className="product-container-description w-60">
                             <div className="product-app">
-                                <span className="small-subtitle">A typical day of potential user</span>
+                                <span className="small-subtitle">Who are the potential users?</span>
                                 <div className="line-product-100"></div>
-                                <h3 className="title-section">User Journey map</h3>
+                                <h3 className="title-section">Empathy Map</h3>
                                 <p className="text-description">
-                                    Based on the research data, the creation of a User Journey Map helped me to better understand the users' pain points, the environment and the context in which the application could be used.
-                                </p>
-                                <p className="text-description">
-                                    The goal of this User Journey is to deliver a package of documents, on behalf of his employer, to another firm of lawyers a few miles away, through a standard delivery method
+                                    I created an empathy map to better understand users' unconscious emotions and thoughts. This map was created during an interview with a potential home banking user. I focused more on what the user was thinking, saying, doing and feeling.
                                 </p>
                             </div>
                         </div>
-                        <div className="journey-map">
-                            <div className="line-circle-container">
-                                <div className="line-circle">
-                                    <div className="circle-journey-container">
-                                        <div className="journey-circle-text">
-                                            <div className="circle-journey circle-red"></div>
-                                            <p>Finding and organizing</p>
-                                        </div>
-                                        <div className="journey-circle-text">
-                                            <div className="circle-journey circle-purple"></div>
-                                            <p>Packing the package</p>
-                                        </div>
-                                        <div className="journey-circle-text">
-                                            <div className="circle-journey circle-green"></div>
-                                            <p>Reach the delivery point</p>
-                                        </div>
-                                        <div className="journey-circle-text">
-                                            <div className="circle-journey circle-yellow"></div>
-                                            <p>Deliver the package</p>
-                                        </div>
-                                        <div className="journey-circle-text">
-                                            <div className="circle-journey circle-blu"></div>
-                                            <p>Back the office</p>
-                                        </div>
-                                    </div>
+                        <div className="emphaty-map">
+                            <div className="container-map">
+                                <div className="square-map" style={{background:"#FFCFCF"}}>
+                                    <h3 className="title">Says</h3>
+                                    <ul>
+                                        <li>. " I often don't have time to go to the bank, I work all day."</li>
+                                        <li>. "It's important to me that a website is clear and inspires confidence."</li>
+                                        <li>. " I am not afraid to pay online. By now, cybersecurity is at a very high level."</li>
+                                    </ul>
                                 </div>
-                                <div className="circle-text">
-                                    <div className="circle-journey-container">
-                                    </div>
+                                <div className="square-map" style={{background:"#A5FFBE"}}>
+                                    <h3 className="title">Thinks</h3>
+                                    <ul>
+                                        <li>. Some websites should be clearer and easier to understand</li>
+                                        <li>. She prefers to do online transfers because he wastes less time</li>
+                                        <li>. There should be more information about the status of payments made online</li>
+                                    </ul>
+                                </div>
+                                <div className="square-map" style={{background:"#ADD2FF"}}>
+                                    <h3 className="title">Does</h3>
+                                    <ul>
+                                        <li>. Make payments and transfers online</li>
+                                        <li>. Check your current account balance directly from the bank's website</li>
+                                        <li>. Sometimes struggles to understand some website features</li>
+                                    </ul>
+                                </div>
+                                <div className="square-map" style={{background:"#FFFBA4"}}>
+                                    <h3 className="title">Feels</h3>
+                                    <ul>
+                                        <li>. Stressed when waiting for payments she made online to arrive</li>
+                                        <li>. Frustrated by lack of information regarding recurring payments</li>
+                                        <li>. Happy and satisfied when she can manage her savings without going to the ban</li>
+                                    </ul>
+                                </div>
+                                <div className="avatar-circle">
+                                    <img src="images/BIBANK/EMOJI/emoji%204.png" alt=""/>
                                 </div>
                             </div>
                         </div>

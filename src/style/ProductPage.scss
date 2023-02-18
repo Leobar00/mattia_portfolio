@@ -199,6 +199,55 @@ html {
           }
         }
       }
+      .emphaty-map {
+        margin-top: 3rem;
+        width: 80%;
+        .container-map {
+          position: relative;
+          display: grid;
+          grid-template-columns: 50% 50%;
+          grid-template-rows: 30rem 30rem;
+          grid-row: auto;
+          grid-column-gap: 20px;
+          grid-row-gap: 20px;
+          .avatar-circle {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 15rem;
+            height: 15rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(rgba(194, 194, 194, 0.9), rgba(145, 145, 145, 0.72));
+            border-radius: 50%;
+            img {
+              width: 75%;
+              height: 75%;
+            }
+          }
+          .square-map {
+            background-color:#333;
+            padding:20px;
+            border-radius:10px;
+            color:black;
+            .title {
+              text-align: center;
+            }
+            ul {
+              list-style: none;
+              width: 80%;
+              margin: 0 auto;
+              li {
+                margin: 20% 0;
+                text-decoration: none;
+                font-size: 1.2rem;
+              }
+            }
+          }
+        }
+      }
       .journey-map {
         width: 80%;
         margin: 5rem 0;
