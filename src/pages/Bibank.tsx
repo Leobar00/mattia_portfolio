@@ -373,87 +373,157 @@ const Bibank = () => {
                     <div className="product-section center-align">
                         <div className="product-container-description w-60">
                             <div className="product-app">
-                                <span className="small-subtitle">What to do?</span>
+                                <span className="small-subtitle">The market</span>
                                 <div className="line-product-100"></div>
-                                <h3 className="title-section">Improvement opportunities</h3>
+                                <h3 className="title-section">Competitive audit</h3>
                                 <p className="text-description">
-                                    On the basis of the User Journey Map, I identified, for each of the tasks to achieve the final goal, some points for improvement of the user experience. Some of these improvements will then be integrated within the final design.
+                                    I decided, following the study of potential users, to perform market research on some of the best-known online banking services (direct and indirect competitors), including a smaller, lesser-known local entity, so as to have as broad a spectrum as possible of the features and strengths (and also weaknesses) of competitors in the market.
+
                                 </p>
-                                <div className="slider-card-container">
-                                    <Swiper
-                                        grabCursor={true}
-                                        freeMode={true}
-                                        modules={[FreeMode, Pagination]}
-                                        className="improvement-opportunites"
-                                        breakpoints= {{
-                                            // when window width is >= 320px
-                                            320: {
-                                                slidesPerView: 1.5,
-                                                spaceBetween: 80
-                                            },
-                                            // when window width is >= 480px
-                                            680: {
-                                                slidesPerView: 2.5,
-                                                spaceBetween: 80
-                                            },
-                                            // when window width is >= 640px
-                                            1040: {
-                                                slidesPerView: 3.5,
-                                                spaceBetween: 90
-                                            }
-                                        }}
-                                    >
-                                        <SwiperSlide>
-                                            <div className="card-container">
-                                                <div className="card-text">
-                                                    <p>FINDING AND ORGANIZING</p>
-                                                </div>
-                                                <div className="card-improvement flex-center improvement-color-1">
-                                                    <p>Use an app for organizing your schedule and jotting down things to remember</p>
-                                                </div>
-                                            </div>
-                                        </SwiperSlide>
-                                        <SwiperSlide>
-                                            <div className="card-container">
-                                                <div className="card-text">
-                                                    <p>PACKING THE PACKAGE</p>
-                                                </div>
-                                                <div className="card-improvement flex-center improvement-color-2">
-                                                    <p>Nothing digital. Need to improve your dexterity! :)</p>
-                                                </div>
-                                            </div>
-                                        </SwiperSlide>
-                                        <SwiperSlide>
-                                            <div className="card-container">
-                                                <div className="card-text">
-                                                    <p>REACH THE DELIVERY POINT</p>
-                                                </div>
-                                                <div className="card-improvement flex-center improvement-color-3">
-                                                    <p>Create an aerial drone delivery app that avoids traffic and saves Marco time that he wouldn't have to leave the office.</p>
-                                                </div>
-                                            </div>
-                                        </SwiperSlide>
-                                        <SwiperSlide>
-                                            <div className="card-container">
-                                                <div className="card-text">
-                                                    <p>DELIVER THE PACKAGE</p>
-                                                </div>
-                                                <div className="card-improvement flex-center improvement-color-4">
-                                                    <p>There is a delivery tracking system within the app that updates every 30 seconds.</p>
-                                                </div>
-                                            </div>
-                                        </SwiperSlide>
-                                        <SwiperSlide>
-                                            <div className="card-container">
-                                                <div className="card-text">
-                                                    <p>BACK TO THE OFFICE</p>
-                                                </div>
-                                                <div className="card-improvement flex-center improvement-color-5">
-                                                    <p>A delivery notification system shared among all employees of the notary firm. Internal function within the app.</p>
-                                                </div>
-                                            </div>
-                                        </SwiperSlide>
-                                    </Swiper>
+                                <a href="#">Click here to view the REPORT.</a>
+
+                                <div className="marks-container">
+                                    <div className="legenda">
+                                        <span className="subtitle">Marks:</span>
+                                        <span>Good = <img src="images/BIBANK/ICONELOGHI/check%20green.png" alt=""/></span>
+                                        <span>Needs works = <img src="images/BIBANK/ICONELOGHI/check%20grey.png" alt=""/></span>
+                                    </div>
+                                    <div className="grid-payment">
+                                        <div className="grid-item"></div>
+                                        <div className="grid-item box-payment">
+                                            <img src="images/BIBANK/ICONELOGHI/logo%20revolut.png" alt=""/>
+                                        </div>
+                                        <div className="grid-item box-payment">
+                                            <img src="images/BIBANK/ICONELOGHI/logo%20paypal.png" alt=""/>
+                                        </div>
+                                        <div className="grid-item box-payment">
+                                            <img src="images/BIBANK/ICONELOGHI/logo%20wise.png" alt=""/>
+                                        </div>
+                                        <div className="grid-item box-payment">
+                                            <img src="images/BIBANK/ICONELOGHI/logo%20credem.png" alt=""/>
+                                        </div>
+                                        <div className="grid-item box-text">
+                                            <p>Target Audience</p>
+                                        </div>
+                                        <div className="grid-item">
+                                            <p>Worldwide</p>
+                                        </div>
+                                        <div className="grid-item">
+                                            <p>Worldwide</p>
+                                        </div>
+                                        <div className="grid-item">
+                                            <p>Worldwide</p>
+                                        </div>
+                                        <div className="grid-item">
+                                            <p>Italy</p>
+                                        </div>
+                                        <div className="grid-item box-text">
+                                            <p>Desktop Experience</p>
+                                        </div>
+                                        <div className="grid-item">
+                                            <img src="images/BIBANK/ICONELOGHI/check%20green.png" alt=""/>
+                                        </div>
+                                        <div className="grid-item">
+                                            <img src="images/BIBANK/ICONELOGHI/check%20green.png" alt=""/>
+                                        </div>
+                                        <div className="grid-item">
+                                            <img src="images/BIBANK/ICONELOGHI/check%20grey.png" alt=""/>
+                                        </div>
+                                        <div className="grid-item">
+                                            <img src="images/BIBANK/ICONELOGHI/check%20grey.png" alt=""/>
+                                        </div>
+                                        <div className="grid-item box-text">
+                                            <p>Mobile Experience</p>
+                                        </div>
+                                        <div className="grid-item">
+                                            <img src="images/BIBANK/ICONELOGHI/check%20grey.png" alt=""/>
+                                        </div>
+                                        <div className="grid-item">
+                                            <img src="images/BIBANK/ICONELOGHI/check%20grey.png" alt=""/>
+                                        </div>
+                                        <div className="grid-item">
+                                            <img src="images/BIBANK/ICONELOGHI/check%20green.png" alt=""/>
+
+                                        </div>
+                                        <div className="grid-item">
+                                            <img src="images/BIBANK/ICONELOGHI/check%20green.png" alt=""/>
+                                        </div>
+                                        <div className="grid-item box-text">
+                                            <p>Feautures</p>
+                                        </div>
+                                        <div className="grid-item">
+                                            <img src="images/BIBANK/ICONELOGHI/check%20grey.png" alt=""/>
+                                        </div>
+                                        <div className="grid-item">
+                                            <img src="images/BIBANK/ICONELOGHI/check%20green.png" alt=""/>
+                                        </div>
+                                        <div className="grid-item">
+                                            <img src="images/BIBANK/ICONELOGHI/check%20green.png" alt=""/>
+                                        </div>
+                                        <div className="grid-item">
+                                            <img src="images/BIBANK/ICONELOGHI/check%20grey.png" alt=""/>
+                                        </div>
+                                        <div className="grid-item box-text">
+                                            <p>Accesibility</p>
+                                        </div>
+                                        <div className="grid-item">
+                                            <img src="images/BIBANK/ICONELOGHI/check%20green.png" alt=""/>
+                                        </div>
+                                        <div className="grid-item">
+                                            <img src="images/BIBANK/ICONELOGHI/check%20grey.png" alt=""/>
+                                        </div>
+                                        <div className="grid-item">
+                                            <img src="images/BIBANK/ICONELOGHI/check%20grey.png" alt=""/>
+                                        </div>
+                                        <div className="grid-item">
+                                            <img src="images/BIBANK/ICONELOGHI/check%20grey.png" alt=""/>
+                                        </div>
+                                        <div className="grid-item box-text">
+                                            <p>User Flow</p>
+                                        </div>
+                                        <div className="grid-item">
+                                            <img src="images/BIBANK/ICONELOGHI/check%20green.png" alt=""/>
+                                        </div>
+                                        <div className="grid-item">
+                                            <img src="images/BIBANK/ICONELOGHI/check%20green.png" alt=""/>
+                                        </div>
+                                        <div className="grid-item">
+                                            <img src="images/BIBANK/ICONELOGHI/check%20green.png" alt=""/>
+                                        </div>
+                                        <div className="grid-item">
+                                            <img src="images/BIBANK/ICONELOGHI/check%20green.png" alt=""/>
+                                        </div>
+                                        <div className="grid-item box-text">
+                                            <p>Navigation</p>
+                                        </div>
+                                        <div className="grid-item">
+                                            <img src="images/BIBANK/ICONELOGHI/check%20green.png" alt=""/>
+                                        </div>
+                                        <div className="grid-item">
+                                            <img src="images/BIBANK/ICONELOGHI/check%20green.png" alt=""/>
+                                        </div>
+                                        <div className="grid-item">
+                                            <img src="images/BIBANK/ICONELOGHI/check%20grey.png" alt=""/>
+                                        </div>
+                                        <div className="grid-item">
+                                            <img src="images/BIBANK/ICONELOGHI/check%20green.png" alt=""/>
+                                        </div>
+                                        <div className="grid-item box-text">
+                                            <p>Brand Identity</p>
+                                        </div>
+                                        <div className="grid-item">
+                                            <img src="images/BIBANK/ICONELOGHI/check%20green.png" alt=""/>
+                                        </div>
+                                        <div className="grid-item">
+                                            <img src="images/BIBANK/ICONELOGHI/check%20green.png" alt=""/>
+                                        </div>
+                                        <div className="grid-item">
+                                            <img src="images/BIBANK/ICONELOGHI/check%20green.png" alt=""/>
+                                        </div>
+                                        <div className="grid-item">
+                                            <img src="images/BIBANK/ICONELOGHI/check%20grey.png" alt=""/>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
