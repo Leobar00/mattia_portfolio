@@ -781,18 +781,18 @@ const Bibank = () => {
                         <div className="product-section center-align">
                             <div className="product-container-description">
                                 <div className="product-app w-60">
-                                    <span className="small-subtitle">From paper to digital</span>
+                                    <span className="small-subtitle">The result</span>
                                     <div className="line-product-100"></div>
-                                    <h3 className="title-section">Digital Wireframe</h3>
+                                    <h3 className="title-section">Hi-fi Prototype</h3>
                                     <p className="text-description">
-                                        Following usability tests performed on some potential users, I developed my digital wireframe. This lo-fi version was very helpful in understanding even better the best process to create in order to lead the user to his final goal.
+                                        Following a second usability test on the digital wireframe, I created the final prototype. I tried to make the user interface simple, intuitive, and fun, alternating between colorful illustrations and clearly visible text and input fields.
                                     </p>
                                 </div>
                                 <div className="list-with-img w-80">
                                     <div className="item-with-img">
                                         <div className="text-container">
-                                            <h4><div className="bullet-white"></div>Simple registration</h4>
-                                            <p>Once on the site, the user can navigate to the public part, discovering all the various services offered by the product and registering in one simple step; in fact, all the user has to do to start using the product is to enter the e-mail.</p>
+                                            <h4><div className="bullet-white"></div>Homepage</h4>
+                                            <p>The website greets the user with the home page. In this first part the customer can discover the various features of the website and access the personalized area via login and registration.</p>
                                         </div>
                                         <div className="container-img">
                                             <img className="dekstop" src="images/BIBANK/MOCKUP/Dekstop/1.gif" alt=""/>
@@ -801,8 +801,8 @@ const Bibank = () => {
                                     </div>
                                     <div className="item-with-img">
                                         <div className="text-container">
-                                            <h4><div className="bullet-white"></div>All in one place</h4>
-                                            <p>Once logged in or signup, the user will be taken to the personal area where, within the first visible page, there will be all the most important features and those most used by the user.</p>
+                                            <h4><div className="bullet-white"></div>Login and Signup</h4>
+                                            <p>I decided to create a simple sign up, where the user is asked to enter only a few details, so that it is simple and stress-free.  I tried to keep the login/signup process consistent on both devices (computer and mobile phone).</p>
                                         </div>
                                         <div className="container-img">
                                             <img className="dekstop" src="images/BIBANK/MOCKUP/Dekstop/2.gif" alt=""/>
@@ -811,8 +811,8 @@ const Bibank = () => {
                                     </div>
                                     <div className="item-with-img">
                                         <div className="text-container">
-                                            <h4><div className="bullet-white"></div>Column structure</h4>
-                                            <p>With the alternating column structure (2 and 1), investing is very simple, as the user has the ability to see the real-time performance of the stocks next to each financial product he or she is about to buy, all on a neat and intuitive page.</p>
+                                            <h4><div className="bullet-white"></div>Full control</h4>
+                                            <p>The first page the user sees as soon as he enters the personal are a is the "Dashboard." Here he can find all the main information (summarized) about his assets. Two other functions for monitoring one's account and assets are "Balance Sheet" and "Budget and Statistics".</p>
                                         </div>
                                         <div className="container-img">
                                             <img className="dekstop" src="images/BIBANK/MOCKUP/Dekstop/3.gif" alt=""/>
@@ -821,8 +821,9 @@ const Bibank = () => {
                                     </div>
                                     <div className="item-with-img">
                                         <div className="text-container">
-                                            <h4><div className="bullet-white"></div>Simple and effective flow</h4>
-                                            <p>Thanks to the simple and intuitive flow, investing and managing your cryptocurrencies is easy and stress-free. You can access the crypto area from the hamburger menu (mobile version) or directly from your personal balance.</p>
+                                            <h4><div className="bullet-white"></div>Cryptocurrency</h4>
+                                            <p>Investing in cryptocurrencies is simple and safe with Bibank.
+                                                Create your own e-wallet and manage cryptocurrencies directly from your PC or smartphone.</p>
                                         </div>
                                         <div className="container-img">
                                             <img className="dekstop" src="images/BIBANK/MOCKUP/Dekstop/4.gif" alt=""/>
@@ -831,8 +832,8 @@ const Bibank = () => {
                                     </div>
                                     <div className="item-with-img">
                                         <div className="text-container">
-                                            <h4><div className="bullet-white"></div>Pay from wherever you want</h4>
-                                            <p>With advanced payment features you can make payments when and where you want, create recurring payments, donations, and manage your subscription plan, right from your computer or cell phone.</p>
+                                            <h4><div className="bullet-white"></div>All your financial product you need</h4>
+                                            <p>In Bibank you can choose different types of investments based on your favorite financial products. In addition, you can check the performance of your stocks from a simple interactive screen directly from your cell phone or smartphone.</p>
                                         </div>
                                         <div className="container-img">
                                             <img className="dekstop" src="images/BIBANK/MOCKUP/Dekstop/5.gif" alt=""/>
@@ -841,12 +842,40 @@ const Bibank = () => {
                                     </div>
                                     <div className="item-with-img">
                                         <div className="text-container">
-                                            <h4><div className="bullet-white"></div>Innovative features</h4>
-                                            <p>In Bibank you can find innovative features such as the "Money Box" section, in which you can manage your savings and create a piggy bank to grow your savings.</p>
+                                            <h4><div className="bullet-white"></div>Manage your cards</h4>
+                                            <p>You can check and create new debit/credit cards directly from your personal area. In addition, you can make online payments at the click of a button.</p>
                                         </div>
                                         <div className="container-img">
-                                            <img className="dekstop" src="images/BIBANK/MOCKUP/Dekstop/5.gif" alt=""/>
-                                            <img className="mobile-img" src="images/BIBANK/MOCKUP/Mobile/5.gif" alt=""/>
+                                            <img className="dekstop" src="images/BIBANK/MOCKUP/Dekstop/6.gif" alt=""/>
+                                            <img className="mobile-img" src="images/BIBANK/MOCKUP/Mobile/6.gif" alt=""/>
+                                        </div>
+                                    </div>
+                                    <div className="item-with-img">
+                                        <div className="text-container">
+                                            <h4><div className="bullet-white"></div>Pay from wherever you want</h4>
+                                            <p>Make payments or request money through Bibank quickly and easily. Create regular payments for subscriptions and bills and make donations to your favorite charity.</p>
+                                        </div>
+                                        <div className="container-img">
+                                            <img className="dekstop" src="images/BIBANK/MOCKUP/Dekstop/7.gif" alt=""/>
+                                            <img className="mobile-img" src="images/BIBANK/MOCKUP/Mobile/7.gif" alt=""/>
+                                        </div>
+                                    </div>
+                                    <div className="item-two-images d-flex">
+                                        <div className="w-50 flex-center">
+                                            <img src="images/BIBANK/Mockup/Dekstop/5.gif" alt=""/>
+                                        </div>
+                                        <div className="w-50 flex-center">
+                                            <img src="images/BIBANK/Mockup/Mobile/5.gif" alt=""/>
+                                        </div>
+                                    </div>
+                                    <div className="item-with-img">
+                                        <div className="text-container">
+                                            <h4><div className="bullet-white"></div>Manage your subscription</h4>
+                                            <p>Manage your Bibank membership directly from your personal area. Change subscription plans or apply for new debit/credit cards in a few simple steps.</p>
+                                        </div>
+                                        <div className="container-img">
+                                            <img className="dekstop" src="images/BIBANK/MOCKUP/Dekstop/8.gif" alt=""/>
+                                            <img className="mobile-img" src="images/BIBANK/MOCKUP/Mobile/8.gif" alt=""/>
                                         </div>
                                     </div>
                                 </div>

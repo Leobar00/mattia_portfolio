@@ -405,6 +405,11 @@ html {
       }
       .list-with-img {
         margin: 8rem 0;
+        .item-two-images {
+          img {
+            width: 20rem;
+          }
+        }
         .item-with-img {
           width: 80%;
           margin: 6rem 0;
