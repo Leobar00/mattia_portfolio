@@ -716,7 +716,7 @@ const Bibank = () => {
                                         </div>
                                         <div className="container-img">
                                             <img className="dekstop" src="images/BIBANK/DIGITAL%20WIREFRAME%20GIF/Dekstop/1.gif" alt=""/>
-                                            <img className="mobile" src="images/BIBANK/DIGITAL%20WIREFRAME%20GIF/Mobile/1.gif" alt=""/>
+                                            <img className="mobile-img" src="images/BIBANK/DIGITAL%20WIREFRAME%20GIF/Mobile/1.gif" alt=""/>
                                         </div>
                                     </div>
                                     <div className="item-with-img">
@@ -726,7 +726,7 @@ const Bibank = () => {
                                         </div>
                                         <div className="container-img">
                                             <img className="dekstop" src="images/BIBANK/DIGITAL%20WIREFRAME%20GIF/Dekstop/2.gif" alt=""/>
-                                            <img className="mobile" src="images/BIBANK/DIGITAL%20WIREFRAME%20GIF/Mobile/2.gif" alt=""/>
+                                            <img className="mobile-img" src="images/BIBANK/DIGITAL%20WIREFRAME%20GIF/Mobile/2.gif" alt=""/>
                                         </div>
                                     </div>
                                     <div className="item-with-img">
@@ -736,7 +736,7 @@ const Bibank = () => {
                                         </div>
                                         <div className="container-img">
                                             <img className="dekstop" src="images/BIBANK/DIGITAL%20WIREFRAME%20GIF/Dekstop/3.gif" alt=""/>
-                                            <img className="mobile" src="images/BIBANK/DIGITAL%20WIREFRAME%20GIF/Mobile/3.gif" alt=""/>
+                                            <img className="mobile-img" src="images/BIBANK/DIGITAL%20WIREFRAME%20GIF/Mobile/3.gif" alt=""/>
                                         </div>
                                     </div>
                                     <div className="item-with-img">
@@ -746,7 +746,7 @@ const Bibank = () => {
                                         </div>
                                         <div className="container-img">
                                             <img className="dekstop" src="images/BIBANK/DIGITAL%20WIREFRAME%20GIF/Dekstop/4.gif" alt=""/>
-                                            <img className="mobile" src="images/BIBANK/DIGITAL%20WIREFRAME%20GIF/Mobile/4.gif" alt=""/>
+                                            <img className="mobile-img" src="images/BIBANK/DIGITAL%20WIREFRAME%20GIF/Mobile/4.gif" alt=""/>
                                         </div>
                                     </div>
                                     <div className="item-with-img">
@@ -756,7 +756,7 @@ const Bibank = () => {
                                         </div>
                                         <div className="container-img">
                                             <img className="dekstop" src="images/BIBANK/DIGITAL%20WIREFRAME%20GIF/Dekstop/5.gif" alt=""/>
-                                            <img className="mobile" src="images/BIBANK/DIGITAL%20WIREFRAME%20GIF/Mobile/5.gif" alt=""/>
+                                            <img className="mobile-img" src="images/BIBANK/DIGITAL%20WIREFRAME%20GIF/Mobile/5.gif" alt=""/>
                                         </div>
                                     </div>
                                     <div className="item-with-img">
@@ -766,7 +766,7 @@ const Bibank = () => {
                                         </div>
                                         <div className="container-img">
                                             <img className="dekstop" src="images/BIBANK/DIGITAL%20WIREFRAME%20GIF/Dekstop/5.gif" alt=""/>
-                                            <img className="mobile" src="images/BIBANK/DIGITAL%20WIREFRAME%20GIF/Mobile/5.gif" alt=""/>
+                                            <img className="mobile-img" src="images/BIBANK/DIGITAL%20WIREFRAME%20GIF/Mobile/5.gif" alt=""/>
                                         </div>
                                     </div>
                                 </div>
@@ -777,24 +777,79 @@ const Bibank = () => {
                     <div className="product-section product-section-only-img">
                         <img src="images/BIBANK/IMMAGINI/10.png" alt=""/>
                     </div>
-
-                    <div className="product-section center-align">
-                        <div className="product-container-description w-80">
-                            <div className="product-app">
-                                <span className="small-subtitle">What have I learnt?</span>
-                                <div className="line-product-100 w-60"></div>
-                                <h3 className="title-section">How I love the design</h3>
-                                <p className="text-description">
-                                    Drones was my first Ux/Ui Design project, developed during Google's Ux Design course. It was my first approach to the world of User Experience. Among the things I learnt during this project there is definitely one that is fundamental in the whole world of design: putting the user at the centre.
-                                    I didn't think, before I started on this path, that research into users' behaviour, emotions and habits was so important for creating effective products with good usability.
-                                </p>
-                                <p className="text-description">
-                                    It was also my first approach with software used to create digital prototypes, such as Figma. I learnt the basic functions of this software through practice, first through wireframing and then through mockup creation.
-                                    It is really important to continuously test the product, not only at the end but during the entire creation process.
-                                </p>
-                                <p className="text-description">
-                                    Through this project, although very basic and certainly with several mistakes and things to improve, I understood how this world (that of design) can be MY world.
-                                </p>
+                    <div className="product-section-bc-black">
+                        <div className="product-section center-align">
+                            <div className="product-container-description">
+                                <div className="product-app w-60">
+                                    <span className="small-subtitle">From paper to digital</span>
+                                    <div className="line-product-100"></div>
+                                    <h3 className="title-section">Digital Wireframe</h3>
+                                    <p className="text-description">
+                                        Following usability tests performed on some potential users, I developed my digital wireframe. This lo-fi version was very helpful in understanding even better the best process to create in order to lead the user to his final goal.
+                                    </p>
+                                </div>
+                                <div className="list-with-img w-80">
+                                    <div className="item-with-img">
+                                        <div className="text-container">
+                                            <h4><div className="bullet-white"></div>Simple registration</h4>
+                                            <p>Once on the site, the user can navigate to the public part, discovering all the various services offered by the product and registering in one simple step; in fact, all the user has to do to start using the product is to enter the e-mail.</p>
+                                        </div>
+                                        <div className="container-img">
+                                            <img className="dekstop" src="images/BIBANK/MOCKUP/Dekstop/1.gif" alt=""/>
+                                            <img className="mobile-img" src="images/BIBANK/MOCKUP/Mobile/1.gif" alt=""/>
+                                        </div>
+                                    </div>
+                                    <div className="item-with-img">
+                                        <div className="text-container">
+                                            <h4><div className="bullet-white"></div>All in one place</h4>
+                                            <p>Once logged in or signup, the user will be taken to the personal area where, within the first visible page, there will be all the most important features and those most used by the user.</p>
+                                        </div>
+                                        <div className="container-img">
+                                            <img className="dekstop" src="images/BIBANK/MOCKUP/Dekstop/2.gif" alt=""/>
+                                            <img className="mobile-img" src="images/BIBANK/MOCKUP/Mobile/2.gif" alt=""/>
+                                        </div>
+                                    </div>
+                                    <div className="item-with-img">
+                                        <div className="text-container">
+                                            <h4><div className="bullet-white"></div>Column structure</h4>
+                                            <p>With the alternating column structure (2 and 1), investing is very simple, as the user has the ability to see the real-time performance of the stocks next to each financial product he or she is about to buy, all on a neat and intuitive page.</p>
+                                        </div>
+                                        <div className="container-img">
+                                            <img className="dekstop" src="images/BIBANK/MOCKUP/Dekstop/3.gif" alt=""/>
+                                            <img className="mobile-img" src="images/BIBANK/MOCKUP/Mobile/3.gif" alt=""/>
+                                        </div>
+                                    </div>
+                                    <div className="item-with-img">
+                                        <div className="text-container">
+                                            <h4><div className="bullet-white"></div>Simple and effective flow</h4>
+                                            <p>Thanks to the simple and intuitive flow, investing and managing your cryptocurrencies is easy and stress-free. You can access the crypto area from the hamburger menu (mobile version) or directly from your personal balance.</p>
+                                        </div>
+                                        <div className="container-img">
+                                            <img className="dekstop" src="images/BIBANK/MOCKUP/Dekstop/4.gif" alt=""/>
+                                            <img className="mobile-img" src="images/BIBANK/MOCKUP/Mobile/4.gif" alt=""/>
+                                        </div>
+                                    </div>
+                                    <div className="item-with-img">
+                                        <div className="text-container">
+                                            <h4><div className="bullet-white"></div>Pay from wherever you want</h4>
+                                            <p>With advanced payment features you can make payments when and where you want, create recurring payments, donations, and manage your subscription plan, right from your computer or cell phone.</p>
+                                        </div>
+                                        <div className="container-img">
+                                            <img className="dekstop" src="images/BIBANK/MOCKUP/Dekstop/5.gif" alt=""/>
+                                            <img className="mobile-img" src="images/BIBANK/MOCKUP/Mobile/5.gif" alt=""/>
+                                        </div>
+                                    </div>
+                                    <div className="item-with-img">
+                                        <div className="text-container">
+                                            <h4><div className="bullet-white"></div>Innovative features</h4>
+                                            <p>In Bibank you can find innovative features such as the "Money Box" section, in which you can manage your savings and create a piggy bank to grow your savings.</p>
+                                        </div>
+                                        <div className="container-img">
+                                            <img className="dekstop" src="images/BIBANK/MOCKUP/Dekstop/5.gif" alt=""/>
+                                            <img className="mobile-img" src="images/BIBANK/MOCKUP/Mobile/5.gif" alt=""/>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
