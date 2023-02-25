@@ -371,10 +371,10 @@ const Bibank = () => {
                         <img src="images/DRONES/IMMAGINI/road.png" alt=""/>
                     </div>
                     <div className="product-section center-align">
-                        <div className="product-container-description w-60">
+                        <div className="product-container-description w-80">
                             <div className="product-app">
                                 <span className="small-subtitle">The market</span>
-                                <div className="line-product-100"></div>
+                                <div className="line-product-100 w-70"></div>
                                 <h3 className="title-section">Competitive audit</h3>
                                 <p className="text-description">
                                     I decided, following the study of potential users, to perform market research on some of the best-known online banking services (direct and indirect competitors), including a smaller, lesser-known local entity, so as to have as broad a spectrum as possible of the features and strengths (and also weaknesses) of competitors in the market.
@@ -524,24 +524,120 @@ const Bibank = () => {
                                             <img src="images/BIBANK/ICONELOGHI/check%20grey.png" alt=""/>
                                         </div>
                                     </div>
+                                    <div className="slider-card-container">
+                                        <Swiper
+                                            grabCursor={true}
+                                            freeMode={true}
+                                            modules={[FreeMode, Pagination]}
+                                            className="storyboard"
+                                            breakpoints= {{
+                                                1040: {
+                                                    slidesPerView: 1.2,
+                                                    spaceBetween:1
+                                                }
+                                            }}
+                                        >
+                                            <SwiperSlide>
+                                                <div className="card-container">
+                                                    <img src="images/BIBANK/IMMAGINI/4.png" alt=""/>
+                                                </div>
+                                            </SwiperSlide>
+                                            <SwiperSlide>
+                                                <div className="card-container">
+                                                    <img src="images/BIBANK/IMMAGINI/5.png" alt=""/>
+                                                </div>
+                                            </SwiperSlide>
+                                            <SwiperSlide>
+                                                <div className="card-container">
+                                                    <img src="images/BIBANK/IMMAGINI/6.png" alt=""/>
+                                                </div>
+                                            </SwiperSlide>
+                                        </Swiper>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <div className="product-section center-align">
+                        <div className="product-container-description w-80">
+                            <div className="product-app">
+                                <span className="small-subtitle">Ideation</span>
+                                <div className="line-product-100 w-60"></div>
+                                <h3 className="title-section">Crazy eights</h3>
+                                <p className="text-description w-80">
+                                    I used a technique called Crazy Eights to come up with new ideas about features to include within the product and to start creating the first interfaces. The goal of this technique is to put as many ideas on a paper as possible, regardless of quality.
+                                    The exercise consists of dividing the sheet into 8 parts, drawing in each box an idea or feature in a limited time (1 minute per box).
+                                </p>
+                                <img className="w-100 mx-4" src="images/BIBANK/IMMAGINI/7.png" alt=""/>
+                            </div>
+                        </div>
+                    </div>
+
+
                     <div className="product-section product-section-only-img">
-                        <img src="images/DRONES/IMMAGINI/4.png" alt=""/>
+                        <img src="images/BIBANK/IMMAGINI/8.png" alt=""/>
                     </div>
                     <div className="product-section center-align">
                         <div className="product-container-description w-60">
                             <div className="product-app">
-                                <span className="small-subtitle">Ideation</span>
+                                <span className="small-subtitle">Desktop Wireframe</span>
                                 <div className="line-product-100"></div>
-                                <h3 className="title-section">Storyboard</h3>
+                                <h3 className="title-section">Paper Wireframe</h3>
                                 <p className="text-description">
-                                    I used the 'storyboard' conception technique to look for new ideas for the wireframe realisation, still trying to empathise with the potential user.
+                                    I decided to start the design process from the paper wireframe, starting with the dekstop version, and then continuing with the mobile version.
                                 </p>
                                 <p className="text-description">
-                                    I therefore developed two different types of storyboards, the first one with the focus on the environment and emotions of the user and the second one with the focus on the functionality of the prototype.
+                                    The paper wireframe allowed me to experiment with different solutions and ideas, testing the product at an early stage, without wasting too much time modifying a design that was already at an advanced stage of development.
+                                    Below are some of the main screens.
+                                </p>
+                            </div>
+                            <div className="list-with-img">
+                                <div className="item-with-img">
+                                    <h4 className="title-list"><div className="bullet"></div>Homepage</h4>
+                                    <p>Once landed on the site, the user arrives at the homepage where he finds various information about the bank and all the various features and services offered, this is before accessing his private area.</p>
+                                    <img src="images/BIBANK/PAPER%20WIREFRAME/Dekstop/1.png" alt=""/>
+                                </div>
+                                <div className="item-with-img">
+                                    <h4 className="title-list"><div className="bullet"></div>Login and Signup</h4>
+                                    <p>The login and registration, both accessible from the homepage, are fast, intuitive, and with few inputs to enter. I decided to maintain these two frames without going below the fold.</p>
+                                    <img src="images/BIBANK/PAPER%20WIREFRAME/Dekstop/2.png" alt=""/>
+                                </div>
+                                <div className="item-with-img">
+                                    <h4 className="title-list"><div className="bullet"></div>Personal area</h4>
+                                    <p>Once logged in, the user arrives at his or her personal area. From the research done during the empathizing phase, it was found that the first thing the user wants to see is their balance sheet.</p>
+                                    <img src="images/BIBANK/PAPER%20WIREFRAME/Dekstop/3.png" alt=""/>
+                                </div>
+                                <div className="item-with-img">
+                                    <h4 className="title-list"><div className="bullet"></div>Investments and Crypto</h4>
+                                    <p>Among the various features included within the product we find the ability to invest in classic financial products and cryptocurrencies, all in a simple and intuitive way.</p>
+                                    <img src="images/BIBANK/PAPER%20WIREFRAME/Dekstop/4.png" alt=""/>
+                                </div>
+                                <div className="item-with-img">
+                                    <h4 className="title-list"><div className="bullet"></div>Card and Statistics</h4>
+                                    <p>For frequent users and regular investors, I decided to create the "cards" and "budget and statistics" sections, where clients can monitor their cards and everything about their assets.</p>
+                                    <img src="images/BIBANK/PAPER%20WIREFRAME/Dekstop/5.png" alt=""/>
+                                </div>
+                                <div className="item-with-img">
+                                    <h4 className="title-list"><div className="bullet"></div>Payments and Money Box</h4>
+                                    <p>The payments section is vitally important within home banking, so I have tried to make it as intuitive as possible so that even less experienced people can make online payments without any problems.</p>
+                                    <img src="images/BIBANK/PAPER%20WIREFRAME/Dekstop/6.png" alt=""/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="product-section center-align">
+                        <div className="product-container-description w-60">
+                            <div className="product-app">
+                                <span className="small-subtitle">Mobile Wireframe</span>
+                                <div className="line-product-100"></div>
+                                <h3 className="title-section">From dekstop to mobile</h3>
+                                <p className="text-description">
+                                    During this project, I decided to start by creating wireframes from the largest screen (in terms of size) to the smallest screen.
+                                </p>
+                                <p className="text-description">
+                                    After studying the spaces and elements that, because they were not entirely necessary, could be removed, I created the paper responsive wireframe of the mobile version.
+                                    Below are some examples that you can see by scrolling horizontally.
                                 </p>
                                 <div className="slider-card-container">
                                     <Swiper
@@ -558,12 +654,37 @@ const Bibank = () => {
                                     >
                                         <SwiperSlide>
                                             <div className="card-container">
-                                                <img src="images/DRONES/IMMAGINI/6.png" alt=""/>
+                                                <img src="images/BIBANK/PAPER%20WIREFRAME/Mobile/wb1.png" alt=""/>
                                             </div>
                                         </SwiperSlide>
                                         <SwiperSlide>
                                             <div className="card-container">
-                                                <img src="images/DRONES/IMMAGINI/7.png" alt=""/>
+                                                <img src="images/BIBANK/PAPER%20WIREFRAME/Mobile/wb2.png" alt=""/>
+                                            </div>
+                                        </SwiperSlide>
+                                        <SwiperSlide>
+                                            <div className="card-container">
+                                                <img src="images/BIBANK/PAPER%20WIREFRAME/Mobile/wb3.png" alt=""/>
+                                            </div>
+                                        </SwiperSlide>
+                                        <SwiperSlide>
+                                            <div className="card-container">
+                                                <img src="images/BIBANK/PAPER%20WIREFRAME/Mobile/wb4.png" alt=""/>
+                                            </div>
+                                        </SwiperSlide>
+                                        <SwiperSlide>
+                                            <div className="card-container">
+                                                <img src="images/BIBANK/PAPER%20WIREFRAME/Mobile/wb5.png" alt=""/>
+                                            </div>
+                                        </SwiperSlide>
+                                        <SwiperSlide>
+                                            <div className="card-container">
+                                                <img src="images/BIBANK/PAPER%20WIREFRAME/Mobile/wb6.png" alt=""/>
+                                            </div>
+                                        </SwiperSlide>
+                                        <SwiperSlide>
+                                            <div className="card-container">
+                                                <img src="images/BIBANK/PAPER%20WIREFRAME/Mobile/wb7.png" alt=""/>
                                             </div>
                                         </SwiperSlide>
                                     </Swiper>
@@ -573,55 +694,7 @@ const Bibank = () => {
                     </div>
 
                     <div className="product-section product-section-only-img">
-                        <img src="images/DRONES/IMMAGINI/7A.png" alt=""/>
-                    </div>
-                    <div className="product-section center-align">
-                        <div className="product-container-description w-60">
-                            <div className="product-app">
-                                <span className="small-subtitle">Wireframe</span>
-                                <div className="line-product-100"></div>
-                                <h3 className="title-section">Paper Wireframe</h3>
-                                <p className="text-description">
-                                    I chose to begin the most practical phase of creation by starting with the paper Wireframe.
-                                </p>
-                                <p className="text-description">
-                                    The paper Wireframe allowed me to experiment with different solutions and ideas, testing the product at an early stage, without wasting too much time modifying a project that was already well advanced in development.
-                                    I used the 'storyboard' conception technique to look for new ideas for the wireframe realisation, still trying to empathise with the potential user.
-                                </p>
-                            </div>
-                            <div className="list-with-img">
-                                <div className="item-with-img">
-                                    <h4 className="title-list"><div className="bullet"></div>Login / Sign up</h4>
-                                    <p>I chose to create a quick and easy login and sign-up process, with little data to enter to gain access.</p>
-                                    <img src="images/DRONES/IMMAGINI/PAPER%20WIREFRAME/8.png" alt=""/>
-                                </div>
-                                <div className="item-with-img">
-                                    <h4 className="title-list"><div className="bullet"></div>Track page</h4>
-                                    <p>From the research I did, the most popular action performed by users is to track their parcel, so I decided to put this feature in the first frames. The search looks very simple and offers two different ways to track the parcel.</p>
-                                    <img src="images/DRONES/IMMAGINI/PAPER%20WIREFRAME/9.png" alt=""/>
-                                </div>
-                                <div className="item-with-img">
-                                    <h4 className="title-list"><div className="bullet"></div>Maps and scanner</h4>
-                                    <p>Interactive maps show in real time where the parcel is (whether you are the sender or the recipient). I thought of including a 'scanner' function so that you can follow the parcel without necessarily knowing the order number.</p>
-                                    <img src="images/DRONES/IMMAGINI/PAPER%20WIREFRAME/10.png" alt=""/>
-                                </div>
-                                <div className="item-with-img">
-                                    <h4 className="title-list"><div className="bullet"></div>Deliver</h4>
-                                    <p>My goal was to create a shipping flow that was as intuitive, easy and fast as possible. By entering a little information you can create a totally new shipment.</p>
-                                    <img src="images/DRONES/IMMAGINI/PAPER%20WIREFRAME/11.png" alt=""/>
-                                </div>
-                                <div className="item-with-img">
-                                    <h4 className="title-list"><div className="bullet"></div>Shipping history</h4>
-                                    <p>I created this session to help users find the details of previous shipments. A convenient horizontal scrolling menu makes it easy to search for shipments on a time basis..</p>
-                                    <img src="images/DRONES/IMMAGINI/PAPER%20WIREFRAME/12.png" alt=""/>
-                                </div>
-                                <div className="item-with-img">
-                                    <h4 className="title-list"><div className="bullet"></div>Contacts</h4>
-                                    <p>This section is designed to speed up the shipping process for people who receive packages from us more frequently than others.</p>
-                                    <img src="images/DRONES/IMMAGINI/PAPER%20WIREFRAME/13.png" alt=""/>
-                                </div>
-                            </div>
-                        </div>
+                        <img src="images/BIBANK/IMMAGINI/9.png" alt=""/>
                     </div>
 
                     <div className="background-digital-wireframe">
@@ -635,46 +708,65 @@ const Bibank = () => {
                                         Following usability tests performed on some potential users, I developed my digital wireframe. This lo-fi version was very helpful in understanding even better the best process to create in order to lead the user to his final goal.
                                     </p>
                                 </div>
-                                <div className="list-with-img-flex w-80">
-                                    <div className="item-with-img-flex">
-                                        <img src="images/DRONES/DIGITAL%20WIREFRAME%20GIF/Signup.gif" alt=""/>
-                                        <div className="text-flex-container">
-                                            <h4>Signup</h4>
-                                            <p>Signup (and also login) are simple fast and intuitive. The user only needs to enter a few pieces of information and in a few simple steps he or she is immediately on the main page. This path is designed to bring as little stress as possible to the user while filling in.</p>
+                                <div className="list-with-img w-80">
+                                    <div className="item-with-img">
+                                        <div className="text-container">
+                                            <h4>Simple registration</h4>
+                                            <p>Once on the site, the user can navigate to the public part, discovering all the various services offered by the product and registering in one simple step; in fact, all the user has to do to start using the product is to enter the e-mail.</p>
+                                        </div>
+                                        <div className="container-img">
+                                            <img className="dekstop" src="images/BIBANK/DIGITAL%20WIREFRAME%20GIF/Dekstop/1.gif" alt=""/>
+                                            <img className="mobile" src="images/BIBANK/DIGITAL%20WIREFRAME%20GIF/Mobile/1.gif" alt=""/>
                                         </div>
                                     </div>
-                                    <div className="item-with-img-flex">
-                                        <img src="images/DRONES/DIGITAL%20WIREFRAME%20GIF/track.gif" alt=""/>
-                                        <div className="text-flex-container">
-                                            <h4>Track pack</h4>
-                                            <p>Tracking the parcel, both incoming and outgoing, is very simple. Based on the research done, I decided to put this feature on the homepage, as it is the most used by users.</p>
-                                            <p>To track the package, the user has two different ways: by entering the shipment code or through the "scanner" function, that is, by scanning the qr code of the shipment with their smartphone.</p>
+                                    <div className="item-with-img">
+                                        <div className="text-container">
+                                            <h4>All in one place</h4>
+                                            <p>Once logged in or signup, the user will be taken to the personal area where, within the first visible page, there will be all the most important features and those most used by the user.</p>
+                                        </div>
+                                        <div className="container-img">
+                                            <img className="dekstop" src="images/BIBANK/DIGITAL%20WIREFRAME%20GIF/Dekstop/2.gif" alt=""/>
+                                            <img className="mobile" src="images/BIBANK/DIGITAL%20WIREFRAME%20GIF/Mobile/2.gif" alt=""/>
                                         </div>
                                     </div>
-                                    <div className="item-with-img-flex">
-                                        <img src="images/DRONES/DIGITAL%20WIREFRAME%20GIF/Deliver.gif" alt=""/>
-                                        <div className="text-flex-container">
-                                            <h4>Deliver flow</h4>
-                                            <p>The user can create an order in a few simple steps. The flow was created so that the user can easily go back if he/she made any mistakes in entering information.
-                                                The user can also decide to choose pre-set shipments with standard package sizes.</p>
+                                    <div className="item-with-img">
+                                        <div className="text-container">
+                                            <h4>Column structure</h4>
+                                            <p>With the alternating column structure (2 and 1), investing is very simple, as the user has the ability to see the real-time performance of the stocks next to each financial product he or she is about to buy, all on a neat and intuitive page.</p>
+                                        </div>
+                                        <div className="container-img">
+                                            <img className="dekstop" src="images/BIBANK/DIGITAL%20WIREFRAME%20GIF/Dekstop/3.gif" alt=""/>
+                                            <img className="mobile" src="images/BIBANK/DIGITAL%20WIREFRAME%20GIF/Mobile/3.gif" alt=""/>
                                         </div>
                                     </div>
-                                    <div className="item-two-images">
-                                        <div className="text-flex-container">
-                                            <h4>Shipment history and notifications</h4>
-                                            <p>Thanks to the "Shipment history" function, the user can check all shipments made previously, breaking them down into time spaces.
-                                                On the other hand, thanks to the "Notifications" function, the user can be notified about the arrival of parcels that he himself has shipped and about those coming in from other people.</p>
+                                    <div className="item-with-img">
+                                        <div className="text-container">
+                                            <h4>Simple and effective flow</h4>
+                                            <p>Thanks to the simple and intuitive flow, investing and managing your cryptocurrencies is easy and stress-free. You can access the crypto area from the hamburger menu (mobile version) or directly from your personal balance.</p>
                                         </div>
-                                        <div className="img-flex-container">
-                                            <img src="images/DRONES/DIGITAL%20WIREFRAME%20GIF/Shipment%20history.gif" alt=""/>
-                                            <img src="images/DRONES/DIGITAL%20WIREFRAME%20GIF/Shipment%20history.gif" alt=""/>
+                                        <div className="container-img">
+                                            <img className="dekstop" src="images/BIBANK/DIGITAL%20WIREFRAME%20GIF/Dekstop/4.gif" alt=""/>
+                                            <img className="mobile" src="images/BIBANK/DIGITAL%20WIREFRAME%20GIF/Mobile/4.gif" alt=""/>
                                         </div>
                                     </div>
-                                    <div className="item-with-img-flex">
-                                        <img src="images/DRONES/DIGITAL%20WIREFRAME%20GIF/Contacts.gif" alt=""/>
-                                        <div className="text-flex-container">
-                                            <h4>Contacts</h4>
-                                            <p>With the "contacts" feature, you can save your most frequently used contacts and send your items quickly and easily without having to enter information such as address, name, and package size.</p>
+                                    <div className="item-with-img">
+                                        <div className="text-container">
+                                            <h4>Pay from wherever you want</h4>
+                                            <p>With advanced payment features you can make payments when and where you want, create recurring payments, donations, and manage your subscription plan, right from your computer or cell phone.</p>
+                                        </div>
+                                        <div className="container-img">
+                                            <img className="dekstop" src="images/BIBANK/DIGITAL%20WIREFRAME%20GIF/Dekstop/5.gif" alt=""/>
+                                            <img className="mobile" src="images/BIBANK/DIGITAL%20WIREFRAME%20GIF/Mobile/5.gif" alt=""/>
+                                        </div>
+                                    </div>
+                                    <div className="item-with-img">
+                                        <div className="text-container">
+                                            <h4>Innovative features</h4>
+                                            <p>In Bibank you can find innovative features such as the "Money Box" section, in which you can manage your savings and create a piggy bank to grow your savings.</p>
+                                        </div>
+                                        <div className="container-img">
+                                            <img className="dekstop" src="images/BIBANK/DIGITAL%20WIREFRAME%20GIF/Dekstop/5.gif" alt=""/>
+                                            <img className="mobile" src="images/BIBANK/DIGITAL%20WIREFRAME%20GIF/Mobile/5.gif" alt=""/>
                                         </div>
                                     </div>
                                 </div>
@@ -683,10 +775,7 @@ const Bibank = () => {
                     </div>
 
                     <div className="product-section product-section-only-img">
-                        <img src="images/DRONES/IMMAGINI/14.png" alt=""/>
-                    </div>
-                    <div className="product-section product-section-only-img">
-                        <img src="images/DRONES/IMMAGINI/19.png" alt=""/>
+                        <img src="images/BIBANK/IMMAGINI/10.png" alt=""/>
                     </div>
 
                     <div className="product-section center-align">
