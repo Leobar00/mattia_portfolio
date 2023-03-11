@@ -388,7 +388,7 @@ const Bibank = () => {
                                         <span>Good = <img src="images/BIBANK/ICONELOGHI/check%20green.png" alt=""/></span>
                                         <span>Needs works = <img src="images/BIBANK/ICONELOGHI/check%20grey.png" alt=""/></span>
                                     </div>
-                                    <div className="grid-payment">
+                                    <div className="grid-payment grid-payment-column-5">
                                         <div className="grid-item"></div>
                                         <div className="grid-item box-payment">
                                             <img src="images/BIBANK/ICONELOGHI/logo%20revolut.png" alt=""/>

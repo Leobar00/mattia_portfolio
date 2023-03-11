@@ -452,7 +452,7 @@ const Oceano = () => {
                                         <span>Good = <img src="images/BIBANK/ICONELOGHI/check%20green.png" alt=""/></span>
                                         <span>Needs works = <img src="images/BIBANK/ICONELOGHI/check%20grey.png" alt=""/></span>
                                     </div>
-                                    <div className="grid-payment">
+                                    <div className="grid-payment grid-payment-column-4">
                                         <div className="grid-item"></div>
                                         <div className="grid-item box-payment">
                                             <img src="images/OCEANO/icon-and-logo/oceanus.png" alt=""/>
@@ -674,49 +674,67 @@ const Oceano = () => {
                                     <div className="line-product-100"></div>
                                     <h3 className="title-section">Digital Wireframe</h3>
                                     <p className="text-description">
-                                        Following usability tests performed on some potential users, I developed my digital wireframe. This lo-fi version was very helpful in understanding even better the best process to create in order to lead the user to his final goal.
+                                        After conducting a small usability study on the paper wireframe, I developed my own digital wireframe. This lo-fi version was very helpful in understanding even better the best process to create to lead the user to their end goal. From the wireframe, I tried to focus on animations and interactions so that the user would be more engaged.
                                     </p>
                                 </div>
-                                <div className="list-with-img-flex w-80">
-                                    <div className="item-with-img-flex">
-                                        <img src="images/OCEANO/DIGITAL%20WIREFRAME%20GIF/Signup.gif" alt=""/>
-                                        <div className="text-flex-container">
-                                            <h4>Signup</h4>
-                                            <p>Signup (and also login) are simple fast and intuitive. The user only needs to enter a few pieces of information and in a few simple steps he or she is immediately on the main page. This path is designed to bring as little stress as possible to the user while filling in.</p>
+                                <div className="list-with-img w-80">
+                                    <div className="item-with-img">
+                                        <div className="text-container">
+                                            <h4>Interactive Homepage</h4>
+                                            <p>The homepage of the dedicated sitoweb contains several animations and interactions and focuses on providing the user with key information to understand what Oceano is all about.</p>
+                                        </div>
+                                        <div className="container-img">
+                                            <img className="dekstop" src="images/OCEANO/DIGITAL%20WIREFRAME%20GIF/DEKSTOP/1.gif" alt=""/>
                                         </div>
                                     </div>
-                                    <div className="item-with-img-flex">
-                                        <img src="images/DRONES/DIGITAL%20WIREFRAME%20GIF/track.gif" alt=""/>
-                                        <div className="text-flex-container">
-                                            <h4>Track pack</h4>
-                                            <p>Tracking the parcel, both incoming and outgoing, is very simple. Based on the research done, I decided to put this feature on the homepage, as it is the most used by users.</p>
-                                            <p>To track the package, the user has two different ways: by entering the shipment code or through the "scanner" function, that is, by scanning the qr code of the shipment with their smartphone.</p>
+                                    <div className="item-with-img">
+                                        <div className="text-container">
+                                            <h4>All in one place</h4>
+                                            <p>Once logged in or signup, the user will be taken to the personal area where, within the first visible page, there will be all the most important features and those most used by the user.</p>
+                                        </div>
+                                        <div className="container-img">
+                                            <img className="dekstop" src="images/BIBANK/DIGITAL%20WIREFRAME%20GIF/Dekstop/2.gif" alt=""/>
+                                            <img className="mobile-img" src="images/BIBANK/DIGITAL%20WIREFRAME%20GIF/Mobile/2.gif" alt=""/>
                                         </div>
                                     </div>
-                                    <div className="item-with-img-flex">
-                                        <img src="images/DRONES/DIGITAL%20WIREFRAME%20GIF/Deliver.gif" alt=""/>
-                                        <div className="text-flex-container">
-                                            <h4>Deliver flow</h4>
-                                            <p>The user can create an order in a few simple steps. The flow was created so that the user can easily go back if he/she made any mistakes in entering information.
-                                                The user can also decide to choose pre-set shipments with standard package sizes.</p>
+                                    <div className="item-with-img">
+                                        <div className="text-container">
+                                            <h4>Column structure</h4>
+                                            <p>With the alternating column structure (2 and 1), investing is very simple, as the user has the ability to see the real-time performance of the stocks next to each financial product he or she is about to buy, all on a neat and intuitive page.</p>
+                                        </div>
+                                        <div className="container-img">
+                                            <img className="dekstop" src="images/BIBANK/DIGITAL%20WIREFRAME%20GIF/Dekstop/3.gif" alt=""/>
+                                            <img className="mobile-img" src="images/BIBANK/DIGITAL%20WIREFRAME%20GIF/Mobile/3.gif" alt=""/>
                                         </div>
                                     </div>
-                                    <div className="item-two-images">
-                                        <div className="text-flex-container">
-                                            <h4>Shipment history and notifications</h4>
-                                            <p>Thanks to the "Shipment history" function, the user can check all shipments made previously, breaking them down into time spaces.
-                                                On the other hand, thanks to the "Notifications" function, the user can be notified about the arrival of parcels that he himself has shipped and about those coming in from other people.</p>
+                                    <div className="item-with-img">
+                                        <div className="text-container">
+                                            <h4>Simple and effective flow</h4>
+                                            <p>Thanks to the simple and intuitive flow, investing and managing your cryptocurrencies is easy and stress-free. You can access the crypto area from the hamburger menu (mobile version) or directly from your personal balance.</p>
                                         </div>
-                                        <div className="img-flex-container">
-                                            <img src="images/DRONES/DIGITAL%20WIREFRAME%20GIF/Shipment%20history.gif" alt=""/>
-                                            <img src="images/DRONES/DIGITAL%20WIREFRAME%20GIF/Shipment%20history.gif" alt=""/>
+                                        <div className="container-img">
+                                            <img className="dekstop" src="images/BIBANK/DIGITAL%20WIREFRAME%20GIF/Dekstop/4.gif" alt=""/>
+                                            <img className="mobile-img" src="images/BIBANK/DIGITAL%20WIREFRAME%20GIF/Mobile/4.gif" alt=""/>
                                         </div>
                                     </div>
-                                    <div className="item-with-img-flex">
-                                        <img src="images/DRONES/DIGITAL%20WIREFRAME%20GIF/Contacts.gif" alt=""/>
-                                        <div className="text-flex-container">
-                                            <h4>Contacts</h4>
-                                            <p>With the "contacts" feature, you can save your most frequently used contacts and send your items quickly and easily without having to enter information such as address, name, and package size.</p>
+                                    <div className="item-with-img">
+                                        <div className="text-container">
+                                            <h4>Pay from wherever you want</h4>
+                                            <p>With advanced payment features you can make payments when and where you want, create recurring payments, donations, and manage your subscription plan, right from your computer or cell phone.</p>
+                                        </div>
+                                        <div className="container-img">
+                                            <img className="dekstop" src="images/BIBANK/DIGITAL%20WIREFRAME%20GIF/Dekstop/5.gif" alt=""/>
+                                            <img className="mobile-img" src="images/BIBANK/DIGITAL%20WIREFRAME%20GIF/Mobile/5.gif" alt=""/>
+                                        </div>
+                                    </div>
+                                    <div className="item-with-img">
+                                        <div className="text-container">
+                                            <h4>Innovative features</h4>
+                                            <p>In Bibank you can find innovative features such as the "Money Box" section, in which you can manage your savings and create a piggy bank to grow your savings.</p>
+                                        </div>
+                                        <div className="container-img">
+                                            <img className="dekstop" src="images/BIBANK/DIGITAL%20WIREFRAME%20GIF/Dekstop/5.gif" alt=""/>
+                                            <img className="mobile-img" src="images/BIBANK/DIGITAL%20WIREFRAME%20GIF/Mobile/5.gif" alt=""/>
                                         </div>
                                     </div>
                                 </div>

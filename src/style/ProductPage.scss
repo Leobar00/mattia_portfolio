@@ -338,11 +338,16 @@ html {
               }
             }
           }
+          .grid-payment-column-5 {
+            grid-template-columns: repeat(5,1fr);
+          }
+          .grid-payment-column-4 {
+            grid-template-columns: repeat(4,1fr);
+          }
           .grid-payment {
             width: 100%;
             margin:4rem 0;
             display: grid;
-            grid-template-columns: repeat(5,1fr);
             grid-template-rows: repeat(8,1fr);
             grid-row: auto;
             grid-column-gap: 10%;
