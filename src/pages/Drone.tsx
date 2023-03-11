@@ -523,32 +523,32 @@ const Drone = () => {
                                 <div className="item-with-img">
                                     <h4 className="title-list"><div className="bullet"></div>Login / Sign up</h4>
                                     <p>I chose to create a quick and easy login and sign-up process, with little data to enter to gain access.</p>
-                                    <img src="images/DRONES/IMMAGINI/PAPER%20WIREFRAME/8.png" alt=""/>
+                                    <img className="img-wireframe" src="images/DRONES/IMMAGINI/PAPER%20WIREFRAME/8.png" alt=""/>
                                 </div>
                                 <div className="item-with-img">
                                     <h4 className="title-list"><div className="bullet"></div>Track page</h4>
                                     <p>From the research I did, the most popular action performed by users is to track their parcel, so I decided to put this feature in the first frames. The search looks very simple and offers two different ways to track the parcel.</p>
-                                    <img src="images/DRONES/IMMAGINI/PAPER%20WIREFRAME/9.png" alt=""/>
+                                    <img className="img-wireframe" src="images/DRONES/IMMAGINI/PAPER%20WIREFRAME/9.png" alt=""/>
                                 </div>
                                 <div className="item-with-img">
                                     <h4 className="title-list"><div className="bullet"></div>Maps and scanner</h4>
                                     <p>Interactive maps show in real time where the parcel is (whether you are the sender or the recipient). I thought of including a 'scanner' function so that you can follow the parcel without necessarily knowing the order number.</p>
-                                    <img src="images/DRONES/IMMAGINI/PAPER%20WIREFRAME/10.png" alt=""/>
+                                    <img className="img-wireframe" src="images/DRONES/IMMAGINI/PAPER%20WIREFRAME/10.png" alt=""/>
                                 </div>
                                 <div className="item-with-img">
                                     <h4 className="title-list"><div className="bullet"></div>Deliver</h4>
                                     <p>My goal was to create a shipping flow that was as intuitive, easy and fast as possible. By entering a little information you can create a totally new shipment.</p>
-                                    <img src="images/DRONES/IMMAGINI/PAPER%20WIREFRAME/11.png" alt=""/>
+                                    <img className="img-wireframe" src="images/DRONES/IMMAGINI/PAPER%20WIREFRAME/11.png" alt=""/>
                                 </div>
                                 <div className="item-with-img">
                                     <h4 className="title-list"><div className="bullet"></div>Shipping history</h4>
                                     <p>I created this session to help users find the details of previous shipments. A convenient horizontal scrolling menu makes it easy to search for shipments on a time basis..</p>
-                                    <img src="images/DRONES/IMMAGINI/PAPER%20WIREFRAME/12.png" alt=""/>
+                                    <img className="img-wireframe" src="images/DRONES/IMMAGINI/PAPER%20WIREFRAME/12.png" alt=""/>
                                 </div>
                                 <div className="item-with-img">
                                     <h4 className="title-list"><div className="bullet"></div>Contacts</h4>
                                     <p>This section is designed to speed up the shipping process for people who receive packages from us more frequently than others.</p>
-                                    <img src="images/DRONES/IMMAGINI/PAPER%20WIREFRAME/13.png" alt=""/>
+                                    <img className="img-wireframe" src="images/DRONES/IMMAGINI/PAPER%20WIREFRAME/13.png" alt=""/>
                                 </div>
                             </div>
                         </div>

@@ -595,32 +595,32 @@ const Bibank = () => {
                                 <div className="item-with-img">
                                     <h4 className="title-list"><div className="bullet"></div>Homepage</h4>
                                     <p>Once landed on the site, the user arrives at the homepage where he finds various information about the bank and all the various features and services offered, this is before accessing his private area.</p>
-                                    <img src="images/BIBANK/PAPER%20WIREFRAME/Dekstop/1.png" alt=""/>
+                                    <img className="img-wireframe" src="images/BIBANK/PAPER%20WIREFRAME/Dekstop/1.png" alt=""/>
                                 </div>
                                 <div className="item-with-img">
                                     <h4 className="title-list"><div className="bullet"></div>Login and Signup</h4>
                                     <p>The login and registration, both accessible from the homepage, are fast, intuitive, and with few inputs to enter. I decided to maintain these two frames without going below the fold.</p>
-                                    <img src="images/BIBANK/PAPER%20WIREFRAME/Dekstop/2.png" alt=""/>
+                                    <img className="img-wireframe" src="images/BIBANK/PAPER%20WIREFRAME/Dekstop/2.png" alt=""/>
                                 </div>
                                 <div className="item-with-img">
                                     <h4 className="title-list"><div className="bullet"></div>Personal area</h4>
                                     <p>Once logged in, the user arrives at his or her personal area. From the research done during the empathizing phase, it was found that the first thing the user wants to see is their balance sheet.</p>
-                                    <img src="images/BIBANK/PAPER%20WIREFRAME/Dekstop/3.png" alt=""/>
+                                    <img className="img-wireframe" src="images/BIBANK/PAPER%20WIREFRAME/Dekstop/3.png" alt=""/>
                                 </div>
                                 <div className="item-with-img">
                                     <h4 className="title-list"><div className="bullet"></div>Investments and Crypto</h4>
                                     <p>Among the various features included within the product we find the ability to invest in classic financial products and cryptocurrencies, all in a simple and intuitive way.</p>
-                                    <img src="images/BIBANK/PAPER%20WIREFRAME/Dekstop/4.png" alt=""/>
+                                    <img className="img-wireframe" src="images/BIBANK/PAPER%20WIREFRAME/Dekstop/4.png" alt=""/>
                                 </div>
                                 <div className="item-with-img">
                                     <h4 className="title-list"><div className="bullet"></div>Card and Statistics</h4>
                                     <p>For frequent users and regular investors, I decided to create the "cards" and "budget and statistics" sections, where clients can monitor their cards and everything about their assets.</p>
-                                    <img src="images/BIBANK/PAPER%20WIREFRAME/Dekstop/5.png" alt=""/>
+                                    <img className="img-wireframe" src="images/BIBANK/PAPER%20WIREFRAME/Dekstop/5.png" alt=""/>
                                 </div>
                                 <div className="item-with-img">
                                     <h4 className="title-list"><div className="bullet"></div>Payments and Money Box</h4>
                                     <p>The payments section is vitally important within home banking, so I have tried to make it as intuitive as possible so that even less experienced people can make online payments without any problems.</p>
-                                    <img src="images/BIBANK/PAPER%20WIREFRAME/Dekstop/6.png" alt=""/>
+                                    <img className="img-wireframe" src="images/BIBANK/PAPER%20WIREFRAME/Dekstop/6.png" alt=""/>
                                 </div>
                             </div>
                         </div>
@@ -857,7 +857,6 @@ const Bibank = () => {
                                         </div>
                                         <div className="container-img">
                                             <img className="dekstop" src="images/BIBANK/MOCKUP/Dekstop/7.gif" alt=""/>
-                                            <img className="mobile-img" src="images/BIBANK/MOCKUP/Mobile/7.gif" alt=""/>
                                         </div>
                                     </div>
                                     <div className="item-two-images d-flex">

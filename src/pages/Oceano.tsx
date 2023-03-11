@@ -631,32 +631,32 @@ const Oceano = () => {
                                 <div className="item-with-img">
                                     <h4 className="title-list"><div className="bullet"></div>On board (mobile app)</h4>
                                     <p>Within the mobile app, the first thing that a new user experiences is the "On Board" phase. In this first phase, the customer will have to enter his or her data and will find information about the main functionality of the app.</p>
-                                    <img src="images/OCEANO/IMMAGINI/PAPER%20WIREFRAME/1.png" alt=""/>
+                                    <img className="img-wireframe" src="images/OCEANO/IMMAGINI/PAPER%20WIREFRAME/1.png" alt=""/>
                                 </div>
                                 <div className="item-with-img">
                                     <h4 className="title-list"><div className="bullet"></div>Homepage</h4>
                                     <p>I designed the homepages to be simple, intuitive, and beautiful to look at. For the mobile app, I decided to include a horizontally scrolling grid of images, while for the dedicated sitoweb we only have vertical scrolling.</p>
-                                    <img src="images/OCEANO/IMMAGINI/PAPER%20WIREFRAME/2.png" alt=""/>
+                                    <img className="img-wireframe" src="images/OCEANO/IMMAGINI/PAPER%20WIREFRAME/2.png" alt=""/>
                                 </div>
                                 <div className="item-with-img">
                                     <h4 className="title-list"><div className="bullet"></div>Donation</h4>
                                     <p>I created a simple user flow, where each click corresponds to a step. This makes it easy for the user to understand where they are at each step, and if they make a mistake, it is very easy to go back and change their choices.</p>
-                                    <img src="images/OCEANO/IMMAGINI/PAPER%20WIREFRAME/3.png" alt=""/>
+                                    <img className="img-wireframe" src="images/OCEANO/IMMAGINI/PAPER%20WIREFRAME/3.png" alt=""/>
                                 </div>
                                 <div className="item-with-img">
                                     <h4 className="title-list"><div className="bullet"></div>Animal Tracking</h4>
                                     <p>I thought about designing interactive maps that could track your adopted animal, so as to create an even deeper user experience. The purpose of these maps is to allow the user to track their animal.</p>
-                                    <img src="images/OCEANO/IMMAGINI/PAPER%20WIREFRAME/4.png" alt=""/>
+                                    <img className="img-wireframe" src="images/OCEANO/IMMAGINI/PAPER%20WIREFRAME/4.png" alt=""/>
                                 </div>
                                 <div className="item-with-img">
                                     <h4 className="title-list"><div className="bullet"></div>Amount and Payment</h4>
                                     <p>I decided to provide the user with a dual choice for the amount and for payment. In fact, the user can decide whether to select an pre-existing digit with a single click or to enter a different digit as they like directly from the keyboard of their device.</p>
-                                    <img src="images/OCEANO/IMMAGINI/PAPER%20WIREFRAME/5.png" alt=""/>
+                                    <img className="img-wireframe" src="images/OCEANO/IMMAGINI/PAPER%20WIREFRAME/5.png" alt=""/>
                                 </div>
                                 <div className="item-with-img">
                                     <h4 className="title-list"><div className="bullet"></div>Confirm Donation</h4>
                                     <p>It is very important for users to be sure that once they have made a payment, everything has gone well. For this reason, for both the mobile app and the dedicated sitoweb, I created a confirmation page containing all the payment and adoption/donation information.</p>
-                                    <img src="images/OCEANO/IMMAGINI/PAPER%20WIREFRAME/6.png" alt=""/>
+                                    <img className="img-wireframe" src="images/OCEANO/IMMAGINI/PAPER%20WIREFRAME/6.png" alt=""/>
                                 </div>
                             </div>
                         </div>
@@ -684,57 +684,57 @@ const Oceano = () => {
                                             <p>The homepage of the dedicated sitoweb contains several animations and interactions and focuses on providing the user with key information to understand what Oceano is all about.</p>
                                         </div>
                                         <div className="container-img">
-                                            <img className="dekstop" src="images/OCEANO/DIGITAL%20WIREFRAME%20GIF/DEKSTOP/1.gif" alt=""/>
+                                            <img className="dekstop" src="images/OCEANO/DIGITAL%20WIREFRAME/DEKSTOP/1.gif" alt=""/>
                                         </div>
                                     </div>
                                     <div className="item-with-img">
                                         <div className="text-container">
-                                            <h4>All in one place</h4>
-                                            <p>Once logged in or signup, the user will be taken to the personal area where, within the first visible page, there will be all the most important features and those most used by the user.</p>
+                                            <h4>On-board and Settings</h4>
+                                            <p>A short and clear Onboard shows the main features of the application and immediately begins to raise awareness about marine ecology.
+                                                In the mobile app, users can also find an area where they can quickly and easily edit their information and payment methods.</p>
                                         </div>
-                                        <div className="container-img">
-                                            <img className="dekstop" src="images/BIBANK/DIGITAL%20WIREFRAME%20GIF/Dekstop/2.gif" alt=""/>
-                                            <img className="mobile-img" src="images/BIBANK/DIGITAL%20WIREFRAME%20GIF/Mobile/2.gif" alt=""/>
-                                        </div>
-                                    </div>
-                                    <div className="item-with-img">
-                                        <div className="text-container">
-                                            <h4>Column structure</h4>
-                                            <p>With the alternating column structure (2 and 1), investing is very simple, as the user has the ability to see the real-time performance of the stocks next to each financial product he or she is about to buy, all on a neat and intuitive page.</p>
-                                        </div>
-                                        <div className="container-img">
-                                            <img className="dekstop" src="images/BIBANK/DIGITAL%20WIREFRAME%20GIF/Dekstop/3.gif" alt=""/>
-                                            <img className="mobile-img" src="images/BIBANK/DIGITAL%20WIREFRAME%20GIF/Mobile/3.gif" alt=""/>
+                                        <div className="container-img-two-oceano">
+                                            <img className="dekstop" src="images/OCEANO/DIGITAL%20WIREFRAME/MOBILE/1.gif" alt=""/>
+                                            <img className="dekstop" src="images/OCEANO/DIGITAL%20WIREFRAME/MOBILE/2.gif" alt=""/>
                                         </div>
                                     </div>
                                     <div className="item-with-img">
                                         <div className="text-container">
-                                            <h4>Simple and effective flow</h4>
-                                            <p>Thanks to the simple and intuitive flow, investing and managing your cryptocurrencies is easy and stress-free. You can access the crypto area from the hamburger menu (mobile version) or directly from your personal balance.</p>
+                                            <h4>Donating is easy</h4>
+                                            <p>On both the mobile app and the dedicated sitoweb, I decided to use the same path to create consistency between the two products. The flow to get to the end of this task is simple and intuitive, as it is accomplished by following small and simple separate steps.</p>
                                         </div>
-                                        <div className="container-img">
-                                            <img className="dekstop" src="images/BIBANK/DIGITAL%20WIREFRAME%20GIF/Dekstop/4.gif" alt=""/>
-                                            <img className="mobile-img" src="images/BIBANK/DIGITAL%20WIREFRAME%20GIF/Mobile/4.gif" alt=""/>
-                                        </div>
-                                    </div>
-                                    <div className="item-with-img">
-                                        <div className="text-container">
-                                            <h4>Pay from wherever you want</h4>
-                                            <p>With advanced payment features you can make payments when and where you want, create recurring payments, donations, and manage your subscription plan, right from your computer or cell phone.</p>
-                                        </div>
-                                        <div className="container-img">
-                                            <img className="dekstop" src="images/BIBANK/DIGITAL%20WIREFRAME%20GIF/Dekstop/5.gif" alt=""/>
-                                            <img className="mobile-img" src="images/BIBANK/DIGITAL%20WIREFRAME%20GIF/Mobile/5.gif" alt=""/>
+                                        <div className="container-img-near">
+                                            <img className="dekstop mr-3" src="images/OCEANO/DIGITAL%20WIREFRAME/DEKSTOP/2.gif" alt=""/>
+                                            <img className="dekstop" src="images/OCEANO/DIGITAL%20WIREFRAME/MOBILE/3.gif" alt=""/>
                                         </div>
                                     </div>
                                     <div className="item-with-img">
                                         <div className="text-container">
-                                            <h4>Innovative features</h4>
-                                            <p>In Bibank you can find innovative features such as the "Money Box" section, in which you can manage your savings and create a piggy bank to grow your savings.</p>
+                                            <h4>Get to know the animals</h4>
+                                            <p>On both the mobile app and the dedicated sitoweb, users have the ability to see where their favorite animal lives and what areas it travels to during migrations. Green circles indicate the area where that animal's species is most localized.</p>
+                                        </div>
+                                        <div className="container-img-near">
+                                            <img className="dekstop mr-3" src="images/OCEANO/DIGITAL%20WIREFRAME/DEKSTOP/3.gif" alt=""/>
+                                            <img className="dekstop" src="images/OCEANO/DIGITAL%20WIREFRAME/MOBILE/4.gif" alt=""/>
+                                        </div>
+                                    </div>
+                                    <div className="item-with-img">
+                                        <div className="text-container">
+                                            <h4>Get to know the company</h4>
+                                            <p>Directly from the main menu, on the dedicated sitoweb, you can learn about the company through the "about" section. This section was made by building images and animations through Figma's "smart animate".</p>
                                         </div>
                                         <div className="container-img">
-                                            <img className="dekstop" src="images/BIBANK/DIGITAL%20WIREFRAME%20GIF/Dekstop/5.gif" alt=""/>
-                                            <img className="mobile-img" src="images/BIBANK/DIGITAL%20WIREFRAME%20GIF/Mobile/5.gif" alt=""/>
+                                            <img className="dekstop" src="images/OCEANO/DIGITAL%20WIREFRAME/DEKSTOP/4.gif" alt=""/>
+                                        </div>
+                                    </div>
+                                    <div className="item-with-img">
+                                        <div className="text-container">
+                                            <h4>Adopt and track</h4>
+                                            <p>Adopt your favorite animal from the comfort of your home and keep track of its movements via the mobile app. The mobile app also supports a "photos" feature where you can find up-to-date photos of your pet around the world.</p>
+                                        </div>
+                                        <div className="container-img-two-oceano">
+                                            <img className="dekstop" src="images/OCEANO/DIGITAL%20WIREFRAME/MOBILE/5.gif" alt=""/>
+                                            <img className="dekstop" src="images/OCEANO/DIGITAL%20WIREFRAME/MOBILE/6.gif" alt=""/>
                                         </div>
                                     </div>
                                 </div>
@@ -743,8 +743,115 @@ const Oceano = () => {
                     </div>
 
                     <div className="product-section product-section-only-img">
-                        <img src="images/DRONES/IMMAGINI/14.png" alt=""/>
+                        <img src="images/OCEANO/IMMAGINI/10.png" alt=""/>
                     </div>
+
+                    <div className="product-section-bc-black">
+                        <div className="product-section center-align">
+                            <div className="product-container-description">
+                                <div className="product-app w-60">
+                                    <span className="small-subtitle">The result</span>
+                                    <div className="line-product-100"></div>
+                                    <h3 className="title-section">Hi-fi Prototype</h3>
+                                    <p className="text-description">
+                                        To create the final prototype, I experimented with different types of animations and interactions, from vertical scrolling to "smart animates." I decided to use a main font with graces and a light gray background that could make the main content stand out through high contrast.
+                                    </p>
+                                </div>
+                                <div className="list-with-img w-80">
+                                    <div className="item-with-img">
+                                        <div className="text-container">
+                                            <h4><div className="bullet-white"></div>On-board (mobile app)</h4>
+                                            <p>The On-board process begins with a page introducing the app and then explaining the main functions from the app to the customer. Next follows the login screen, from where sign-up can also be done.</p>
+                                        </div>
+                                        <div className="container-img-hifi flex-center">
+                                            <img className="dekstop" src="images/OCEANO/MOCKUP/MOBILE/1.gif" alt=""/>
+                                        </div>
+                                    </div>
+                                    <div className="item-with-img">
+                                        <div className="text-container">
+                                            <h4><div className="bullet-white"></div>Login and Signup</h4>
+                                            <p>I decided to create a simple sign up, where the user is asked to enter only a few details, so that it is simple and stress-free.  I tried to keep the login/signup process consistent on both devices (computer and mobile phone).</p>
+                                        </div>
+                                        <div className="container-img">
+                                            <img className="dekstop" src="images/BIBANK/MOCKUP/Dekstop/2.gif" alt=""/>
+                                            <img className="mobile-img" src="images/BIBANK/MOCKUP/Mobile/2.gif" alt=""/>
+                                        </div>
+                                    </div>
+                                    <div className="item-with-img">
+                                        <div className="text-container">
+                                            <h4><div className="bullet-white"></div>Full control</h4>
+                                            <p>The first page the user sees as soon as he enters the personal are a is the "Dashboard." Here he can find all the main information (summarized) about his assets. Two other functions for monitoring one's account and assets are "Balance Sheet" and "Budget and Statistics".</p>
+                                        </div>
+                                        <div className="container-img">
+                                            <img className="dekstop" src="images/BIBANK/MOCKUP/Dekstop/3.gif" alt=""/>
+                                            <img className="mobile-img" src="images/BIBANK/MOCKUP/Mobile/3.gif" alt=""/>
+                                        </div>
+                                    </div>
+                                    <div className="item-with-img">
+                                        <div className="text-container">
+                                            <h4><div className="bullet-white"></div>Cryptocurrency</h4>
+                                            <p>Investing in cryptocurrencies is simple and safe with Bibank.
+                                                Create your own e-wallet and manage cryptocurrencies directly from your PC or smartphone.</p>
+                                        </div>
+                                        <div className="container-img">
+                                            <img className="dekstop" src="images/BIBANK/MOCKUP/Dekstop/4.gif" alt=""/>
+                                            <img className="mobile-img" src="images/BIBANK/MOCKUP/Mobile/4.gif" alt=""/>
+                                        </div>
+                                    </div>
+                                    <div className="item-with-img">
+                                        <div className="text-container">
+                                            <h4><div className="bullet-white"></div>All your financial product you need</h4>
+                                            <p>In Bibank you can choose different types of investments based on your favorite financial products. In addition, you can check the performance of your stocks from a simple interactive screen directly from your cell phone or smartphone.</p>
+                                        </div>
+                                        <div className="container-img">
+                                            <img className="dekstop" src="images/BIBANK/MOCKUP/Dekstop/5.gif" alt=""/>
+                                            <img className="mobile-img" src="images/BIBANK/MOCKUP/Mobile/5.gif" alt=""/>
+                                        </div>
+                                    </div>
+                                    <div className="item-with-img">
+                                        <div className="text-container">
+                                            <h4><div className="bullet-white"></div>Manage your cards</h4>
+                                            <p>You can check and create new debit/credit cards directly from your personal area. In addition, you can make online payments at the click of a button.</p>
+                                        </div>
+                                        <div className="container-img">
+                                            <img className="dekstop" src="images/BIBANK/MOCKUP/Dekstop/6.gif" alt=""/>
+                                            <img className="mobile-img" src="images/BIBANK/MOCKUP/Mobile/6.gif" alt=""/>
+                                        </div>
+                                    </div>
+                                    <div className="item-with-img">
+                                        <div className="text-container">
+                                            <h4><div className="bullet-white"></div>Pay from wherever you want</h4>
+                                            <p>Make payments or request money through Bibank quickly and easily. Create regular payments for subscriptions and bills and make donations to your favorite charity.</p>
+                                        </div>
+                                        <div className="container-img">
+                                            <img className="dekstop" src="images/BIBANK/MOCKUP/Dekstop/7.gif" alt=""/>
+                                            <img className="mobile-img" src="images/BIBANK/MOCKUP/Mobile/7.gif" alt=""/>
+                                        </div>
+                                    </div>
+                                    <div className="item-two-images d-flex">
+                                        <div className="w-50 flex-center">
+                                            <img src="images/BIBANK/Mockup/Dekstop/5.gif" alt=""/>
+                                        </div>
+                                        <div className="w-50 flex-center">
+                                            <img src="images/BIBANK/Mockup/Mobile/5.gif" alt=""/>
+                                        </div>
+                                    </div>
+                                    <div className="item-with-img">
+                                        <div className="text-container">
+                                            <h4><div className="bullet-white"></div>Manage your subscription</h4>
+                                            <p>Manage your Bibank membership directly from your personal area. Change subscription plans or apply for new debit/credit cards in a few simple steps.</p>
+                                        </div>
+                                        <div className="container-img">
+                                            <img className="dekstop" src="images/BIBANK/MOCKUP/Dekstop/8.gif" alt=""/>
+                                            <img className="mobile-img" src="images/BIBANK/MOCKUP/Mobile/8.gif" alt=""/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
                     <div className="product-section product-section-only-img">
                         <img src="images/DRONES/IMMAGINI/19.png" alt=""/>
                     </div>
