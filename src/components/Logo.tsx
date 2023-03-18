@@ -9,7 +9,7 @@ const Logo = () => {
 
     const location = useLocation();
     return (
-        <div className="logo">
+        <div className="logo animate__animated animate__fadeIn animate__slow">
             <Link to="/main" >
                 <img src="/images/HOMEPAGE/Logo.png" alt="" />
             </Link>

@@ -741,7 +741,7 @@ const Fitup = () => {
 
 
                     <div className="product-section product-section-only-img">
-                        <img src="images/FITUP/IMMAGINI/10.png" alt=""/>
+                        <img src="images/FITUP/IMMAGINI/9.png" alt=""/>
                     </div>
 
                     <div className="product-section-bc-black">
