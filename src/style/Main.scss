@@ -1,12 +1,19 @@
 .general-container {
   position: relative;
   height: 100vh;
-  .container-main {
+  .background-container {
+    background: linear-gradient(rgba(0, 0, 0, 0.93),rgba(0, 0, 0, 0.90) , rgba(0, 0, 0, 0.80));
     width: 87vw;
+    height: 100%;
+    @media screen and (max-width: 768px) {
+      width: 100vw;
+    }
+  }
+  .container-main {
+    width: 100%;
     height: 100%;
     position: relative;
     overflow: hidden;
-    background: linear-gradient(rgba(0, 0, 0, 0.93),rgba(0, 0, 0, 0.90) , rgba(0, 0, 0, 0.80));
 
     .instruction {
       color: white;
@@ -174,10 +181,6 @@
           font-weight: 300;
         }
       }
-    }
-
-    @media screen and (max-width: 768px) {
-      width: 100vw;
     }
   }
 }
