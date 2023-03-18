@@ -769,81 +769,60 @@ const Oceano = () => {
                                     </div>
                                     <div className="item-with-img">
                                         <div className="text-container">
-                                            <h4><div className="bullet-white"></div>Login and Signup</h4>
-                                            <p>I decided to create a simple sign up, where the user is asked to enter only a few details, so that it is simple and stress-free.  I tried to keep the login/signup process consistent on both devices (computer and mobile phone).</p>
+                                            <h4><div className="bullet-white"></div>Homepage (dedicated website)</h4>
+                                            <p>For the dedicated sitoweb, I decided to use illustrations in the first part of the homepage to create a visual that is both beautiful to look at and interactive. From the homepage one can then access all the functions of Oceano, including donations and adoptions.</p>
                                         </div>
                                         <div className="container-img">
-                                            <img className="dekstop" src="images/BIBANK/MOCKUP/Dekstop/2.gif" alt=""/>
-                                            <img className="mobile-img" src="images/BIBANK/MOCKUP/Mobile/2.gif" alt=""/>
+                                            <img className="dekstop" src="images/OCEANO/MOCKUP/DEKSTOP/1.gif" alt=""/>
                                         </div>
                                     </div>
                                     <div className="item-with-img">
                                         <div className="text-container">
-                                            <h4><div className="bullet-white"></div>Full control</h4>
-                                            <p>The first page the user sees as soon as he enters the personal are a is the "Dashboard." Here he can find all the main information (summarized) about his assets. Two other functions for monitoring one's account and assets are "Balance Sheet" and "Budget and Statistics".</p>
+                                            <h4><div className="bullet-white"></div>Simple donation flow</h4>
+                                            <p>The donation process, similar for both the dedicated sitoweb and the mobile app, follows a very simple flow made in steps. In the dekstop version, in order to create a more interactive product, I decided to work with Figma's "smart animates."
+                                                I used illustrations to represent the animals to be chosen.</p>
                                         </div>
                                         <div className="container-img">
-                                            <img className="dekstop" src="images/BIBANK/MOCKUP/Dekstop/3.gif" alt=""/>
-                                            <img className="mobile-img" src="images/BIBANK/MOCKUP/Mobile/3.gif" alt=""/>
+                                            <img className="dekstop" src="images/OCEANO/MOCKUP/DEKSTOP/2.gif" alt=""/>
+                                            <img className="mobile-img" src="images/OCEANO/MOCKUP/MOBILE/2.gif" alt=""/>
                                         </div>
                                     </div>
                                     <div className="item-with-img">
                                         <div className="text-container">
-                                            <h4><div className="bullet-white"></div>Cryptocurrency</h4>
-                                            <p>Investing in cryptocurrencies is simple and safe with Bibank.
-                                                Create your own e-wallet and manage cryptocurrencies directly from your PC or smartphone.</p>
+                                            <h4><div className="bullet-white"></div>Interactive map</h4>
+                                            <p>I created interactive maps to inform the user in a fun way about where the chosen animal lives and moves to find food. Users can look up information about the animals before proceeding with donation or adoption.</p>
                                         </div>
                                         <div className="container-img">
-                                            <img className="dekstop" src="images/BIBANK/MOCKUP/Dekstop/4.gif" alt=""/>
-                                            <img className="mobile-img" src="images/BIBANK/MOCKUP/Mobile/4.gif" alt=""/>
+                                            <img className="dekstop" src="images/OCEANO/MOCKUP/DEKSTOP/3.gif" alt=""/>
+                                            <img className="mobile-img" src="images/OCEANO/MOCKUP/MOBILE/3.gif" alt=""/>
                                         </div>
                                     </div>
                                     <div className="item-with-img">
                                         <div className="text-container">
-                                            <h4><div className="bullet-white"></div>All your financial product you need</h4>
-                                            <p>In Bibank you can choose different types of investments based on your favorite financial products. In addition, you can check the performance of your stocks from a simple interactive screen directly from your cell phone or smartphone.</p>
+                                            <h4><div className="bullet-white"></div>Intuitive adoption process</h4>
+                                            <p>The adoption process, similar to the donation process, is very simple and intuitive. In addition to choosing your preferred payment method, you can name your new marine animal.</p>
                                         </div>
                                         <div className="container-img">
-                                            <img className="dekstop" src="images/BIBANK/MOCKUP/Dekstop/5.gif" alt=""/>
-                                            <img className="mobile-img" src="images/BIBANK/MOCKUP/Mobile/5.gif" alt=""/>
+                                            <img className="dekstop" src="images/OCEANO/MOCKUP/DEKSTOP/4.gif" alt=""/>
+                                            <img className="mobile-img" src="images/OCEANO/MOCKUP/MOBILE/4.gif" alt=""/>
                                         </div>
                                     </div>
                                     <div className="item-with-img">
                                         <div className="text-container">
-                                            <h4><div className="bullet-white"></div>Manage your cards</h4>
-                                            <p>You can check and create new debit/credit cards directly from your personal area. In addition, you can make online payments at the click of a button.</p>
+                                            <h4><div className="bullet-white"></div>Track your animal (mobile app)</h4>
+                                            <p>Thanks to the "track your pet" function, you can check your pet's location at any time. I think this feature is very important, as the user can create an emotional bond with the animal they have adopted</p>
                                         </div>
-                                        <div className="container-img">
-                                            <img className="dekstop" src="images/BIBANK/MOCKUP/Dekstop/6.gif" alt=""/>
-                                            <img className="mobile-img" src="images/BIBANK/MOCKUP/Mobile/6.gif" alt=""/>
-                                        </div>
-                                    </div>
-                                    <div className="item-with-img">
-                                        <div className="text-container">
-                                            <h4><div className="bullet-white"></div>Pay from wherever you want</h4>
-                                            <p>Make payments or request money through Bibank quickly and easily. Create regular payments for subscriptions and bills and make donations to your favorite charity.</p>
-                                        </div>
-                                        <div className="container-img">
-                                            <img className="dekstop" src="images/BIBANK/MOCKUP/Dekstop/7.gif" alt=""/>
-                                            <img className="mobile-img" src="images/BIBANK/MOCKUP/Mobile/7.gif" alt=""/>
-                                        </div>
-                                    </div>
-                                    <div className="item-two-images d-flex">
-                                        <div className="w-50 flex-center">
-                                            <img src="images/BIBANK/Mockup/Dekstop/5.gif" alt=""/>
-                                        </div>
-                                        <div className="w-50 flex-center">
-                                            <img src="images/BIBANK/Mockup/Mobile/5.gif" alt=""/>
+                                        <div className="container-img-hifi flex-center">
+                                            <img className="mobile-img" src="images/OCEANO/MOCKUP/MOBILE/5.gif" alt=""/>
                                         </div>
                                     </div>
                                     <div className="item-with-img">
                                         <div className="text-container">
-                                            <h4><div className="bullet-white"></div>Manage your subscription</h4>
-                                            <p>Manage your Bibank membership directly from your personal area. Change subscription plans or apply for new debit/credit cards in a few simple steps.</p>
+                                            <h4><div className="bullet-white"></div>About (dedicated website)</h4>
+                                            <p>The about section is useful for deriving information, mission and mindset of the company. In line with the rest of the site, I decided to use creative illustrations and create animated transactions.</p>
                                         </div>
                                         <div className="container-img">
-                                            <img className="dekstop" src="images/BIBANK/MOCKUP/Dekstop/8.gif" alt=""/>
-                                            <img className="mobile-img" src="images/BIBANK/MOCKUP/Mobile/8.gif" alt=""/>
+                                            <img className="dekstop" src="images/OCEANO/MOCKUP/DEKSTOP/5.gif" alt=""/>
                                         </div>
                                     </div>
                                 </div>
@@ -853,7 +832,7 @@ const Oceano = () => {
 
 
                     <div className="product-section product-section-only-img">
-                        <img src="images/DRONES/IMMAGINI/19.png" alt=""/>
+                        <img src="images/OCEANO/IMMAGINI/16.png" alt=""/>
                     </div>
 
                     <div className="product-section center-align">
@@ -861,17 +840,13 @@ const Oceano = () => {
                             <div className="product-app">
                                 <span className="small-subtitle">What have I learnt?</span>
                                 <div className="line-product-100 w-60"></div>
-                                <h3 className="title-section">How I love the design</h3>
+                                <h3 className="title-section">Creating solutions to real problems</h3>
                                 <p className="text-description">
-                                    Drones was my first Ux/Ui Design project, developed during Google's Ux Design course. It was my first approach to the world of User Experience. Among the things I learnt during this project there is definitely one that is fundamental in the whole world of design: putting the user at the centre.
-                                    I didn't think, before I started on this path, that research into users' behaviour, emotions and habits was so important for creating effective products with good usability.
+                                    Oceano is a project made to try to solve a real social problem, namely marine pollution and the resulting danger to aquatic animals. From a technical point of view, during this project I learned and tried experimenting with new transactions and animations, using different effects, including smart animations, to try to make the design not only more functional, but also more fun and interactive.
                                 </p>
                                 <p className="text-description">
-                                    It was also my first approach with software used to create digital prototypes, such as Figma. I learnt the basic functions of this software through practice, first through wireframing and then through mockup creation.
-                                    It is really important to continuously test the product, not only at the end but during the entire creation process.
-                                </p>
-                                <p className="text-description">
-                                    Through this project, although very basic and certainly with several mistakes and things to improve, I understood how this world (that of design) can be MY world.
+                                    It was very inspiring, during the interviews conducted, to understand users' thoughts on such important and sensitive issues.
+                                    One of the most important things I realized during this project is the importance of users' opinions and sensibilities; in fact, they are able to greatly influence your design idea
                                 </p>
                             </div>
                         </div>
