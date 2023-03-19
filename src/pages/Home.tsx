@@ -1,15 +1,9 @@
 import React, {useEffect} from 'react';
-import {BrowserRouter as Router, Link, Route, Routes} from "react-router-dom";
-
-function hideTransition () {
-    let el: HTMLElement | null = document.querySelector('.center-block-flex');
-
-    if(el != null) {
-        el.style.opacity = '0';
-    }
-}
+import {BrowserRouter as Router, Link, Route, Routes, useNavigate} from "react-router-dom";
 
 const Home = () => {
+
+    const navigate = useNavigate();
     useEffect(() => {
         let el: HTMLElement | null = document.querySelector('.center-block-flex');
 
@@ -19,6 +13,20 @@ const Home = () => {
         }
 
     },[])
+
+
+    function hideTransition (e:any) {
+        e.preventDefault();
+        let el: HTMLElement | null = document.querySelector('.center-block-flex');
+
+        if(el != null) {
+            el.style.opacity = '0';
+        }
+
+        setTimeout(() => {
+            navigate('/main')
+        },3000)
+    }
 
 
     return (
