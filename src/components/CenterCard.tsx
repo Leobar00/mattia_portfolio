@@ -5,7 +5,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import {Mousewheel} from "swiper";
-import {Link, NavLink, useLocation} from 'react-router-dom';
+import {Link, NavLink, useLocation, useNavigate} from 'react-router-dom';
 import {CSSTransition} from 'react-transition-group';
 import Drone from "../pages/Drone";
 import 'animate.css';
@@ -50,6 +50,7 @@ function changeColorCard(arrayUrlImg: Array<any>)
 const CenterCard = () => {
     const [arrayUrlImg,setUrlImg] = useState(urlImg)
     const [isEnter,setIsEnter] = useState(false)
+    const navigate = useNavigate();
 
     function startAnimation(e:any)
     {
@@ -61,7 +62,7 @@ const CenterCard = () => {
 
                 imgActive.style.animation = 'transition-img-center 2s linear';
                 setTimeout(() => {
-                    window.location.href = linkImg!.getAttribute('href') as string;
+                    navigate(linkImg!.getAttribute('href') as string);
                 },1800)
             }
 

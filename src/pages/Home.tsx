@@ -1,6 +1,13 @@
 import React, {useEffect} from 'react';
 import {BrowserRouter as Router, Link, Route, Routes} from "react-router-dom";
 
+function hideTransition () {
+    let el: HTMLElement | null = document.querySelector('.center-block-flex');
+
+    if(el != null) {
+        el.style.opacity = '0';
+    }
+}
 
 const Home = () => {
     useEffect(() => {
@@ -25,7 +32,7 @@ const Home = () => {
                         Welcome to design world.
                     </p>
                 </div>
-                <Link to="/main" >Explore</Link>
+                <Link to="/main" onClick={hideTransition}>Explore</Link>
             </div>
         </div>
     )
