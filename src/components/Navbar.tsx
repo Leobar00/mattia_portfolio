@@ -5,13 +5,14 @@ const Navbar = () => {
 
     setTimeout(() => {
         document.querySelector('.sidebar-right')?.classList.remove('d-none');
-    },2000)
+    },500)
 
     return (
-      <Link to="/menu" className="sidebar-right animate__animated animate__fadeIn animate__slower d-none">
-          <div className="circle"></div>
-      </Link>
-
+        <div className="initial-background">
+          <Link to="/menu" className="sidebar-right animate__animated animate__fadeIn animate__slower d-none">
+              <div className="circle"></div>
+          </Link>
+        </div>
     );
 }
 
