@@ -211,8 +211,7 @@ const Drone = () => {
                                 slidesPerView={2}
                                 spaceBetween={40}
                                 grabCursor={true}
-                                freeMode={true}
-                                modules={[FreeMode, Pagination]}
+                                modules={[Pagination]}
                                 className="mySwiper"
                             >
                                 <SwiperSlide>
@@ -382,8 +381,7 @@ const Drone = () => {
                                 <div className="slider-card-container">
                                     <Swiper
                                         grabCursor={true}
-                                        freeMode={true}
-                                        modules={[FreeMode, Pagination]}
+                                        modules={[Pagination]}
                                         className="improvement-opportunites"
                                         breakpoints= {{
                                             // when window width is >= 320px
@@ -476,8 +474,7 @@ const Drone = () => {
                                 <div className="slider-card-container">
                                     <Swiper
                                         grabCursor={true}
-                                        freeMode={true}
-                                        modules={[FreeMode, Pagination]}
+                                        modules={[Pagination]}
                                         className="storyboard"
                                         breakpoints= {{
                                             1040: {

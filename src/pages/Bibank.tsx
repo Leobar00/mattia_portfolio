@@ -207,8 +207,7 @@ const Bibank = () => {
                                 slidesPerView={2}
                                 spaceBetween={40}
                                 grabCursor={true}
-                                freeMode={true}
-                                modules={[FreeMode, Pagination]}
+                                modules={[Pagination]}
                                 className="mySwiper"
                             >
                                 <SwiperSlide>
@@ -527,8 +526,7 @@ const Bibank = () => {
                                     <div className="slider-card-container">
                                         <Swiper
                                             grabCursor={true}
-                                            freeMode={true}
-                                            modules={[FreeMode, Pagination]}
+                                            modules={[Pagination]}
                                             className="storyboard"
                                             breakpoints= {{
                                                 1040: {
@@ -642,8 +640,7 @@ const Bibank = () => {
                                 <div className="slider-card-container">
                                     <Swiper
                                         grabCursor={true}
-                                        freeMode={true}
-                                        modules={[FreeMode, Pagination]}
+                                        modules={[Pagination]}
                                         className="storyboard"
                                         breakpoints= {{
                                             1040: {
