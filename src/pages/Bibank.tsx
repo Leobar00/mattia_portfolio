@@ -16,11 +16,11 @@ const Bibank = () => {
                 <div className="product-container">
                     <div className="product-container-description center-align">
                         <div >
-                            <div className="line-product"></div>
-                            <p className="product-subtitle">Project</p>
-                            <p className="product-title">Bibank responsive website</p>
+                            <div className="line-product animate__animated animate__slideInLeft animate__slower"></div>
+                            <p className="product-subtitle animate__animated animate__slideInLeft animate__slower">Project</p>
+                            <p className="product-title animate__animated animate__fadeInTopRight animate__slower">Bibank responsive website</p>
                         </div>
-                        <div>
+                        <div className="animate__animated animate__slideInRight animate__slower">
                             <div className="line-product"></div>
                             <p className="product-subtitle">My role</p>
                             <p className="product-title">Ux/Ui Design</p>
@@ -31,8 +31,8 @@ const Bibank = () => {
                                     <p>Go to prototype</p>
                                 </div>
                             </div>
-                            <p className="product-subtitle">Project duration</p>
-                            <p className="product-title">Dec - 2021</p>
+                            <p className="product-subtitle animate__animated animate__slideInLeft animate__slower">Project duration</p>
+                            <p className="product-title animate__animated animate__slideInLeft animate__slower">Dec - 2021</p>
                         </div>
                         <div>
                             <div className="line-product"></div>

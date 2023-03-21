@@ -17,11 +17,11 @@ const Fitup = () => {
                 <div className="product-container">
                     <div className="product-container-description center-align">
                         <div >
-                            <div className="line-product"></div>
-                            <p className="product-subtitle">Project</p>
-                            <p className="product-title">Fitup mobile app</p>
+                            <div className="line-product animate__animated animate__slideInLeft animate__slower"></div>
+                            <p className="product-subtitle animate__animated animate__slideInLeft animate__slower">Project</p>
+                            <p className="product-title animate__animated animate__fadeInTopRight animate__slower">Fitup mobile app</p>
                         </div>
-                        <div>
+                        <div className="animate__animated animate__slideInRight animate__slower">
                             <div className="line-product"></div>
                             <p className="product-subtitle">My role</p>
                             <p className="product-title">Ux/Ui Design</p>
@@ -32,8 +32,8 @@ const Fitup = () => {
                                     <p>Go to prototype</p>
                                 </div>
                             </div>
-                            <p className="product-subtitle">Project duration</p>
-                            <p className="product-title">Mar - 2023</p>
+                            <p className="product-subtitle animate__animated animate__slideInLeft animate__slower">Project duration</p>
+                            <p className="product-title animate__animated animate__slideInLeft animate__slower">Mar - 2023</p>
                         </div>
                         <div>
                             <div className="line-product"></div>
