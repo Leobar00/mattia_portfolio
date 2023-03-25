@@ -774,6 +774,88 @@ const Bibank = () => {
                     <div className="product-section product-section-only-img">
                         <img src="images/BIBANK/IMMAGINI/10.png" alt=""/>
                     </div>
+
+                    <div className="graphic-palette">
+                        <div className="product-section center-align" style={{paddingBottom:'0px!important',paddingTop:'3rem',minHeight:'0'}}>
+                            <div className="product-container-description w-80">
+                                <div className="product-app">
+                                    <span className="small-subtitle">Mockup</span>
+                                    <div className="line-product-100 w-60"></div>
+                                    <h3 className="title-section">Design system</h3>
+                                    <p className="text-description w-70">
+                                        To create the mockup and subsequent hi-fi prototype, I tried to use simple, contrasting colors, easily readable fonts, and a two-column structure.
+                                        Information, depending on the category it belongs to, is divided within boxes to facilitate user navigation.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="palette-title">
+                            <p><strong>Colors / 01</strong></p>
+                        </div>
+                        <div className="grid-color-palette">
+                            <div className="item item1" style={{ backgroundColor:'white' }}></div>
+                            <div className="item item2" style={{ backgroundColor:'#000000' }}>
+                                <strong>Black</strong>
+                                <p>Hex: 000000</p>
+                            </div>
+                            <div className="item item4" style={{ backgroundColor:'#DCDCDC' }}>
+                                <strong>Light gray</strong>
+                                <p>Hex:DCDCDC</p>
+                            </div>
+                            <div className="item item5" style={{ backgroundColor:'#EBEBEB' }}>
+                                <strong>Super light gray</strong>
+                                <p>Hex: EBEBEB</p>
+                            </div>
+                            <div className="item item6" style={{ backgroundColor:'#FFEB85' }}>
+                                <strong>Sand</strong>
+                                <p>Hex: FFEB85</p>
+                            </div>
+                            <div className="item item7" style={{ backgroundColor:'#4FD953' }}>
+                                <strong>Green</strong>
+                                <p>Hex: 4FD953</p>
+                            </div>
+                            <div className="item item8" style={{ backgroundColor:'#FF0000' }}>
+                                <strong>Red</strong>
+                                <p>Hex: FF0000</p>
+                            </div>
+                        </div>
+                        <div className="product-section-bc-black">
+                            <div className="palette-title">
+                                <p><strong>Fonts / 02</strong></p>
+                            </div>
+                            <div className="center-align">
+                                <p className="graphic-font-title">Microsoft Tai Le</p>
+                                <div className="row-flex">
+                                    <img src="images/BIBANK/IMMAGINI/12.png" alt=""/>
+                                    <div className="font-table">
+                                        <div className="uppercase-letter">ABCDEFGHILMNOPQRSTUVZ</div>
+                                        <div className="square-font">
+                                            <p>*Weight</p>
+                                            <strong>(Bold)</strong>
+                                        </div>
+                                        <div className="lowercase-letter">abcdefghijklmnoprstuvz</div>
+                                        <div className="bold-letter"><span>Aa</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="center-align">
+                                <p className="graphic-font-title">Noto Sans Arabi UI</p>
+                                <div className="row-flex">
+                                    <img src="images/BIBANK/IMMAGINI/13.png" alt=""/>
+                                    <div className="font-table">
+                                        <div className="uppercase-letter">ABCDEFGHILMNOPQRSTUVZ</div>
+                                        <div className="square-font">
+                                            <p>*Weight</p>
+                                            <strong>(Regular)</strong>
+                                        </div>
+                                        <div className="lowercase-letter">abcdefghijklmnoprstuvz</div>
+                                        <div className="bold-letter"><span>Aa</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <div className="product-section-bc-black">
                         <div className="product-section center-align">
                             <div className="product-container-description">

@@ -304,6 +304,9 @@
   top: 0;
   right: 0;
   width: 13vw;
+  @media screen and (max-width: 768px){
+    display: none;
+  }
   .sidebar-right {
     position: absolute;
     right: 0;
