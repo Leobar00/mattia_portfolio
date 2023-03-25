@@ -741,6 +741,86 @@ const Fitup = () => {
                         <img src="images/FITUP/IMMAGINI/9.png" alt=""/>
                     </div>
 
+                    <div className="graphic-palette">
+                        <div className="product-section center-align" style={{paddingBottom:'0px!important',paddingTop:'3rem',minHeight:'0'}}>
+                            <div className="product-container-description w-80">
+                                <div className="product-app">
+                                    <span className="small-subtitle">Mockup</span>
+                                    <div className="line-product-100 w-60"></div>
+                                    <h3 className="title-section">Design system</h3>
+                                    <p className="text-description w-70">
+                                        To create FitUp's design system, I used different kinds of colors. The color of the CTAs is black, while I also used brighter colors in other sections.  I chosed fonts without graces, often in bold, trying to bring lightness and modernity within the product.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="palette-title">
+                            <p><strong>Colors / 01</strong></p>
+                        </div>
+                        <div className="grid-color-palette" >
+                            <div className="item item1" style={{ backgroundColor:'white' }}></div>
+                            <div className="item item2" style={{ backgroundColor:'#000000' }}>
+                                <strong>Black Dark</strong>
+                                <p>Hex: 000000</p>
+                            </div>
+                            <div className="item item4" style={{ backgroundColor:'#04CB00' }}>
+                                <strong>Light green</strong>
+                                <p>Hex: 04CB00</p>
+                            </div>
+                            <div className="item item5" style={{ backgroundColor:'#048B02' }}>
+                                <strong>Dark green</strong>
+                                <p>Hex: 048B02</p>
+                            </div>
+                            <div className="item item6" style={{ backgroundColor:'#7C99FF' }}>
+                                <strong>Light Blue</strong>
+                                <p>Hex: 7C99FF</p>
+                            </div>
+                            <div className="item item7" style={{ backgroundColor:'#F2A9D1' }}>
+                                <strong>Pink</strong>
+                                <p>Hex: F2A9D1</p>
+                            </div>
+                            <div className="item item8" style={{ backgroundColor:'#F5F5F5',color:'black' }}>
+                                <strong>Light Grey</strong>
+                                <p>Hex: F5F5F5</p>
+                            </div>
+                        </div>
+                        <div className="product-section-bc-black">
+                            <div className="palette-title">
+                                <p><strong>Fonts / 02</strong></p>
+                            </div>
+                            <div className="center-align">
+                                <p className="graphic-font-title">PlayFarDisplay</p>
+                                <div className="row-flex">
+                                    <img src="images/OCEANO/IMMAGINI/12.png" alt=""/>
+                                    <div className="font-table">
+                                        <div className="uppercase-letter">ABCDEFGHILMNOPQRSTUVZ</div>
+                                        <div className="square-font">
+                                            <p>*Weight</p>
+                                            <strong>(Bold)</strong>
+                                        </div>
+                                        <div className="lowercase-letter">abcdefghijklmnoprstuvz</div>
+                                        <div className="bold-letter"><span>Aa</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="center-align">
+                                <p className="graphic-font-title">Noto Sans Arabic UI</p>
+                                <div className="row-flex">
+                                    <img src="images/OCEANO/IMMAGINI/13.png" alt=""/>
+                                    <div className="font-table">
+                                        <div className="uppercase-letter">ABCDEFGHILMNOPQRSTUVZ</div>
+                                        <div className="square-font">
+                                            <p>*Weight</p>
+                                            <strong>(Regular)</strong>
+                                        </div>
+                                        <div className="lowercase-letter">abcdefghijklmnoprstuvz</div>
+                                        <div className="bold-letter"><span>Aa</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <div className="product-section-bc-black">
                         <div className="product-section center-align">
                             <div className="product-container-description">
@@ -829,6 +909,7 @@ const Fitup = () => {
                     <div className="product-section product-section-only-img">
                         <img src="images/FITUP/IMMAGINI/16.png" alt=""/>
                     </div>
+
 
                     <div className="product-section center-align">
                         <div className="product-container-description w-80">

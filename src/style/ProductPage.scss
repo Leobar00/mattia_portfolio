@@ -932,6 +932,7 @@ html {
       align-items: start;
       flex-direction: column;
       padding: 1.5rem;
+      color: white;
       strong {
         font-weight: 600;
         font-size: 1.3rem;
@@ -944,7 +945,6 @@ html {
     }
 
     .item2 {
-      color: white!important;
       grid-area: b;
     }
 
@@ -966,12 +966,10 @@ html {
 
     .item7 {
       grid-area: g;
-      color: white!important;
     }
 
     .item8 {
       grid-area: h;
-      color: white!important;
     }
   }
 }

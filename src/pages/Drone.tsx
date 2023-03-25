@@ -616,6 +616,78 @@ const Drone = () => {
                         <img src="images/DRONES/IMMAGINI/19.png" alt=""/>
                     </div>
 
+                    <div className="graphic-palette">
+                        <div className="product-section center-align" style={{paddingBottom:'0px!important',paddingTop:'3rem',minHeight:'0'}}>
+                            <div className="product-container-description w-80">
+                                <div className="product-app">
+                                    <span className="small-subtitle">Mockup</span>
+                                    <div className="line-product-100 w-60"></div>
+                                    <h3 className="title-section">Design system</h3>
+                                    <p className="text-description w-70">
+                                        I tried to keep the elements of the design system as consistent as possible in terms of shapes, colours and meaning. I used linear and rounded fonts, without graces, to give a more modern feel.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="palette-title">
+                            <p><strong>Colors / 01</strong></p>
+                        </div>
+                        <div className="grid-color-palette" style={{gridTemplateRows: "repeat(2, 1fr)",gridTemplateColumns: "repeat(7, 1fr)",gridTemplateAreas: `"a a b b b b b""d d e e f f f"`}}>
+                            <div className="item item1" style={{ backgroundColor:'white' }}></div>
+                            <div className="item item2" style={{ background:'linear-gradient(180deg, #446DFF 0%, rgba(255, 0, 199, 0.5) 41.98%, rgba(255, 75, 253, 0.3) 100%)' }}>
+                                <strong>Drones</strong>
+                                <p>Hex: 446DFF FF00C7 FF4BFD</p>
+                            </div>
+                            <div className="item item4" style={{ backgroundColor:'#FF91B2' }}>
+                                <strong>Piggy Pink</strong>
+                                <p>Hex: FF91B2</p>
+                            </div>
+                            <div className="item item5" style={{ backgroundColor:'#FF6593' }}>
+                                <strong>Dark Pink</strong>
+                                <p>Hex: FF6593</p>
+                            </div>
+                            <div className="item item6" style={{ backgroundColor:'#6659FF' }}>
+                                <strong>Blue sky</strong>
+                                <p>Hex: 6659FF</p>
+                            </div>
+                        </div>
+                        <div className="product-section-bc-black">
+                            <div className="palette-title">
+                                <p><strong>Fonts / 02</strong></p>
+                            </div>
+                            <div className="center-align">
+                                <p className="graphic-font-title">Montserrat</p>
+                                <div className="row-flex">
+                                    <img src="images/DRONES/IMMAGINI/16.png" alt=""/>
+                                    <div className="font-table">
+                                        <div className="uppercase-letter">ABCDEFGHILMNOPQRSTUVZ</div>
+                                        <div className="square-font">
+                                            <p>*Weight</p>
+                                            <strong>(Bold)</strong>
+                                        </div>
+                                        <div className="lowercase-letter">abcdefghijklmnoprstuvz</div>
+                                        <div className="bold-letter"><span>Aa</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="center-align">
+                                <p className="graphic-font-title">Hind Madurai</p>
+                                <div className="row-flex">
+                                    <img src="images/DRONES/IMMAGINI/17.png" alt=""/>
+                                    <div className="font-table">
+                                        <div className="uppercase-letter">ABCDEFGHILMNOPQRSTUVZ</div>
+                                        <div className="square-font">
+                                            <p>*Weight</p>
+                                            <strong>(Regular)</strong>
+                                        </div>
+                                        <div className="lowercase-letter">abcdefghijklmnoprstuvz</div>
+                                        <div className="bold-letter"><span>Aa</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <div className="product-section center-align">
                         <div className="product-container-description w-80">
                             <div className="product-app">

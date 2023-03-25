@@ -798,15 +798,15 @@ const Bibank = () => {
                                 <strong>Black</strong>
                                 <p>Hex: 000000</p>
                             </div>
-                            <div className="item item4" style={{ backgroundColor:'#DCDCDC' }}>
+                            <div className="item item4" style={{ backgroundColor:'#DCDCDC',color:'black' }}>
                                 <strong>Light gray</strong>
                                 <p>Hex:DCDCDC</p>
                             </div>
-                            <div className="item item5" style={{ backgroundColor:'#EBEBEB' }}>
+                            <div className="item item5" style={{ backgroundColor:'#EBEBEB',color:'black' }}>
                                 <strong>Super light gray</strong>
                                 <p>Hex: EBEBEB</p>
                             </div>
-                            <div className="item item6" style={{ backgroundColor:'#FFEB85' }}>
+                            <div className="item item6" style={{ backgroundColor:'#FFEB85',color:'black' }}>
                                 <strong>Sand</strong>
                                 <p>Hex: FFEB85</p>
                             </div>

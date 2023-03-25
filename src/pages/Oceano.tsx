@@ -743,6 +743,86 @@ const Oceano = () => {
                         <img src="images/OCEANO/IMMAGINI/10.png" alt=""/>
                     </div>
 
+                    <div className="graphic-palette">
+                        <div className="product-section center-align" style={{paddingBottom:'0px!important',paddingTop:'3rem',minHeight:'0'}}>
+                            <div className="product-container-description w-80">
+                                <div className="product-app">
+                                    <span className="small-subtitle">Mockup</span>
+                                    <div className="line-product-100 w-60"></div>
+                                    <h3 className="title-section">Design system</h3>
+                                    <p className="text-description w-70">
+                                        To create the design system of Oceano, I used light colors, with shades ranging from gray and light blue to recall the colors of the sea. The two fonts chosen (one with graces and one without) create a sharp and pleasant contrast that is clear and intuitive for the user.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="palette-title">
+                            <p><strong>Colors / 01</strong></p>
+                        </div>
+                        <div className="grid-color-palette" >
+                            <div className="item item1" style={{ backgroundColor:'white' }}></div>
+                            <div className="item item2" style={{ backgroundColor:'#386D9E' }}>
+                                <strong>Blue Ocean</strong>
+                                <p>Hex: 386D9E</p>
+                            </div>
+                            <div className="item item4" style={{ backgroundColor:'#00C2FF',color:'black' }}>
+                                <strong>Light Blue</strong>
+                                <p>Hex: 00C2FF</p>
+                            </div>
+                            <div className="item item5" style={{ backgroundColor:'#54D6FF',color:'black' }}>
+                                <strong>Light Blue (2)</strong>
+                                <p>Hex: 54D6FF</p>
+                            </div>
+                            <div className="item item6" style={{ backgroundColor:'#7FE0FF',color:'black' }}>
+                                <strong>Light Blue (3)</strong>
+                                <p>Hex: 7FE0FF</p>
+                            </div>
+                            <div className="item item7" style={{ backgroundColor:'#B2ECFF',color:'black' }}>
+                                <strong>Light Blue (4)</strong>
+                                <p>Hex: B2ECFF</p>
+                            </div>
+                            <div className="item item8" style={{ backgroundColor:'#F5F5F5',color:'black' }}>
+                                <strong>Light Grey</strong>
+                                <p>Hex: F5F5F5</p>
+                            </div>
+                        </div>
+                        <div className="product-section-bc-black">
+                            <div className="palette-title">
+                                <p><strong>Fonts / 02</strong></p>
+                            </div>
+                            <div className="center-align">
+                                <p className="graphic-font-title">PlayFarDisplay</p>
+                                <div className="row-flex">
+                                    <img src="images/OCEANO/IMMAGINI/12.png" alt=""/>
+                                    <div className="font-table">
+                                        <div className="uppercase-letter">ABCDEFGHILMNOPQRSTUVZ</div>
+                                        <div className="square-font">
+                                            <p>*Weight</p>
+                                            <strong>(Bold)</strong>
+                                        </div>
+                                        <div className="lowercase-letter">abcdefghijklmnoprstuvz</div>
+                                        <div className="bold-letter"><span>Aa</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="center-align">
+                                <p className="graphic-font-title">Noto Sans Arabic UI</p>
+                                <div className="row-flex">
+                                    <img src="images/OCEANO/IMMAGINI/13.png" alt=""/>
+                                    <div className="font-table">
+                                        <div className="uppercase-letter">ABCDEFGHILMNOPQRSTUVZ</div>
+                                        <div className="square-font">
+                                            <p>*Weight</p>
+                                            <strong>(Regular)</strong>
+                                        </div>
+                                        <div className="lowercase-letter">abcdefghijklmnoprstuvz</div>
+                                        <div className="bold-letter"><span>Aa</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <div className="product-section-bc-black">
                         <div className="product-section center-align">
                             <div className="product-container-description">
