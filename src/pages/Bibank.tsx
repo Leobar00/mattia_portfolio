@@ -857,7 +857,7 @@ const Bibank = () => {
                                         </div>
                                     </div>
                                     <div className="item-two-images d-flex">
-                                        <div className="w-50 flex-center">
+                                        <div className="w-50 flex-center" style={{ backgroundColor:'rgba(111, 141, 201, 1)' }}>
                                             <img src="images/BIBANK/Mockup/Dekstop/5.gif" alt=""/>
                                         </div>
                                         <div className="w-50 flex-center">
@@ -871,10 +871,31 @@ const Bibank = () => {
                                         </div>
                                         <div className="container-img">
                                             <img className="dekstop" src="images/BIBANK/MOCKUP/Dekstop/8.gif" alt=""/>
-                                            <img className="mobile-img" src="images/BIBANK/MOCKUP/Mobile/8.gif" alt=""/>
+                                            <img className="mobile-img" src="images/BIBANK/MOCKUP/Mobile/6.gif" alt=""/>
                                         </div>
                                     </div>
                                 </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="product-section product-section-only-img">
+                        <img src="images/BIBANK/IMMAGINI/16.png" alt=""/>
+                    </div>
+
+                    <div className="product-section center-align">
+                        <div className="product-container-description w-80">
+                            <div className="product-app">
+                                <span className="small-subtitle">What have I learnt?</span>
+                                <div className="line-product-100 w-60"></div>
+                                <h3 className="title-section">How to design a responsive website</h3>
+                                <p className="text-description">
+                                    Bibank was my second project within the Google UX Design course and my first responsive project. From this project I learned the importance of planning in creating a site usable from different devices. I also worked on an area, finance, that I really like and use on a daily basis.
+                                </p>
+                                <p className="text-description">
+                                    I developed this project using Adobe XD software, consequently learning the main functions of this important tool.
+                                    In this project I experimented with techniques and methods during the research and ideation phase that were different from those previously used. From here, I realized how much you really never stop learning and that getting to a goal there are (almost) always several viable paths.
+                                </p>
                             </div>
                         </div>
                     </div>
