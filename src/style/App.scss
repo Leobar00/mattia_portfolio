@@ -127,6 +127,9 @@ a {
 }
 .w-60 {
   width: 60%!important;
+  @media screen and (max-width: 768px){
+    width: 80%;
+  }
 }
 .w-100 {
   width: 100%!important;
