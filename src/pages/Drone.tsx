@@ -11,6 +11,17 @@ import { FreeMode, Pagination } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/free-mode";
+import Footer from "../components/Footer";
+
+const footerFirstObject = {
+    link:'/oceano',
+    name:'Oceano'
+}
+
+const footerSecondtObject = {
+    link:'/fitup',
+    name:'FitUp'
+}
 
 const Drone = () => {
     return (
@@ -710,6 +721,7 @@ const Drone = () => {
                     </div>
                 </div>
                 <ButtonScroll/>
+                <Footer route="/oceano" nextStep="Oceano mobile app" firstProject={footerFirstObject} secondProject={footerSecondtObject} />
             </div>
             <Navbar />
         </div>
