@@ -5,7 +5,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import {Mousewheel} from "swiper";
-import {Link, NavLink, useLocation, useNavigate} from 'react-router-dom';
+import {NavLink, useNavigate} from 'react-router-dom';
 import {CSSTransition} from 'react-transition-group';
 import Drone from "../pages/Drone";
 import 'animate.css';
@@ -54,7 +54,7 @@ const CenterCard = () => {
 
     function startAnimation(e:any)
     {
-        e.preventDefault()
+        e.preventDefault();
         setIsEnter((v) => {
             const imgActive: HTMLElement | null  = document.querySelector('.center-card .swiper-slide-active');
             if(imgActive != null) {
@@ -68,7 +68,6 @@ const CenterCard = () => {
 
             return !v;
         })
-
     }
 
     useEffect(() => {
