@@ -721,7 +721,7 @@ const Drone = () => {
                     </div>
                 </div>
                 <ButtonScroll/>
-                <Footer route="/oceano" nextStep="Oceano mobile app" firstProject={footerFirstObject} secondProject={footerSecondtObject} />
+                <Footer route="/bibank" nextStep="Bibank responsive web" firstProject={footerFirstObject} secondProject={footerSecondtObject} />
             </div>
             <Navbar />
         </div>

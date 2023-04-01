@@ -7,7 +7,17 @@ import {Swiper, SwiperSlide} from "swiper/react";
 import {FreeMode, Pagination} from "swiper";
 import ButtonScroll from "../components/ButtonScroll";
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
+const footerFirstObject = {
+    link:'/drone',
+    name:'Drones'
+}
+
+const footerSecondtObject = {
+    link:'/bibank',
+    name:'Bibank'
+}
 
 const Oceano = () => {
     return (
@@ -930,6 +940,7 @@ const Oceano = () => {
                     </div>
                 </div>
                 <ButtonScroll/>
+                <Footer route="/fitup" nextStep="Fitup mobile app" firstProject={footerFirstObject} secondProject={footerSecondtObject} />
             </div>
             <Navbar />
         </div>

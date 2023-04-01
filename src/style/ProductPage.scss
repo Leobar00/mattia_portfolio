@@ -992,6 +992,7 @@ footer {
       margin: 0 auto;
       overflow: hidden;
       padding: 2rem 0;
+      min-height: 15rem;
       & > span {
         font-weight: 300;
         font-size: 10em;
@@ -1003,38 +1004,34 @@ footer {
           color: white;
           &:hover {
             text-decoration: underline;
-            .arrow {
-              display: inline;
-              text-decoration: none!important;
-            }
-          }
-          .arrow {
-            display: none;
-            margin-left: 1rem;
-            font-size: 8rem;
           }
         }
-      }
-      .animation-line-1 {
-        padding-right: 30%;
-        animation: text-line 25s linear infinite;
+        &:hover .arrow {
+          display: inline;
+          text-decoration: none!important;
+        }
+        .arrow {
+          display: none;
+          margin-left: 1rem;
+          font-size: 8rem;
+        }
       }
     }
 
     .text-line-2 {
+      position: relative;
       color: white;
       text-align: center;
       white-space: nowrap;
       overflow: hidden;
       padding: 2rem 0;
+      min-height: 15rem;
       & > span {
+        position: absolute;
+        right: 11%;
         font-weight: 300;
         font-size: 10em;
         display: inline-block;
-      }
-      .animation-line-2 {
-        padding-left: 30%;
-        animation: text-line-2 25s linear infinite;
       }
     }
 

@@ -6,7 +6,17 @@ import Logo from "../components/Logo";
 import {Swiper, SwiperSlide} from "swiper/react";
 import {FreeMode, Pagination} from "swiper";
 import ButtonScroll from "../components/ButtonScroll";
+import Footer from "../components/Footer";
 
+const footerFirstObject = {
+    link:'/drone',
+    name:'Drones'
+}
+
+const footerSecondtObject = {
+    link:'/fitup',
+    name:'FitUp'
+}
 
 const Bibank = () => {
     return (
@@ -983,6 +993,7 @@ const Bibank = () => {
                     </div>
                 </div>
                 <ButtonScroll/>
+                <Footer route="/oceano" nextStep="Oceano mobile app" firstProject={footerFirstObject} secondProject={footerSecondtObject} />
             </div>
             <Navbar />
         </div>

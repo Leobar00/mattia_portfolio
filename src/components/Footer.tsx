@@ -10,8 +10,8 @@ const Footer = (props:any) => {
                     <span className="">
                         <Link to={props.route} >
                             Next
-                            <p className="arrow">➜</p>
                         </Link>
+                        <p className="arrow">➜</p>
                     </span>
                 </div>
                 <div className="line "></div>
