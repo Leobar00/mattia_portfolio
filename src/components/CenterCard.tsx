@@ -56,7 +56,7 @@ const CenterCard = () => {
     {
         e.preventDefault();
         setIsEnter((v) => {
-            const imgActive: HTMLElement | null  = document.querySelector('.center-card .card');
+            const imgActive: HTMLElement | null  = document.querySelector('.center-card .swiper-slide-active');
             if(imgActive != null) {
                 const linkImg: HTMLElement | null = imgActive.querySelector('.link-img-center');
 
