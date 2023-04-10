@@ -36,7 +36,7 @@ html {
     width: 85%;
     margin: 0 auto;
     @media screen and (max-width: 768px){
-      width: 95%;
+      width: 85%;
     }
   }
   .product-container {
@@ -606,12 +606,12 @@ html {
           .text-flex-container {
             margin-top: 5rem;
             h4 {
-              font-size: 2rem;
+              font-size: 32px;
             }
             p {
               line-height: 1.8rem;
               margin-top: 2rem;
-              font-size: 1.1rem;
+              font-size: 22px;
             }
           }
 
@@ -764,6 +764,9 @@ html {
       }
       .slider-card-container {
         width: 100%;
+        img {
+          user-select: none;
+        }
         .swiper {
           overflow: unset!important;
         }
