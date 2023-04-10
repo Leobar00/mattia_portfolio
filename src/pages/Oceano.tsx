@@ -691,7 +691,7 @@ const Oceano = () => {
                                             <p>The homepage of the dedicated sitoweb contains several animations and interactions and focuses on providing the user with key information to understand what Oceano is all about.</p>
                                         </div>
                                         <div className="container-img">
-                                            <img className="dekstop" src="images/OCEANO/DIGITAL%20WIREFRAME/DEKSTOP/1.gif" alt=""/>
+                                            <img className="dekstop desktop-img" src="images/OCEANO/DIGITAL%20WIREFRAME/DEKSTOP/1.gif" alt=""/>
                                         </div>
                                     </div>
                                     <div className="item-with-img">
@@ -701,8 +701,8 @@ const Oceano = () => {
                                                 In the mobile app, users can also find an area where they can quickly and easily edit their information and payment methods.</p>
                                         </div>
                                         <div className="container-img-two-oceano">
-                                            <img className="dekstop" src="images/OCEANO/DIGITAL%20WIREFRAME/MOBILE/1.gif" alt=""/>
-                                            <img className="dekstop" src="images/OCEANO/DIGITAL%20WIREFRAME/MOBILE/2.gif" alt=""/>
+                                            <img className="dekstop " src="images/OCEANO/DIGITAL%20WIREFRAME/MOBILE/1.gif" alt=""/>
+                                            <img className="dekstop " src="images/OCEANO/DIGITAL%20WIREFRAME/MOBILE/2.gif" alt=""/>
                                         </div>
                                     </div>
                                     <div className="item-with-img">
@@ -711,8 +711,8 @@ const Oceano = () => {
                                             <p>On both the mobile app and the dedicated sitoweb, I decided to use the same path to create consistency between the two products. The flow to get to the end of this task is simple and intuitive, as it is accomplished by following small and simple separate steps.</p>
                                         </div>
                                         <div className="container-img-near">
-                                            <img className="dekstop mr-3" src="images/OCEANO/DIGITAL%20WIREFRAME/DEKSTOP/2.gif" alt=""/>
-                                            <img className="dekstop" src="images/OCEANO/DIGITAL%20WIREFRAME/MOBILE/3.gif" alt=""/>
+                                            <img className="dekstop mr-3 desktop-img" src="images/OCEANO/DIGITAL%20WIREFRAME/DEKSTOP/2.gif" alt=""/>
+                                            <img className="dekstop mobile-img" src="images/OCEANO/DIGITAL%20WIREFRAME/MOBILE/3.gif" alt=""/>
                                         </div>
                                     </div>
                                     <div className="item-with-img">
@@ -721,8 +721,8 @@ const Oceano = () => {
                                             <p>On both the mobile app and the dedicated sitoweb, users have the ability to see where their favorite animal lives and what areas it travels to during migrations. Green circles indicate the area where that animal's species is most localized.</p>
                                         </div>
                                         <div className="container-img-near">
-                                            <img className="dekstop mr-3" src="images/OCEANO/DIGITAL%20WIREFRAME/DEKSTOP/3.gif" alt=""/>
-                                            <img className="dekstop" src="images/OCEANO/DIGITAL%20WIREFRAME/MOBILE/4.gif" alt=""/>
+                                            <img className="dekstop mr-3 desktop-img" src="images/OCEANO/DIGITAL%20WIREFRAME/DEKSTOP/3.gif" alt=""/>
+                                            <img className="dekstop mobile-img" src="images/OCEANO/DIGITAL%20WIREFRAME/MOBILE/4.gif" alt=""/>
                                         </div>
                                     </div>
                                     <div className="item-with-img">
@@ -731,7 +731,7 @@ const Oceano = () => {
                                             <p>Directly from the main menu, on the dedicated sitoweb, you can learn about the company through the "about" section. This section was made by building images and animations through Figma's "smart animate".</p>
                                         </div>
                                         <div className="container-img">
-                                            <img className="dekstop" src="images/OCEANO/DIGITAL%20WIREFRAME/DEKSTOP/4.gif" alt=""/>
+                                            <img className="dekstop desktop-img" src="images/OCEANO/DIGITAL%20WIREFRAME/DEKSTOP/4.gif" alt=""/>
                                         </div>
                                     </div>
                                     <div className="item-with-img">
@@ -740,8 +740,8 @@ const Oceano = () => {
                                             <p>Adopt your favorite animal from the comfort of your home and keep track of its movements via the mobile app. The mobile app also supports a "photos" feature where you can find up-to-date photos of your pet around the world.</p>
                                         </div>
                                         <div className="container-img-two-oceano">
-                                            <img className="dekstop" src="images/OCEANO/DIGITAL%20WIREFRAME/MOBILE/5.gif" alt=""/>
-                                            <img className="dekstop" src="images/OCEANO/DIGITAL%20WIREFRAME/MOBILE/6.gif" alt=""/>
+                                            <img className="dekstop " src="images/OCEANO/DIGITAL%20WIREFRAME/MOBILE/5.gif" alt=""/>
+                                            <img className="dekstop " src="images/OCEANO/DIGITAL%20WIREFRAME/MOBILE/6.gif" alt=""/>
                                         </div>
                                     </div>
                                 </div>
