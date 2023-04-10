@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import '../style/Menu.scss';
 import NavbarLeftMenu from "../components/NavbarLeftMenu";
 import {Link} from "react-router-dom";
@@ -37,6 +37,28 @@ function mobileMenu() {
 
 const Menu = () => {
     const [background,setBackground] = useState("")
+
+    const [isImagesLoad, setIsImagesLoad] = useState(
+        Array(menuItem.length).fill(false)
+    );
+
+    useEffect(() => {
+        const imageLoadPromises = menuItem.map((item, index) => {
+            return new Promise((resolve) => {
+                const img = new Image();
+                img.onload = () => {
+                    const updatedIsImagesLoaded = [...isImagesLoad];
+                    updatedIsImagesLoaded[index] = true;
+                    setIsImagesLoad(updatedIsImagesLoaded);
+                };
+                img.src = item.imageUrl;
+            });
+        });
+        Promise.all(imageLoadPromises).then(() => {
+            console.log('All images are loaded');
+        });
+    }, [menuItem]);
+
 
     return (
         <div className="menu-container overflow-hidden">
