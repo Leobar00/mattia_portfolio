@@ -138,6 +138,7 @@ html {
       }
     }
     .product-section-bc-black {
+      height: 50rem;
       background: linear-gradient(180deg, #1A1A1A 0%, #2C2C2C 47.19%, #121212 100%);
       > * {
         color: white!important;
@@ -878,27 +879,31 @@ html {
       "a b"
       "c d";
       .uppercase-letter {
-        width: 8rem;
+        width: 10.4rem;
         grid-area: a;
         overflow-wrap:break-word ;
+        letter-spacing: 0.2rem;
+        font-size: 1.2rem;
       }
       .square-font {
         grid-area: b;
-        width: 7rem;
-        height: 6rem;
+        width: 9.3rem;
+        height: 8rem;
         padding: 1rem;
         border-radius: 10px;
         background-color: #686868;
         > * {
-          font-size: 0.8rem;
+          font-size: 1rem;
           color: white;
         }
       }
       .lowercase-letter {
-        width: 6.3rem;
+        width: 10rem;
+        letter-spacing: 0.2rem;
         grid-area: c;
+        height: 6%;
         overflow-wrap:break-word ;
-        font-size: 0.8rem;
+        font-size: 1.2rem;
       }
       .bold-letter {
         width: 100%;
@@ -910,7 +915,7 @@ html {
           position: absolute;
           top: -3.8rem;
           left: -2rem;
-          font-size: 7rem;
+          font-size: 9.5rem;
         }
       }
     }
@@ -920,16 +925,16 @@ html {
   }
   .grid-color-palette {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(3, 1fr);
     gap: 0;
     grid-auto-flow: row;
     padding: 0rem;
     grid-template-areas:
-      "a a b b b b"
-      "d d e f f f"
-      "g g h h h h";
-    height: 33rem;
+      "a a a b b b b b"
+      "d d d e e f f f"
+      "g g g h h h h h";
+    height: 35rem;
     width: 100%;
     .item {
       display: flex;
