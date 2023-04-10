@@ -43,8 +43,8 @@ const Menu = () => {
             {/* Mobile menu  */}
             {mobileMenu()}
             <NavbarLeftMenu route='main' text='Back to Home' />
-            <div className="right-position">
-                <div className="menu-main" style={{ background:'linear-gradient(rgba(220,219,219,0.05), rgba(220,219,219,0.3)),' + background }}>
+            <div className="right-position" style={{ background:'linear-gradient(rgba(220,219,219,0.05), rgba(220,219,219,0.3)),' + background  }}>
+                <div className="menu-main" >
                     <ul>
                         {
                             Object.entries(menuItem).map(([key,value]) => {
@@ -53,10 +53,12 @@ const Menu = () => {
                                         <Link to={value.route} key={value.name}
                                               onMouseOver={() => {
                                                   document.querySelector('.description-item-menu')!.innerHTML = value.description
+                                                  document.querySelector<HTMLElement>('.menu-main')!.style.backgroundColor = 'transparent'
                                                   setBackground('url("' + value.imageUrl + '")')
                                               }}
                                               onMouseLeave={() => {
                                                   document.querySelector('.description-item-menu')!.innerHTML = ''
+                                                  document.querySelector<HTMLElement>('.menu-main')!.style.backgroundColor = '#DCDBDB'
                                                   setBackground('#DCDBDB url("")')
                                               }}>
                                             {value.name}
