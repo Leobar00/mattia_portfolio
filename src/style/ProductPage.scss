@@ -8,6 +8,17 @@ html {
     font-size: 12px;
   }
 }
+
+.title-page-product {
+  font-size: 50px;
+  font-weight: 700;
+}
+.paragraph-page-product {
+  font-size: 28px;
+  font-weight: 400;
+  font-family: var(--microsfot-jheng);
+}
+
 .container-main-white {
   width: 87vw;
   height: 100vh;
@@ -61,10 +72,11 @@ html {
       }
       .product-title{
         font-weight: 400;
-        font-size: clamp(2rem,calc(2em + 5vw),9rem);
+        font-size: clamp(2rem,150px,9rem);
         letter-spacing: 0.5rem;
         margin: 1rem 0;
         color: #323232;
+        white-space: nowrap;
       }
       .tool-img {
         > img {
@@ -93,11 +105,12 @@ html {
         .column-6 {
           width: 45%;
           > span {
+            @extend .paragraph-page-product;
             font-weight: bold;
           }
           > p {
+            @extend .paragraph-page-product;
             margin: 1rem 0;
-            font-size: 1.1rem;
             color: #323232;
           }
         }
@@ -114,6 +127,7 @@ html {
       background-color: black;
       color: white;
       position: relative;
+      min-height: 45rem;
       .align-the-end {
         width: 80%;
         height: 85%;
@@ -122,7 +136,7 @@ html {
         flex-direction: column;
         justify-content: end;
         h3 {
-          font-size: 2rem;
+          @extend .title-page-product;
         }
         .line-80 {
           margin: 1rem 0;
@@ -131,8 +145,7 @@ html {
           width: 80%;
         }
         p {
-          font-size: 1.3rem;
-          font-weight: 400;
+          @extend .paragraph-page-product;
           font-family: var(--microsfot-jheng);
         }
       }
@@ -181,6 +194,9 @@ html {
           .card-container {
             .card-text {
               margin: 1rem 0;
+              > p {
+                font-size: 22px;
+              }
             }
             .card-improvement {
               width: calc(100% + 3rem);
@@ -189,6 +205,7 @@ html {
               border-radius: 10px;
               background-color: red;
               p {
+                font-size: 25px;
                 color: white;
               }
             }
@@ -322,7 +339,7 @@ html {
           background-color: grey;
         }
         .text-description {
-          font-size: 1.3rem;
+          @extend .paragraph-page-product;
           font-family: var(--microsfot-jheng);
           margin: 1rem 0;
           font-weight: 400;
@@ -427,12 +444,12 @@ html {
             width: 95%;
             margin-top: 5rem;
             h4 {
-              font-size: 2rem;
+              font-size: 32px;
             }
             p {
               line-height: 1.8rem;
               margin-top: 2rem;
-              font-size: 1.1rem;
+              font-size: 22px;
             }
           }
           .container-img-two-oceano {
@@ -499,7 +516,7 @@ html {
             }
           }
           h4 {
-            font-size: 2rem;
+            font-size: 32px;
             .bullet {
               width: 0.8rem;
               height: 0.8rem;
@@ -521,7 +538,7 @@ html {
           }
           p {
             margin-top: 2rem;
-            font-size: 1.1rem;
+            font-size: 22px;
             line-height: 1.8rem;
           }
           .img-wireframe {
@@ -543,13 +560,13 @@ html {
             margin-top: 5rem;
             h4 {
               margin-left: 3rem;
-              font-size: 2rem;
+              font-size: 32px;
             }
             p {
               line-height: 1.8rem;
               margin-top: 2rem;
               margin-left: 3rem;
-              font-size: 1.1rem;
+              font-size: 22px;
             }
           }
           img {
@@ -568,13 +585,13 @@ html {
             margin-top: 5rem;
             h4 {
               margin-left: 3rem;
-              font-size: 2rem;
+              font-size: 32px;
             }
             p {
               line-height: 1.8rem;
               margin-top: 2rem;
               margin-left: 3rem;
-              font-size: 1.1rem;
+              font-size: 22px;
             }
           }
           img {
@@ -632,11 +649,9 @@ html {
       flex-wrap: wrap;
       .text-description {
         margin: 1rem 0;
-        font-size: 1.3rem;
+        @extend .paragraph-page-product;
         font-family: var(--microsfot-jheng);
-        line-height: 1.8rem;
         margin: 1rem 0;
-        font-weight: 400;
         width: 70%;
         ul {
           margin-top: 1.5rem;
@@ -1083,10 +1098,10 @@ footer {
   width: 100%;
 }
 .small-subtitle {
-  font-size: 1.1rem;
+  font-size: 25px;
 }
 .title-section {
-  font-size: 3rem;
+  @extend .title-page-product;
 }
 .line-product-100{
   margin: 1rem 0;
