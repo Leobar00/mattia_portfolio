@@ -57,10 +57,12 @@ const CenterCard = () => {
         e.preventDefault();
         setIsEnter((v) => {
             const imgActive: HTMLElement | null  = document.querySelector('.center-card .swiper-slide-active');
-            if(imgActive != null) {
+            const centerCard: HTMLElement | null  = document.querySelector('.center-card');
+            if(imgActive != null && centerCard != null) {
                 const linkImg: HTMLElement | null = imgActive.querySelector('.link-img-center');
 
                 imgActive.style.animation = 'transition-img-center 2s linear';
+                centerCard.style.zIndex = '20';
                 setTimeout(() => {
                     navigate(linkImg!.getAttribute('href') as string);
                 },1800)

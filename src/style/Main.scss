@@ -1,6 +1,19 @@
 .general-container {
   position: relative;
   height: 100vh;
+  #white-section {
+    position: fixed;
+    z-index:12;
+    bottom: 0;
+    left: 0;
+    height: 0;
+    width: 100%;
+    background: white;
+    transition: height 2s ease-in-out;
+    &.active {
+      height: 100vh;
+    }
+  }
   .background-container {
     background: linear-gradient(rgba(0, 0, 0, 0.93),rgba(0, 0, 0, 0.90) , rgba(0, 0, 0, 0.80));
     width: 87vw;

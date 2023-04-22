@@ -26,6 +26,7 @@ const Main = () => {
                 </div>
                 <Navbar />
             </div>
+            <div id="white-section"/>
         </div>
 
 )

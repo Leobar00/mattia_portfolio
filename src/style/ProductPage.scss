@@ -172,12 +172,14 @@ html {
       }
       //small card horizontal slider
       .slider-card-container {
-        width: 80vw;
+        width: 77vw;
         margin-top: 15%;
         @media screen and (max-width: 768px){
           width: 95vw;
         }
         .storyboard {
+          margin: 0!important;
+          overflow: unset!important;
           .card-container {
             height: 50%;
             width: 95%;

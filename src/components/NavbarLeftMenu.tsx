@@ -1,6 +1,6 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import BlackLogo from "./BlackLogo";
-import {Link} from "react-router-dom";
+import {Link, useLocation} from "react-router-dom";
 
 interface NavbarLeftMenuProps {
     route:string,
@@ -8,8 +8,15 @@ interface NavbarLeftMenuProps {
 }
 
 const NavbarLeftMenu = ({route,text}: NavbarLeftMenuProps) => {
+    const [showMenu, setShowMenu] = useState(false);
+    const location = useLocation(); // rotta in cui ci troviamo
+
+    useEffect(() => {
+        setShowMenu(true);
+    }, []);
+
     return (
-            <div className="navbar-left">
+            <div className={`navbar-left ${showMenu ? 'show' : ''}`}>
                 <Link to={ '/' + route }>
                     <BlackLogo />
                     <div className="navbar-left-text">
