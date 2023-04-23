@@ -8,11 +8,16 @@ const Navbar = () => {
     const navigate = useNavigate();
 
     const handleBarClick = () => {
-        const circle: HTMLElement|null = document.querySelector('.circle');
+        const circle: HTMLElement|null = document.querySelector('.sidebar-right .circle');
         const whiteSection = document.getElementById("white-section");
+        const arrow: HTMLElement|null = document.querySelector(".arrow-up");
         document.querySelector('.initial-background')?.classList.add('active');
 
         circle!.style.opacity = '0';
+        if(arrow?.classList) {
+
+            arrow.style.opacity = '0'
+        }
         setTimeout(() => {
             whiteSection?.classList.add('active');
         }, 2000);

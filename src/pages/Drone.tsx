@@ -724,6 +724,7 @@ const Drone = () => {
                 <Footer route="/bibank" nextStep="Bibank responsive web" firstProject={footerFirstObject} secondProject={footerSecondtObject} />
             </div>
             <Navbar />
+            <div id="white-section"/>
         </div>
     )
 }
