@@ -2,8 +2,20 @@
   font-family: 'Microsoft JhengHei';
   src: url("../../public/fonts/msjh_0.ttf");
 }
+@font-face {
+  font-family: 'Noto Serif JP';
+  src: url("../../public/fonts/NotoSerifJPRegular.otf");
+}
+
+@font-face {
+  font-family: 'Noto Serif JP Bold';
+  src: url("../../public/fonts/NotoSerifJPBold.otf");
+}
+
 :root {
   --microsfot-jheng : 'Microsoft JhengHei';
+  --noto-serifjp-regular: 'Noto Serif JP';
+  --noto-serifjp-bold: 'Noto Serif JP Bold';
   overflow-y: hidden;
 }
 * {

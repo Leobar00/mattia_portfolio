@@ -8,15 +8,16 @@ interface MenuItem {
     name: string,
     route: string,
     imageUrl : string,
-    description:string
+    description:string,
+    class:string
 }
 
 
 let menuItem: MenuItem[] = [
-    {name:'ABOUT',route:'/about',imageUrl:'/images/menu/about.png',description:'Dom Mount, 4.545 mt.\n' + 'Switzerland, 2022\n' + 'Lonely journey among the snow-covered glaciers of the Swiss peaks.'},
-    {name:'WORKS',route:'/',imageUrl:'/images/menu/works.png',description:'My projects, my designs.\n' + 'Small collection of my case studies, developed during the courses.'},
-    {name:'IDEAS',route:'/',imageUrl:'/images/menu/ideas.png',description:'A blank sheet of paper.\n' + 'From which to start, to fill with ideas and thoughts about design world.'},
-    {name:'TALK',route:'/',imageUrl:'/images/menu/talk.png',description:'I would love to talk to you and learn more about this fantastic job. Currently in Perth  :)'}
+    {name:'ABOUT',route:'/about',imageUrl:'/images/menu/about.png',description:'Dom Mount, 4.545 mt.\n' + 'Switzerland, 2022\n' + 'Lonely journey among the snow-covered glaciers of the Swiss peaks.',class:'slideInDown slideInDown_slow'},
+    {name:'WORKS',route:'/',imageUrl:'/images/menu/works.png',description:'My projects, my designs.\n' + 'Small collection of my case studies, developed during the courses.',class:'.slideInDown slideInDown_fast'},
+    {name:'IDEAS',route:'/',imageUrl:'/images/menu/ideas.png',description:'A blank sheet of paper.\n' + 'From which to start, to fill with ideas and thoughts about design world.',class:'slideInUp slideInUp_fast'},
+    {name:'TALK',route:'/',imageUrl:'/images/menu/talk.png',description:'I would love to talk to you and learn more about this fantastic job. Currently in Perth  :)',class:'slideInUp slideInUp_slow'}
 ]
 
 function mobileMenu() {
@@ -71,7 +72,7 @@ const Menu = () => {
                         {
                             Object.entries(menuItem).map(([key,value]) => {
                                 return(
-                                    <li className="menu-item" >
+                                    <li className={`menu-item ${value.class}`} >
                                         <Link to={value.route} key={value.name}
                                               onMouseOver={() => {
                                                   document.querySelector('.description-item-menu')!.innerHTML = value.description
@@ -82,7 +83,8 @@ const Menu = () => {
                                                   document.querySelector('.description-item-menu')!.innerHTML = ''
                                                   document.querySelector<HTMLElement>('.menu-main')!.style.backgroundColor = '#DCDBDB'
                                                   setBackground('#DCDBDB url("")')
-                                              }}>
+                                              }}
+                                        >
                                             {value.name}
                                         </Link>
                                     </li>

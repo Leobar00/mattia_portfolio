@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {useEffect, useLayoutEffect, useState} from 'react';
 import BlackLogo from "./BlackLogo";
 import {Link, useLocation} from "react-router-dom";
 
@@ -9,9 +9,11 @@ interface NavbarLeftMenuProps {
 
 const NavbarLeftMenu = ({route,text}: NavbarLeftMenuProps) => {
     const [showMenu, setShowMenu] = useState(false);
+    console.log(showMenu);
     const location = useLocation(); // rotta in cui ci troviamo
 
     useEffect(() => {
+        console.log('ciao')
         setShowMenu(true);
     }, []);
 

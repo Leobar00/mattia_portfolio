@@ -5,6 +5,7 @@
   display: flex;
   width: 100%;
   min-height: 100vh;
+  background-color: #DADADA;
   @media screen and (max-width: 768px) {
     display: block;
     background: linear-gradient(rgba(0, 0, 0, 0.93),rgba(0, 0, 0, 0.90) , rgba(0, 0, 0, 0.80));
@@ -54,12 +55,15 @@
         .menu-item {
           position: relative;
           z-index: 2;
-          font-size: clamp(5rem,10vw,12rem);
+          font-size: clamp(7rem,9vw,9rem);
           list-style: none;
+          line-height: clamp(7rem ,9.3rem,12rem);
           &:nth-child(odd){
+            font-family: var(--noto-serifjp-regular);
             font-weight: 400;
           }
           &:nth-child(even){
+            font-family: var(--noto-serifjp-bold);
             font-weight: 500;
           }
           a {
@@ -105,11 +109,11 @@
     min-height: 100vh;
     overflow: hidden;
     width: 0;
-    background: white;
     margin: 0;
-    transition: width 3s ease-in-out;
+    transition: width 2s ease-in-out;
     &.show {
       width: 12rem;
+      background-color: white;
     }
     @media screen and (max-width: 768px) {
       display: none;
@@ -358,5 +362,62 @@
     @media screen and (max-width: 768px){
       display: none;
     }
+  }
+}
+
+.slideInDown {
+  position: absolute;
+  top: 0;
+  animation-name: slideInDown;
+  animation-timing-function: ease-out;
+  animation-fill-mode: both;
+}
+
+.slideInDown_slow {
+  @extend .slideInDown;
+  animation-duration: 2s;
+}
+
+.slideInDown_fast {
+  @extend .slideInDown;
+  animation-delay: 0.8s;
+  animation-duration: 1s;
+}
+
+@keyframes slideInDown {
+  0% {
+    transform: translateY(-300%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.slideInUp {
+  position: absolute;
+  bottom: 0;
+  animation-timing-function: ease-out;
+  animation-fill-mode: both;
+  animation-name: slideInUp;
+}
+
+.slideInUp_slow {
+  @extend .slideInUp;
+  animation-duration: 2s;
+}
+
+.slideInUp_fast {
+  @extend .slideInUp;
+  animation-delay: 0.8s;
+  animation-duration: 1s;
+}
+
+@keyframes slideInUp {
+  from {
+    transform: translateY(300%);
+  }
+
+  to {
+    transform: translateY(0);
   }
 }
