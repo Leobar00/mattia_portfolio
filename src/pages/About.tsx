@@ -6,7 +6,7 @@ import {Link} from "react-router-dom";
 const About = () => {
 
     return (
-        <div className="menu-container overflow-hidden">
+        <div className="menu-container bg-black overflow-hidden">
             <NavbarLeftMenu route="menu" text="Back to menu" />
             <div className="right-position background-info-page">
                 <div className="container-section-menu background-info-page">

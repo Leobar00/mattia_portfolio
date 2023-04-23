@@ -19,6 +19,7 @@
     right: 0;
     background-size: cover!important;
     z-index: 0;
+    transition:all 2s ease-in-out;
     @media screen and (max-width: 768px) {
       width: 100%;
       position: relative;
@@ -111,6 +112,7 @@
     width: 0;
     margin: 0;
     transition: width 2s ease-in-out;
+    cursor: pointer;
     &.show {
       width: 12rem;
       background-color: white;
@@ -291,12 +293,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        .bg-white {
-          background-color: white;
-        }
-        .bg-black {
-          background-color: black;
-        }
         .line-center-vertical {
           height: 15rem;
           width: 1px;
@@ -363,7 +359,7 @@
     }
   }
 }
-
+//Animation
 .slideInDown {
   position: absolute;
   top: 0;
@@ -418,5 +414,25 @@
 
   to {
     transform: translateY(0);
+  }
+}
+.bg-white {
+  background-color: white;
+}
+.bg-black {
+  background-color: black!important;
+}
+
+//transition
+#gradient-section {
+  position: fixed;
+  z-index:12;
+  top: 0;
+  height: 0;
+  width: 100%;
+  background: linear-gradient(#BC86AF,#6AB471 , #B23D3D, #4C869E);
+  transition: height 1s ease-in-out;
+  &.active {
+    height: 100vh;
   }
 }

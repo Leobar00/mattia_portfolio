@@ -63,11 +63,14 @@ const Menu = () => {
 
     return (
         <div className="menu-container overflow-hidden">
+            <div id="gradient-section"></div>
             {/* Mobile menu  */}
             {mobileMenu()}
             <NavbarLeftMenu route='main' text='Back to Home' />
-            <div className="right-position" style={{ background:'linear-gradient(rgba(220,219,219,0.05), rgba(220,219,219,0.3)),' + background  }}>
-                <div className="menu-main" >
+            <div className="right-position" style={{
+                background:'linear-gradient(rgba(220,219,219,0.05), rgba(220,219,219,0.3)),' + background ,
+            }}>
+                <div className="menu-main"  >
                     <ul>
                         {
                             Object.entries(menuItem).map(([key,value]) => {

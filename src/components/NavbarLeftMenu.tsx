@@ -1,6 +1,6 @@
 import React, {useEffect, useLayoutEffect, useState} from 'react';
 import BlackLogo from "./BlackLogo";
-import {Link, useLocation} from "react-router-dom";
+import {Link, useLocation, useNavigate} from "react-router-dom";
 
 interface NavbarLeftMenuProps {
     route:string,
@@ -9,22 +9,34 @@ interface NavbarLeftMenuProps {
 
 const NavbarLeftMenu = ({route,text}: NavbarLeftMenuProps) => {
     const [showMenu, setShowMenu] = useState(false);
-    console.log(showMenu);
     const location = useLocation(); // rotta in cui ci troviamo
+    const navigate = useNavigate();
+
+
+    const handleMenuClick = () => {
+        const gradientSection: HTMLElement | null = document.getElementById('gradient-section');
+        gradientSection?.classList.add('active');
+        setTimeout(() => {
+            navigate('/' + route)
+        },2000)
+    }
+
+    const handleInfoPageClick = () => {
+        navigate('/menu')
+    }
 
     useEffect(() => {
-        console.log('ciao')
         setShowMenu(true);
     }, []);
 
     return (
             <div className={`navbar-left ${showMenu ? 'show' : ''}`}>
-                <Link to={ '/' + route }>
+                <div onClick={location.pathname == '/menu' ? handleMenuClick : handleInfoPageClick }>
                     <BlackLogo />
                     <div className="navbar-left-text">
                         <p>{text}</p>
                     </div>
-                </Link>
+                </div>
             </div>
     )
 }

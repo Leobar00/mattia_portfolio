@@ -33,7 +33,7 @@ const Drone = () => {
                         <div >
                             <div className="line-product animate__animated animate__slideInLeft animate__slower"></div>
                             <p className="product-subtitle animate__animated animate__slideInLeft animate__slower">Project</p>
-                            <p className="product-title animate__animated animate__fadeInTopRight animate__slower">Drones mobile app</p>
+                            <p className="product-title animate__animated animate__fadeInRight animate__slower">Drones mobile app</p>
                         </div>
                         <div className="animate__animated animate__slideInRight animate__slower">
                             <div className="line-product"></div>
