@@ -24,7 +24,6 @@ const Navbar = () => {
 
         setTimeout(() => {
             whiteSection!.style.backgroundColor = '#DCDBDB';
-
         },3600)
 
         setTimeout(() => {

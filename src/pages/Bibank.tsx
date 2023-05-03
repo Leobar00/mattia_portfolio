@@ -996,6 +996,7 @@ const Bibank = () => {
                 <Footer route="/oceano" nextStep="Oceano mobile app" firstProject={footerFirstObject} secondProject={footerSecondtObject} />
             </div>
             <Navbar />
+            <div id="white-section"/>
         </div>
     )
 }

@@ -943,6 +943,7 @@ const Oceano = () => {
                 <Footer route="/fitup" nextStep="Fitup mobile app" firstProject={footerFirstObject} secondProject={footerSecondtObject} />
             </div>
             <Navbar />
+            <div id="white-section"/>
         </div>
     )
 }
