@@ -3,6 +3,7 @@ import '../style/Main.scss';
 import CenterCard from './../components/CenterCard'
 import Logo from './../components/Logo'
 import Navbar from './../components/Navbar'
+import AnimatedLine from './../components/AnimatedLine';
 
 const Main = () => {
 
@@ -15,11 +16,11 @@ const Main = () => {
                     <div className="container-line desktop">
                         <div className="line"></div>
                         <div className="text-line">
-                            <span className="animation-line-1">Drones mobile drones mobile app</span>
+                            <AnimatedLine text="Drones mobile drones mobile app" delay={0} fromX={-100} toX={0} classe="animation-line-1" />
                         </div>
                         <div className="line "></div>
                         <div className="text-line-2">
-                            <span className="animation-line-2">ux/ui design</span>
+                            <AnimatedLine text="ux/ui design" delay={500} fromX={100} toX={0} classe="animation-line-2" />
                         </div>
                         <div className="line"></div>
                     </div>

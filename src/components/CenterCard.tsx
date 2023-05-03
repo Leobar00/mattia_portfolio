@@ -9,6 +9,7 @@ import {NavLink, useNavigate} from 'react-router-dom';
 import {CSSTransition} from 'react-transition-group';
 import Drone from "../pages/Drone";
 import 'animate.css';
+import {useSpring,animated} from "react-spring";
 
 interface CenterCard {
     title: string,
@@ -52,6 +53,13 @@ const CenterCard = () => {
     const [isEnter,setIsEnter] = useState(false)
     const navigate = useNavigate();
 
+    const backgroundColorStyle = window.screen.width < 1024 ? { backgroundColor: arrayUrlImg[0].color } : { backgroundColor: arrayUrlImg[3].color };
+
+    const props = useSpring({
+        from: { opacity: 0.3, top: '120%' },
+        to: { opacity: 1, top:'50%' }
+    })
+
     function startAnimation(e:any)
     {
         e.preventDefault();
@@ -87,7 +95,7 @@ const CenterCard = () => {
             //3. class name prefix
             classNames="transition-center"
         >
-            <div className="center-card" style={window.screen.width < 1024 ? {backgroundColor: arrayUrlImg[0].color} : {backgroundColor: arrayUrlImg[3].color}}>
+            <animated.div className="center-card" style={{ ...backgroundColorStyle, ...props }}>
                 <Swiper
                     className="mySwiper card"
                     grabCursor={true}
@@ -139,7 +147,7 @@ const CenterCard = () => {
                     </span>
                     <span>04</span>
                 </div>
-            </div>
+            </animated.div>
         </CSSTransition>
     )
 }
