@@ -76,7 +76,7 @@
     }
     .center-card {
         width: clamp(28rem,30%,35rem);
-        height: clamp(25rem,65%,50rem);
+        height: clamp(30rem,70%,50rem);
         position: absolute;
         top: 50%;
         left: 50%;
@@ -127,41 +127,44 @@
       transform: translate(-50%,-50%);
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
       height: 50%;
       width: 100%;
-      margin-top:2rem ;
-
       .text-line {
+        display: flex;
+        align-items: center;
+        height:clamp(10rem,25vh,20rem);
         color: white;
-        text-align: center;
         white-space: nowrap;
         margin: 0 auto;
         overflow: hidden;
         & > span {
           font-weight: 300;
-          font-size: 8rem;
+          font-size: clamp(6.97rem, calc(5.34rem + 8.13vw), 11.64rem);
           display: inline-block;
-          padding-left: 100%;
         }
         .animation-line-1 {
-          animation: text-line 12s linear infinite;
+          animation: text-line 12s linear,text-line-infinite 12s linear ;
+          animation-delay: 0s, 12s;
+          animation-iteration-count: 1, infinite;
         }
       }
 
       .text-line-2 {
+        display: flex;
+        align-items: center;
+        height:clamp(10rem,25vh,30rem);
         color: white;
-        text-align: center;
         white-space: nowrap;
         overflow: hidden;
         & > span {
           font-weight: 300;
-          font-size: 8rem;
+          font-size: clamp(6.97rem, calc(5.34rem + 8.13vw), 11.64rem);
           display: inline-block;
-          padding-left: 100%;
         }
         .animation-line-2 {
-          animation: text-line-2 12s linear infinite;
+          animation: text-line-2 12s linear , text-line-2-infinite 12s linear ;
+          animation-delay: 0s, 12s;
+          animation-iteration-count: 1, infinite;
         }
       }
 
@@ -227,15 +230,33 @@
     transform: translate(0, 0);
   }
   100% {
-    transform: translate(-100%, 0);
+    transform: translate(-150%, 0);
+  }
+}
+
+@keyframes text-line-infinite {
+  0% {
+    transform: translate(100%, 0);
+  }
+  100% {
+    transform: translate(-150%, 0);
   }
 }
 
 @keyframes text-line-2 {
   0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(150%, 0);
+  }
+}
+
+@keyframes text-line-2-infinite {
+  0% {
     transform: translate(-100%, 0);
   }
   100% {
-    transform: translate(0, 0);
+    transform: translate(150%, 0);
   }
 }
