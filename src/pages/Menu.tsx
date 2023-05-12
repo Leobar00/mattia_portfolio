@@ -50,6 +50,8 @@ const Menu = () => {
     function onClickItem(e:any)
     {
         e.preventDefault();
+        const clickedElement = e.target;
+        const href = clickedElement.getAttribute('href');
         setTriggerEvent(false);
         let menuMain : HTMLElement | null  = document.querySelector('.menu-main');
         let navbarLeft : HTMLElement | null= document.querySelector('.navbar-left');
@@ -60,7 +62,7 @@ const Menu = () => {
         rightPosition!.style.width = '100vw';
 
         setTimeout(() => {
-            navigate('/about')
+            navigate(href)
         },2000)
     }
 
@@ -127,7 +129,6 @@ const Menu = () => {
                         <div className="description-item-menu"/>
                     </div>
                 </div>
-
             </div>
         </div>
     )
