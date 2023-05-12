@@ -21,7 +21,7 @@ let menuItem: MenuItem[] = [
     {name:'TALK',route:'/',imageUrl:'/images/menu/talk.png',description:'I would love to talk to you and learn more about this fantastic job. Currently in Perth  :)',class:'slideInUp slideInUp_slow'}
 ]
 
-function mobileMenu()
+const mobileMenu = () =>
 {
     if(window.innerWidth < 768) {
         return (
@@ -47,7 +47,15 @@ const Menu = () => {
         Array(menuItem.length).fill(false)
     );
 
-    function onClickItem(e:any)
+    const handleMenuClick = (href:string) => {
+        const gradientSection: HTMLElement | null = document.getElementById('black-section');
+        gradientSection?.classList.add('active');
+        setTimeout(() => {
+            navigate(href)
+        },2000)
+    }
+
+    const onClickItem = ( e:any) =>
     {
         e.preventDefault();
         const clickedElement = e.target;
@@ -62,8 +70,12 @@ const Menu = () => {
         rightPosition!.style.width = '100vw';
 
         setTimeout(() => {
-            navigate(href)
+            handleMenuClick(href)
         },2000)
+
+        setTimeout(() => {
+            navigate(href)
+        },4000)
     }
 
     useEffect(() => {
@@ -130,6 +142,7 @@ const Menu = () => {
                     </div>
                 </div>
             </div>
+            <div id="black-section"></div>
         </div>
     )
 }

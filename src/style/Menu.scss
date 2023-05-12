@@ -129,7 +129,7 @@
       display: none;
     }
     &:hover {
-      background: linear-gradient(rgba(0, 0, 0, 0.93),rgba(0, 0, 0, 0.90) , rgba(0, 0, 0, 0.84));
+      background: linear-gradient(rgba(18, 18, 18, 1),rgba(26, 26, 26, 1) , rgba(44, 44, 44, 1));
       transition: 0s;
       .navbar-left-text p{
         color: white;
@@ -175,7 +175,7 @@
   }
   //pagine del menu (About ecc.)
   .background-info-page {
-    background: linear-gradient(rgba(0, 0, 0, 0.93),rgba(0, 0, 0, 0.90) , rgba(0, 0, 0, 0.80));
+    background: linear-gradient(rgba(18, 18, 18, 1),rgba(26, 26, 26, 1) , rgba(44, 44, 44, 1));
   }
   .container-section-menu {
     overflow-y: scroll!important;
@@ -439,6 +439,19 @@
   height: 0;
   width: 100%;
   background: linear-gradient(#BC86AF,#6AB471 , #B23D3D, #4C869E);
+  transition: height 1s ease-in-out;
+  &.active {
+    height: 100vh;
+  }
+}
+
+#black-section {
+  position: fixed;
+  z-index:12;
+  top: 0;
+  height: 0;
+  width: 100%;
+  background: linear-gradient(rgba(18, 18, 18, 1),rgba(26, 26, 26, 1) , rgba(44, 44, 44, 1));
   transition: height 1s ease-in-out;
   &.active {
     height: 100vh;
