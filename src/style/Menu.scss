@@ -12,19 +12,25 @@
   }
   //menù principale
   .right-position {
-    width: calc(100% - 12rem);
-    height: 100%;
     position: absolute;
-    top: 0;
-    right: 0;
+    width: 100vw;
+    height: 100%;
     background-size: cover!important;
-    z-index: 0;
-    transition:all 2s ease-in-out;
     @media screen and (max-width: 768px) {
       width: 100%;
       position: relative;
       margin-top: 3rem;
       background: transparent;
+    }
+    #background {
+      width: calc(100vw - 12rem);
+      height: 100%;
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-size: cover!important;
+      z-index: 0;
+      transition:opacity 2s ease-in-out;
     }
     .menu-main {
       background-color: #DCDBDB;
@@ -33,6 +39,8 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
+      opacity: 1;
+      transition: all 2s;
       @media screen and (max-width: 768px) {
         width: 100%;
         position: relative;
@@ -111,8 +119,10 @@
     overflow: hidden;
     width: 0;
     margin: 0;
-    transition: width 2s ease-in-out;
+    opacity: 1;
+    transition: opacity 2s ease-in-out;
     cursor: pointer;
+    z-index: 3;
     &.show {
       width: 12rem;
       background-color: white;

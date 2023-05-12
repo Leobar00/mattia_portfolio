@@ -3,6 +3,7 @@ import '../style/Menu.scss';
 import NavbarLeftMenu from "../components/NavbarLeftMenu";
 import {Link, useLocation, useNavigate} from "react-router-dom";
 import Logo from "../components/Logo";
+import {useTransition,animated} from 'react-spring';
 
 interface MenuItem {
     name: string,
@@ -20,7 +21,8 @@ let menuItem: MenuItem[] = [
     {name:'TALK',route:'/',imageUrl:'/images/menu/talk.png',description:'I would love to talk to you and learn more about this fantastic job. Currently in Perth  :)',class:'slideInUp slideInUp_slow'}
 ]
 
-function mobileMenu() {
+function mobileMenu()
+{
     if(window.innerWidth < 768) {
         return (
             <div>
@@ -37,11 +39,30 @@ function mobileMenu() {
 }
 
 const Menu = () => {
-    const [background,setBackground] = useState("")
+    const [background,setBackground] = useState("");
+    const [triggerEvent,setTriggerEvent] = useState(true);
+    const navigate = useNavigate();
 
     const [isImagesLoad, setIsImagesLoad] = useState(
         Array(menuItem.length).fill(false)
     );
+
+    function onClickItem(e:any)
+    {
+        e.preventDefault();
+        setTriggerEvent(false);
+        let menuMain : HTMLElement | null  = document.querySelector('.menu-main');
+        let navbarLeft : HTMLElement | null= document.querySelector('.navbar-left');
+        let rightPosition : HTMLElement | null= document.querySelector('.right-position');
+
+        menuMain!.style.opacity = '0';
+        navbarLeft!.style.opacity = '0';
+        rightPosition!.style.width = '100vw';
+
+        setTimeout(() => {
+            navigate('/about')
+        },2000)
+    }
 
     useEffect(() => {
         const imageLoadPromises = menuItem.map((item, index) => {
@@ -70,33 +91,43 @@ const Menu = () => {
             <div className="right-position" style={{
                 background:'linear-gradient(rgba(220,219,219,0.05), rgba(220,219,219,0.3)),' + background ,
             }}>
-                <div className="menu-main"  >
-                    <ul>
-                        {
-                            Object.entries(menuItem).map(([key,value]) => {
-                                return(
-                                    <li className={`menu-item ${value.class}`} >
-                                        <Link to={value.route} key={value.name}
-                                              onMouseOver={() => {
-                                                  document.querySelector('.description-item-menu')!.innerHTML = value.description
-                                                  document.querySelector<HTMLElement>('.menu-main')!.style.backgroundColor = 'transparent'
-                                                  setBackground('url("' + value.imageUrl + '")')
-                                              }}
-                                              onMouseLeave={() => {
-                                                  document.querySelector('.description-item-menu')!.innerHTML = ''
-                                                  document.querySelector<HTMLElement>('.menu-main')!.style.backgroundColor = '#DCDBDB'
-                                                  setBackground('#DCDBDB url("")')
-                                              }}
-                                        >
-                                            {value.name}
-                                        </Link>
-                                    </li>
-                                )
-                            })
-                        }
-                    </ul>
-                    <div className="description-item-menu"/>
+                <div id="background" >
+                    <div className="menu-main"  >
+                        <ul>
+                            {
+                                Object.entries(menuItem).map(([key,value]) => {
+                                    return(
+                                        <li className={`menu-item ${value.class}`} >
+                                            <Link to={value.route} key={value.name}
+                                                  onMouseOver={() => {
+                                                      if(triggerEvent) {
+                                                          document.querySelector('.description-item-menu')!.innerHTML = value.description
+                                                          document.querySelector<HTMLElement>('.menu-main')!.style.backgroundColor = 'transparent'
+                                                          setBackground('url("' + value.imageUrl + '")')
+                                                      }
+                                                  }}
+                                                  onMouseLeave={() => {
+                                                      if(triggerEvent) {
+                                                          document.querySelector('.description-item-menu')!.innerHTML = ''
+                                                          document.querySelector<HTMLElement>('.menu-main')!.style.backgroundColor = '#DCDBDB'
+                                                          setBackground('#DCDBDB url("")')
+                                                      }
+                                                  }}
+                                                  onClick={(event) => {
+                                                      onClickItem(event)
+                                                  }}
+                                            >
+                                                {value.name}
+                                            </Link>
+                                        </li>
+                                    )
+                                })
+                            }
+                        </ul>
+                        <div className="description-item-menu"/>
+                    </div>
                 </div>
+
             </div>
         </div>
     )
