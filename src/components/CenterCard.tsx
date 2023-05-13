@@ -48,9 +48,11 @@ function changeColorCard(arrayUrlImg: Array<any>)
 
 
 
+
 const CenterCard = () => {
-    const [arrayUrlImg,setUrlImg] = useState(urlImg)
-    const [isEnter,setIsEnter] = useState(false)
+    const [arrayUrlImg,setUrlImg] = useState(urlImg);
+    const [checkExpand,setCheckExpand] = useState(false);
+    const [lastEl,setLastEl] = useState();
     const navigate = useNavigate();
 
     const backgroundColorStyle = window.screen.width < 1024 ? { backgroundColor: arrayUrlImg[0].color } : { backgroundColor: arrayUrlImg[3].color };
@@ -60,24 +62,32 @@ const CenterCard = () => {
         to: { opacity: 1, top:'50%' }
     })
 
+    const lastElement = (e:any) => {
+        let triggerEl : HTMLElement | null = e
+        const childPath : any = triggerEl!.getAttribute('src');
+        if(triggerEl != null && childPath != null) {
+
+            setLastEl(childPath);
+        }
+    }
+
     function startAnimation(e:any)
     {
+        lastElement(e.target);
         e.preventDefault();
-        setIsEnter((v) => {
-            const imgActive: HTMLElement | null  = document.querySelector('.center-card .swiper-slide-active');
-            const centerCard: HTMLElement | null  = document.querySelector('.center-card');
-            if(imgActive != null && centerCard != null) {
-                const linkImg: HTMLElement | null = imgActive.querySelector('.link-img-center');
+        debugger;
 
-                imgActive.style.animation = 'transition-img-center 2s linear';
-                centerCard.style.zIndex = '20';
-                setTimeout(() => {
-                    navigate(linkImg!.getAttribute('href') as string);
-                },1800)
-            }
+        const imgActive: HTMLElement | null     = document.querySelector('.center-card .swiper-slide-active');
+        const centerCard: HTMLElement | null    = document.querySelector('.center-card');
+        const linkImg: HTMLElement | null       = imgActive!.querySelector('.link-img-center');
 
-            return !v;
-        })
+        centerCard!.style.zIndex = '1000';
+        imgActive!.style.animation = 'transition-img-center 2s linear';
+        setCheckExpand(true);
+
+        setTimeout(() => {
+            navigate(linkImg!.getAttribute('href') as string);
+        },1800)
     }
 
     useEffect(() => {
@@ -87,22 +97,17 @@ const CenterCard = () => {
     },[])
 
     return (
-        <CSSTransition
-            //1. state (enter/exit)
-            in={isEnter}
-            //2. duration
-            timeout={2000}
-            //3. class name prefix
-            classNames="transition-center"
-        >
-            <animated.div className="center-card" style={{ ...backgroundColorStyle, ...props }}>
-                <Swiper
+        <div>
+            <animated.div className={`center-card ${checkExpand ? 'full' : ''}`} style={{ ...backgroundColorStyle, ...props,}}>
+                {!checkExpand ? (<Swiper
                     className="mySwiper card"
                     grabCursor={true}
                     initialSlide={4}
                     mousewheel={true}
                     modules={[Mousewheel]}
-                    onSlideChangeTransitionStart={() => changeColorCard(arrayUrlImg)}
+                    onSlideChangeTransitionStart={() => {
+                        changeColorCard(arrayUrlImg)
+                    }}
                     breakpoints={{
                         1024: {
                            direction:'vertical',
@@ -130,6 +135,27 @@ const CenterCard = () => {
                         })
                     }
                 </Swiper>
+                ) : (
+                    Object.entries(arrayUrlImg).map(([key,value]) => {
+                        return(
+                            <div
+                                className="card "
+                                key={key}
+                                data-index={key}
+                            >
+                                <NavLink className='link-img-center' to={"/" + value.title} >
+                                    <img
+                                        src={lastEl}
+                                        alt=""
+                                        style={{
+                                            animation : 'transition-img-center 2s linear'
+                                        }}
+                                    />
+                                </NavLink>
+                            </div>
+                        )
+                    })
+                )}
                 <div className="instruction desktop">
                     <p>Drag and press to view projects</p>
                 </div>
@@ -148,7 +174,7 @@ const CenterCard = () => {
                     <span>04</span>
                 </div>
             </animated.div>
-        </CSSTransition>
+        </div>
     )
 }
 export  default CenterCard ;
