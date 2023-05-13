@@ -59,7 +59,10 @@ const CenterCard = () => {
 
     const props = useSpring({
         from: { opacity: 0.3, top: '120%' },
-        to: { opacity: 1, top:'50%' }
+        to: { opacity: 1, top:'50%' },
+        config:{
+            duration:1000
+        }
     })
 
     const lastElement = (e:any) => {
@@ -78,11 +81,8 @@ const CenterCard = () => {
         debugger;
 
         const imgActive: HTMLElement | null     = document.querySelector('.center-card .swiper-slide-active');
-        const centerCard: HTMLElement | null    = document.querySelector('.center-card');
         const linkImg: HTMLElement | null       = imgActive!.querySelector('.link-img-center');
 
-        centerCard!.style.zIndex = '1000';
-        imgActive!.style.animation = 'transition-img-center 2s linear';
         setCheckExpand(true);
 
         setTimeout(() => {

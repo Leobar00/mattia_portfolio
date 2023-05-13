@@ -77,9 +77,9 @@
         left: 50%;
         transform: translate(-50%, -50%);
         z-index: 10;
-        transition-property:width,height,top,opacity ;
-        transition-duration: 2s,2s,1s,1s;
-        transition-timing-function: ease-in-out,ease-in-out,ease-in-out,ease-in-out;
+        transition-property:width,height;
+        transition-duration: 2s,2s;
+        transition-timing-function: ease-in-out,ease-in-out;
       .swiper {
         overflow: inherit;
          .swiper-wrapper > div:not(.swiper-slide-active) {
