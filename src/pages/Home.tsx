@@ -1,7 +1,14 @@
 import React, {useEffect} from 'react';
 import {BrowserRouter as Router, Link, Route, Routes, useNavigate} from "react-router-dom";
+import {useSpring,animated} from "react-spring";
 
 const Home = () => {
+    const [background, setBackground] = useSpring(() => ({
+        background: 'black',
+        config: {
+            duration: 500,
+        }
+    }));
 
     const navigate = useNavigate();
     useEffect(() => {
@@ -19,9 +26,8 @@ const Home = () => {
         e.preventDefault();
         let el: HTMLElement | null = document.querySelector('.center-block-flex');
 
-        if(el != null) {
-            el.style.opacity = '0';
-        }
+        el!.style.opacity = '0';
+        setBackground({background: 'linear-gradient(rgba(13, 13, 13, 1),rgba(26, 26, 26, 1) , rgba(44, 44, 44, 1));',})
 
         setTimeout(() => {
             navigate('/main')
@@ -30,8 +36,8 @@ const Home = () => {
 
 
     return (
-        <div className="container-home background-black">
-            <div className="center-block-flex">
+        <animated.div className="container-home background-black" style={{...background}}>
+            <div className="center-block-flex" >
                 <img src="/images/HOMEPAGE/Logo.png" alt="" />
                 <div className="container-paragraph">
                     <p>
@@ -42,7 +48,7 @@ const Home = () => {
                 </div>
                 <Link to="/main" onClick={hideTransition}>Explore</Link>
             </div>
-        </div>
+        </animated.div>
     )
 }
 
